@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 13128fd8ae8fdb749903b6259d27194b
+timeCreated: 1465208676
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Materials/LightGrey.mat
+  uploadId: 362478

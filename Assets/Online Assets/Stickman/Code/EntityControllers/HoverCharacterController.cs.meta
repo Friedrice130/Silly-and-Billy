@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 581a13de04b3fdc42ab752e08df75735
+timeCreated: 1464693285
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: -25
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Code/EntityControllers/HoverCharacterController.cs
+  uploadId: 362478

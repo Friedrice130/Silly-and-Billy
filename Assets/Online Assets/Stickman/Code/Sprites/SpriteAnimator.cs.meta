@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 29d076fb8ce522d4f83afcf67ea7dc9b
+timeCreated: 1473272057
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Code/Sprites/SpriteAnimator.cs
+  uploadId: 362478

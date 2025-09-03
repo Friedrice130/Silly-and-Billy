@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 87ea87330594e9c48b27a64c88a88795
+timeCreated: 1472723202
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Materials/Stairs.mat
+  uploadId: 362478

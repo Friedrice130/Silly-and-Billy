@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2a08614abfe159941b7cd74d3c1b5bc8
+timeCreated: 1473511671
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Models/HeroCube/Materials/HeroCube.mat
+  uploadId: 362478

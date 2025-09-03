@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e4505987b687309458c5388903d4fa80
+timeCreated: 1470922981
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Materials/WaterBack.mat
+  uploadId: 362478

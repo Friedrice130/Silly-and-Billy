@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 36fae0a1ad966fe4e91a9c1e377a2d34
+timeCreated: 1470739981
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Code/AbilityModules/DropDownModule.cs
+  uploadId: 362478

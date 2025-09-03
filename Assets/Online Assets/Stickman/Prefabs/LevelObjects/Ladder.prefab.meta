@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 48fc2704841a474468e2eb61f490df06
+timeCreated: 1472723311
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Prefabs/LevelObjects/Ladder.prefab
+  uploadId: 362478

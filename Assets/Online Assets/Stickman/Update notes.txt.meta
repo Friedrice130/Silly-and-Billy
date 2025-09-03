@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d02fe878a92adbe4a81694356782e760
+timeCreated: 1470730030
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Update notes.txt
+  uploadId: 362478

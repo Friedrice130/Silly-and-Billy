@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7b8f0453bd129b640ae7a003e3436636
+timeCreated: 1464260523
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Sprites/ClassicCharacter/Thumbs.db
+  uploadId: 362478

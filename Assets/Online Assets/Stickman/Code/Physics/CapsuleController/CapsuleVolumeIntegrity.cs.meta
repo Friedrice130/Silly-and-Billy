@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 93a6e43ca91cdff4eb2d8b0e755f3cfd
+timeCreated: 1463040425
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Code/Physics/CapsuleController/CapsuleVolumeIntegrity.cs
+  uploadId: 362478

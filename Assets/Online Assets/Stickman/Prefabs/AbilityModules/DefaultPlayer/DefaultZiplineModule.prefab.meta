@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: f2d9c165b8886ee4ab9006d90dba9843
+timeCreated: 1458823572
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultZiplineModule.prefab
+  uploadId: 362478

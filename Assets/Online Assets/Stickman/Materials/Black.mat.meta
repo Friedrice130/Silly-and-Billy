@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fda563801e4b5cf4fb8376a37330fe7c
+timeCreated: 1458647831
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Materials/Black.mat
+  uploadId: 362478

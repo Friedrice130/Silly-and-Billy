@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: c9a220bad15f8fb4a84d9689b4ead415
+timeCreated: 1473257415
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Code/Game/DemoObjects/Zipline.cs
+  uploadId: 362478

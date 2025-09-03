@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b209549c3a8d1d34d8381df360a20baf
+timeCreated: 1463653740
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Sprites/ClassicCharacter/ClassicSpriteAnimator.controller
+  uploadId: 362478

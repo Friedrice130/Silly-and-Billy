@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a29b857f79c5fb74bad5d14f5866c698
+timeCreated: 1471285199
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Scenes/RunnerSceneDemo.unity
+  uploadId: 362478

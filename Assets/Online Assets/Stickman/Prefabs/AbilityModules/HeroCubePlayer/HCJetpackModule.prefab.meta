@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eee5ddaa23696c446a48847eafad35a2
+timeCreated: 1473511366
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCJetpackModule.prefab
+  uploadId: 362478

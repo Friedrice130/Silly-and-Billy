@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b68f8a8d04d3f9149867feb628e30393
+timeCreated: 1472731703
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Sprites/ClassicCharacter/ClassicClimbIdle.anim
+  uploadId: 362478

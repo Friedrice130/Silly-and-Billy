@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6232f98e295a8ed4288b4152982452a2
+timeCreated: 1461852049
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultEdgeClimbModule.prefab
+  uploadId: 362478

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 7c2327dbf0d99ad49a1c081052a2a48d
+timeCreated: 1467560568
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Code/Game/DemoObjects/Balancer.cs
+  uploadId: 362478

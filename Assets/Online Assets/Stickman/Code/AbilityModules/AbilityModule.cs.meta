@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: a28bd7bb017c5c44c9e3991391afb05f
+timeCreated: 1458548892
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Code/AbilityModules/AbilityModule.cs
+  uploadId: 362478

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 6b147144cbcdbe144aa469583ecc3c25
+timeCreated: 1467297251
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Code/Input/InputElement.cs
+  uploadId: 362478

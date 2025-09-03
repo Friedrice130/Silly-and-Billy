@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b56f3893540d44a42872273a21e666d8
+timeCreated: 1470922900
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Materials/Water.mat
+  uploadId: 362478

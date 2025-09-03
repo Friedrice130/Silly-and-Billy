@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d6828b92226d68147aa848a63dc8e881
+timeCreated: 1461923046
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Code/MovementAnimation/CapsuleMovementPathNode.cs
+  uploadId: 362478

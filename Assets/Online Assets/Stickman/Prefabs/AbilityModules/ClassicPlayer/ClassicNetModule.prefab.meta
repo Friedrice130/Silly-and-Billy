@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eb7dea1fafd118f47ae401ce63b16ac5
+timeCreated: 1473258433
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicNetModule.prefab
+  uploadId: 362478

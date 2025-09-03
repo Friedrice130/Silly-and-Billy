@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 17da9eb10df2c924c89fa98817b46398
+timeCreated: 1464261350
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Sprites/ClassicCharacter/ClassicWallSlide.anim
+  uploadId: 362478

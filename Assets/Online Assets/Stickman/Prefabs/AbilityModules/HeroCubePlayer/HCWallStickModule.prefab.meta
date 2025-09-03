@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 68c8afd11120a234eb28e58cce8be8f3
+timeCreated: 1473592731
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCWallStickModule.prefab
+  uploadId: 362478

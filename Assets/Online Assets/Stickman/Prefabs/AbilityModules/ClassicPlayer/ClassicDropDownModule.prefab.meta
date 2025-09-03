@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ed933e4448b161049bd7a955417172f2
+timeCreated: 1470740373
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Prefabs/AbilityModules/ClassicPlayer/ClassicDropDownModule.prefab
+  uploadId: 362478

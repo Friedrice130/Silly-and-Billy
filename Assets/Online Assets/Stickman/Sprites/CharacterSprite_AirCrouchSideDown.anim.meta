@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2aa264ccde49c904c992d2e698ec9812
+timeCreated: 1460637081
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Sprites/CharacterSprite_AirCrouchSideDown.anim
+  uploadId: 362478

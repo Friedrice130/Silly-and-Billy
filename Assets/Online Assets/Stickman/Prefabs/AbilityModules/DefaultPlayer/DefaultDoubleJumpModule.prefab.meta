@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7c41d2e39e2d2cb45b11d66bcd95d162
+timeCreated: 1467280584
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultDoubleJumpModule.prefab
+  uploadId: 362478

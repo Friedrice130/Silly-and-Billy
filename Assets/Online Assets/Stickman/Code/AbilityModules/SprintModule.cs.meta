@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 32b917df8bd164640bcc346f0a033fe7
+timeCreated: 1467378315
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Code/AbilityModules/SprintModule.cs
+  uploadId: 362478

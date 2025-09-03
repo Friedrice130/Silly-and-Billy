@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 6ef75e8913334b246bd9601b26ad6ae2
+timeCreated: 1464691543
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Code/Game/ExtraPlayerScripts/OnWallSlideParticleSpawner.cs
+  uploadId: 362478

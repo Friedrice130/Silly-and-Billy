@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2749a589064414c4c9e9a08eba604aba
+timeCreated: 1470741223
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Prefabs/LevelObjects/OneWayPlatform.prefab
+  uploadId: 362478

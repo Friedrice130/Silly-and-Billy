@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 76e3a153387bb0342bf053947c700334
+timeCreated: 1460636327
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Sprites/CharacterSprite_Run.anim
+  uploadId: 362478

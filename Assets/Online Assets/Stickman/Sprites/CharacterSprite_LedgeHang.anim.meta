@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 1062f53ac71adb34cb4806f13835e3c8
+timeCreated: 1460727311
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Sprites/CharacterSprite_LedgeHang.anim
+  uploadId: 362478

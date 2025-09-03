@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 006d181c7f39aa7469a46c0b4f98d4d7
+timeCreated: 1468767672
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Prefabs/CharacterControllers/ClassicCharacter.prefab
+  uploadId: 362478

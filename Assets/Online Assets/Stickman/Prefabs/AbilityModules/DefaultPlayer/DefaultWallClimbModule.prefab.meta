@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a7447b2b747ccc641bc5e354cd7f5186
+timeCreated: 1473673788
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Prefabs/AbilityModules/DefaultPlayer/DefaultWallClimbModule.prefab
+  uploadId: 362478

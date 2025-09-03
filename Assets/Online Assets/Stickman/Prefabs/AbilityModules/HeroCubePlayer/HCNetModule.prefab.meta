@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c36ae67e7c734e04891d9809cdee0090
+timeCreated: 1473503023
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Prefabs/AbilityModules/HeroCubePlayer/HCNetModule.prefab
+  uploadId: 362478

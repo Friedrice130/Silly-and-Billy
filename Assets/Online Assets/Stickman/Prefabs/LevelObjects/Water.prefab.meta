@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cc53c125eda66d148b93433043b46930
+timeCreated: 1470923023
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 67414
+  packageName: 2D Flexible Platformer Controller
+  packageVersion: 1.5
+  assetPath: Assets/CharacterEditorPackage/Prefabs/LevelObjects/Water.prefab
+  uploadId: 362478
