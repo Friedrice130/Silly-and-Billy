@@ -1,10 +1,6 @@
 using UnityEngine;
 
-namespace TarodevController
-{
-    /// <summary>
-    /// VERY primitive animator example.
-    /// </summary>
+
     public class PlayerAnimator : MonoBehaviour
     {
         [Header("References")] [SerializeField]
@@ -140,4 +136,3 @@ namespace TarodevController
         private static readonly int IdleSpeedKey = Animator.StringToHash("IdleSpeed");
         private static readonly int JumpKey = Animator.StringToHash("Jump");
     }
-}

@@ -1,8 +1,6 @@
 using UnityEngine;
 
-namespace TarodevController
-{
-    [CreateAssetMenu]
+
     public class ScriptableStats : ScriptableObject
     {
         [Header("LAYERS")] [Tooltip("Set this to the layer your player is on")]
@@ -53,4 +51,3 @@ namespace TarodevController
         [Tooltip("The amount of time we buffer a jump. This allows jump input before actually hitting the ground")]
         public float JumpBuffer = .2f;
     }
-}
