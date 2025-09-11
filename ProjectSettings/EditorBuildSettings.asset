@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Joyce/PortalSwitchScene.unity
     guid: 639351f9e144aaf4aa68a8b793137eb8
   - enabled: 1
-    path: Assets/Scenes/Joyce/BasicController & Portal.unity
+    path: Assets/Scenes/Joyce/BasicController.unity
     guid: b0afcde4fa966be44ad1924512bba458
   - enabled: 1
     path: Assets/Scenes/AngelScene.unity
