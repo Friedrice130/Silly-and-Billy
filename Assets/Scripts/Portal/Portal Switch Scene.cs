@@ -4,8 +4,9 @@ using System.Collections.Generic;
 
 public class PortalSwitchScene : MonoBehaviour
 {
-    [SerializeField] bool goNextLevel;
-    [SerializeField] string levelName;
+    [SerializeField] bool goNextLevel; // build index +1
+    [SerializeField] string levelName; // type scene name manually 
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
