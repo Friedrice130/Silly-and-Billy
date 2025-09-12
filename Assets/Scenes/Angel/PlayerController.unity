@@ -733,12 +733,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e83ddb20d00ab2547a05e3d024827f5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
-  acceleration: 5.6
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  wallCheckPoint: {fileID: 949576508}
+  speed: 15
 --- !u!114 &384539643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -778,7 +773,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
     m_ActionId: 87b48dda-3e8b-463c-9e9d-5fe04c588eec
-    m_ActionName: 'Player/Movement[/Keyboard/space]'
+    m_ActionName: 'Player/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]'
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -891,7 +886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &949576508
 Transform:
   m_ObjectHideFlags: 0

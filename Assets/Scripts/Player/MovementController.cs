@@ -6,79 +6,44 @@ using UnityEngine.InputSystem;
 public class MovementController : MonoBehaviour
 {
     Rigidbody2D rb;
+	public int speed;
+	//public int jumpPower;
 	
-	[SerializeField] int speed;
-	float speedMultiplier;
+	Vector2 vecMove;
 	
-	[Range(1,10)]
-	[SerializeField] float acceleration;
-	
-	bool btnPressed;
-	
-	bool isWallTouch;
-	public LayerMask wallLayer;
-	public Transform wallCheckPoint;
-	
-	Vector2 relativeTransform;
-	
-	private void Awake()
+	void Start()
 	{
 		rb = GetComponent<Rigidbody2D>();
 	}
 	
-	private void Start()
+	void Update()
 	{
-		UpdateRelativeTransform();
+		
+	}
+	
+	//public void Jump(InputAction.CallbackContext value)
+	//{
+		//if (value.started)
+		//{
+			//rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
+		//}
+	//}
+
+	
+	public void Move(InputAction.CallbackContext value)
+	{
+		vecMove = value.ReadValue<Vector2>();
+		flip();
 	}
 	
 	private void FixedUpdate()
 	{
-		UpdateSpeedMultiplier();
-		
-		float targetSpeed = speed * speedMultiplier * relativeTransform.x;
-		rb.linearVelocity = new Vector2(targetSpeed, rb.linearVelocity.y);
-		
-		isWallTouch = Physics2D.OverlapBox(wallCheckPoint.position, new Vector2(0.06f, 0.96f), 0, wallLayer);
-		
-		if (isWallTouch)
-		{
-			Flip();
-		}
+		rb.linearVelocity = new Vector2(vecMove.x * speed, rb.linearVelocity.y);
 	}
 	
-	public void Flip()
+	void flip()
 	{
-		transform.Rotate(0, 180, 0);
-		UpdateRelativeTransform();
-	}
-	
-	void UpdateRelativeTransform()
-	{
-		relativeTransform = transform.InverseTransformVector(Vector2.one);
-	}
-	
-	public void Move(InputAction.CallbackContext value)
-	{
-		if (value.started)
-		{
-			btnPressed = true;
-		}
-		else if (value.canceled)
-		{
-			btnPressed = false;
-		}
-	}
-	
-	void UpdateSpeedMultiplier()
-	{
-		if (btnPressed && speedMultiplier < 1)
-		{
-			speedMultiplier += Time.deltaTime * acceleration;
-		}
-		else if (!btnPressed && speedMultiplier > 0)
-		{
-			speedMultiplier -= Time.deltaTime * acceleration;
-			if (speedMultiplier < 0) speedMultiplier = 0;
-		}
+		if (vecMove.x < -0.01f) transform.localScale = new Vector3(-1, 1, 1);
+		if (vecMove.x > 0.01f) transform.localScale = new Vector3(1, 1, 1);
 	}
 }
