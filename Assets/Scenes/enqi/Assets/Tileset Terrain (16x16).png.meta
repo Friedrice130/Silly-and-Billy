@@ -170,10 +170,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 115
-        width: 18
-        height: 18
+        x: 16
+        y: 116
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,10 +192,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_1
       rect:
         serializedVersion: 2
-        x: 47
-        y: 115
-        width: 18
-        height: 18
+        x: 48
+        y: 116
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,10 +214,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_2
       rect:
         serializedVersion: 2
-        x: 79
-        y: 115
-        width: 18
-        height: 18
+        x: 80
+        y: 116
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,10 +236,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_3
       rect:
         serializedVersion: 2
-        x: 127
-        y: 115
-        width: 18
-        height: 18
+        x: 128
+        y: 116
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -258,10 +258,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_4
       rect:
         serializedVersion: 2
-        x: 159
-        y: 115
-        width: 18
-        height: 18
+        x: 160
+        y: 116
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -280,10 +280,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_5
       rect:
         serializedVersion: 2
-        x: 191
-        y: 115
-        width: 18
-        height: 18
+        x: 192
+        y: 116
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -302,10 +302,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_6
       rect:
         serializedVersion: 2
-        x: 241
-        y: 115
+        x: 240
+        y: 116
         width: 16
-        height: 18
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -324,10 +324,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_7
       rect:
         serializedVersion: 2
-        x: 271
-        y: 115
+        x: 272
+        y: 116
         width: 16
-        height: 18
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -346,10 +346,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_8
       rect:
         serializedVersion: 2
-        x: 15
-        y: 83
-        width: 18
-        height: 18
+        x: 16
+        y: 84
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -368,10 +368,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_9
       rect:
         serializedVersion: 2
-        x: 47
-        y: 83
-        width: 18
-        height: 18
+        x: 48
+        y: 84
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -390,10 +390,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_10
       rect:
         serializedVersion: 2
-        x: 79
-        y: 83
-        width: 18
-        height: 18
+        x: 80
+        y: 84
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -412,10 +412,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_11
       rect:
         serializedVersion: 2
-        x: 127
-        y: 83
-        width: 18
-        height: 18
+        x: 128
+        y: 84
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -434,10 +434,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_12
       rect:
         serializedVersion: 2
-        x: 159
-        y: 83
-        width: 18
-        height: 18
+        x: 160
+        y: 84
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -456,10 +456,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_13
       rect:
         serializedVersion: 2
-        x: 191
-        y: 83
-        width: 18
-        height: 18
+        x: 192
+        y: 84
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -478,10 +478,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_14
       rect:
         serializedVersion: 2
-        x: 239
-        y: 83
-        width: 18
-        height: 18
+        x: 240
+        y: 84
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -500,10 +500,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_15
       rect:
         serializedVersion: 2
-        x: 271
-        y: 83
-        width: 18
-        height: 18
+        x: 272
+        y: 84
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -522,10 +522,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_16
       rect:
         serializedVersion: 2
-        x: 15
-        y: 51
-        width: 34
-        height: 17
+        x: 16
+        y: 52
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -544,10 +544,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_17
       rect:
         serializedVersion: 2
-        x: 63
-        y: 60
-        width: 18
-        height: 9
+        x: 32
+        y: 52
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -566,10 +566,10 @@ TextureImporter:
       name: Tileset Terrain (16x16)_18
       rect:
         serializedVersion: 2
-        x: 95
-        y: 59
-        width: 18
-        height: 10
+        x: 64
+        y: 52
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -584,11 +584,33 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain (16x16)_19
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 52
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5e54fb0696da743bbcdd09fef0393d
+      internalID: 2029090197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2957197a2c6e143488963bde635d304d
     internalID: 0
     vertices: []
     indices: 
@@ -609,6 +631,7 @@ TextureImporter:
       Tileset Terrain (16x16)_16: 2423676088822550444
       Tileset Terrain (16x16)_17: -2311649056163719819
       Tileset Terrain (16x16)_18: -8317662358954575265
+      Tileset Terrain (16x16)_19: 2029090197
       Tileset Terrain (16x16)_2: -7187492011932592877
       Tileset Terrain (16x16)_3: -2082829728169427874
       Tileset Terrain (16x16)_4: 5428879846577056273
