@@ -3,7 +3,7 @@
     "name": "PlayerActions",
     "maps": [
         {
-            "name": "Player",
+            "name": "Player 1 (WASD)",
             "id": "1e2ed02a-a56a-4f4e-ba4c-34e7b9084590",
             "actions": [
                 {
@@ -23,20 +23,11 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Down",
-                    "type": "Button",
-                    "id": "5b421613-ccf6-4478-9858-42d7c02e14d9",
-                    "expectedControlType": "",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
-                    "name": "AD",
+                    "name": "2D Vector",
                     "id": "aefb08f7-1095-44c9-a592-021fa0345bf2",
                     "path": "2DVector",
                     "interactions": "",
@@ -69,6 +60,17 @@
                     "isPartOfComposite": true
                 },
                 {
+                    "name": "Down",
+                    "id": "0dcb2478-4282-4ac3-936c-a2270181b251",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
                     "name": "",
                     "id": "e3ebc982-144c-45c5-b91c-4396d0bde230",
                     "path": "<Keyboard>/w",
@@ -78,15 +80,85 @@
                     "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
+                }
+            ]
+        },
+        {
+            "name": "Player 2 (Arrow Keys)",
+            "id": "c27adc93-bcb2-4fcb-940f-3a4883e77bff",
+            "actions": [
+                {
+                    "name": "Movement",
+                    "type": "Value",
+                    "id": "8c2f942a-75d1-477d-803f-ed5b6ab64fbc",
+                    "expectedControlType": "Vector2",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": true
                 },
                 {
-                    "name": "",
-                    "id": "08bddc11-fa10-436f-82ba-f4357302db8c",
-                    "path": "<Keyboard>/s",
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "c0e6f6d9-e976-4684-a77e-a434b7c14570",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "2D Vector",
+                    "id": "554e9f5e-b3bc-43d3-9ea2-b0d6d51558f5",
+                    "path": "2DVector",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Down",
+                    "action": "Movement",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "left",
+                    "id": "081936e9-30a1-404e-8ff3-116e4380a36d",
+                    "path": "<Keyboard>/leftArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "fba68feb-f5b4-43ee-a2bc-1d590759559e",
+                    "path": "<Keyboard>/rightArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Down",
+                    "id": "b863cd55-56ec-43b8-9b6d-ceb97ca6f335",
+                    "path": "<Keyboard>/downArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "",
+                    "id": "441937ff-af4e-4763-a247-2c26efd059fd",
+                    "path": "<Keyboard>/upArrow",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

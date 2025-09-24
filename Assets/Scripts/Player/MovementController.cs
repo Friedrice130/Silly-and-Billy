@@ -1,93 +1,197 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class MovementController : MonoBehaviour
 {
-    Rigidbody2D rb;
-    public int speed;
+    [Header("References")]
+    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] private CapsuleCollider2D col;
+    [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private Transform groundCheck;
 
-    [Header("Jump System")]
-    [SerializeField] float jumpTime;
-    [SerializeField] int jumpPower;
-    [SerializeField] float fallMultiplier;
-    [SerializeField] float jumpMultiplier;
+    [Header("Movement")]
+    [SerializeField] private float maxSpeed = 14f;
+    [SerializeField] private float acceleration = 120f;
+    [SerializeField] private float groundDeceleration = 60f;
+    [SerializeField] private float airDeceleration = 30f;
 
-    public Transform groundCheck;
-    public LayerMask groundLayer;
-    Vector2 vecGravity;
+    [Header("Jumping")]
+    [SerializeField] private float jumpPower = 36f;
+    [SerializeField] private float maxFallSpeed = 40f;
+    [SerializeField] private float fallAcceleration = 110f;
+    [SerializeField] private float jumpEndEarlyGravityModifier = 3f;
+    [SerializeField] private float coyoteTime = 0.15f;
+    [SerializeField] private float jumpBuffer = 0.2f;
 
-    bool isJumping;
-    float jumpCounter;
+    [Header("Input Setup")]
+    [Tooltip("Choose which action map this player should use (Player1WASD / Player2ArrowKeys).")]
+    [SerializeField] private string actionMapName = "Player1WASD";
 
-    Vector2 vecMove;
+    private PlayerActions controls;
+    private InputAction moveAction;
+    private InputAction jumpAction;
 
-    void Start()
+    private Vector2 moveInput;
+    private Vector2 frameVelocity;
+
+    // state tracking
+    private bool grounded;
+    private bool endedJumpEarly;
+    private bool jumpToConsume;
+    private bool bufferedJumpUsable;
+    private bool coyoteUsable;
+    private bool jumpHeld;
+    private float frameLeftGrounded = float.MinValue;
+    private float timeJumpWasPressed;
+    private float time;
+
+    void Awake()
     {
-        vecGravity = new Vector2(0, -Physics2D.gravity.y);
         rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<CapsuleCollider2D>();
+        rb.interpolation = RigidbodyInterpolation2D.Interpolate;
+
+        controls = new PlayerActions();
     }
 
-    public void Jump(InputAction.CallbackContext value)
+    void OnEnable()
     {
-        if (value.started && isGrounded())
+        if (actionMapName == "Player1WASD")
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpPower);
-            isJumping = true;
-            jumpCounter = 0;
+            controls.Player1WASD.Enable();
+            moveAction = controls.Player1WASD.Movement;
+            jumpAction = controls.Player1WASD.Jump;
         }
-        if (value.canceled)
+        else if (actionMapName == "Player2ArrowKeys")
         {
-            isJumping = false;
-            jumpCounter = 0;
+            controls.Player2ArrowKeys.Enable();
+            moveAction = controls.Player2ArrowKeys.Movement;
+            jumpAction = controls.Player2ArrowKeys.Jump;
+        }
 
-            if (rb.linearVelocity.y > 0)
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, rb.linearVelocity.y * 0.6f);
-            }
-        }
+        moveAction.Enable();
+        jumpAction.Enable();
+
+        // Subscribe to movement
+        moveAction.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
+        moveAction.canceled += ctx => moveInput = Vector2.zero;
+
+        // Subscribe to jump
+        jumpAction.started += ctx => { jumpToConsume = true; timeJumpWasPressed = time; jumpHeld = true; };
+        jumpAction.canceled += ctx => jumpHeld = false;
     }
 
-    public void Move(InputAction.CallbackContext value)
+    void OnDisable()
     {
-        vecMove = value.ReadValue<Vector2>();
+        moveAction?.Disable();
+        jumpAction?.Disable();
+    }
+
+    void Update()
+    {
+        time += Time.deltaTime;
+    }
+
+    void FixedUpdate()
+    {
+        frameVelocity = rb.linearVelocity;
+
+        CheckCollisions();
+        HandleJump();
+        HandleHorizontal();
+        HandleGravity();
+
+        rb.linearVelocity = frameVelocity;
+    }
+
+    #region Collisions
+    private void CheckCollisions()
+    {
+        bool groundHit = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.8f, 0.3f),
+            CapsuleDirection2D.Horizontal, 0, groundLayer);
+
+        if (!grounded && groundHit)
+        {
+            grounded = true;
+            coyoteUsable = true;
+            bufferedJumpUsable = true;
+            endedJumpEarly = false;
+        }
+        else if (grounded && !groundHit)
+        {
+            grounded = false;
+            frameLeftGrounded = time;
+        }
+    }
+    #endregion
+
+    #region Jump
+    private bool HasBufferedJump => bufferedJumpUsable && time < timeJumpWasPressed + jumpBuffer;
+    private bool CanUseCoyote => coyoteUsable && !grounded && time < frameLeftGrounded + coyoteTime;
+
+    private void HandleJump()
+    {
+        if (!endedJumpEarly && !grounded && frameVelocity.y > 0 && !jumpHeld)
+            endedJumpEarly = true;
+
+        if (!jumpToConsume && !HasBufferedJump) return;
+
+        if (grounded || CanUseCoyote) ExecuteJump();
+
+        jumpToConsume = false;
+    }
+
+    private void ExecuteJump()
+    {
+        endedJumpEarly = false;
+        timeJumpWasPressed = 0;
+        bufferedJumpUsable = false;
+        coyoteUsable = false;
+        frameVelocity.y = jumpPower;
+    }
+    #endregion
+
+    #region Horizontal
+    private void HandleHorizontal()
+    {
+        if (moveInput.x == 0)
+        {
+            float decel = grounded ? groundDeceleration : airDeceleration;
+            frameVelocity.x = Mathf.MoveTowards(rb.linearVelocity.x, 0, decel * Time.fixedDeltaTime);
+        }
+        else
+        {
+            frameVelocity.x = Mathf.MoveTowards(rb.linearVelocity.x, moveInput.x * maxSpeed, acceleration * Time.fixedDeltaTime);
+        }
+
         flip();
     }
+    #endregion
 
-    private void FixedUpdate()
+    #region Gravity
+    private void HandleGravity()
     {
-        rb.linearVelocity = new Vector2(vecMove.x * speed, rb.linearVelocity.y);
-
-        if (rb.linearVelocity.y < 0)
+        if (grounded && frameVelocity.y <= 0f)
         {
-            rb.linearVelocity -= vecGravity * fallMultiplier * Time.deltaTime;
+            frameVelocity.y = -1.5f; // grounding force
         }
-
-        if (rb.linearVelocity.y > 0 && isJumping)
+        else
         {
-            jumpCounter += Time.deltaTime;
-            if (jumpCounter > jumpTime) isJumping = false;
+            float gravity = fallAcceleration;
+            if (endedJumpEarly && frameVelocity.y > 0)
+                gravity *= jumpEndEarlyGravityModifier;
 
-            float t = jumpCounter / jumpTime;
-            float currentJumpM = jumpMultiplier;
+            frameVelocity.y += -gravity * Time.fixedDeltaTime;
 
-            if (t > 0.5f)
-            {
-                currentJumpM = jumpMultiplier * (1 - t);
-            }
-            rb.linearVelocity += vecGravity * currentJumpM * Time.deltaTime;
+            if (frameVelocity.y < -maxFallSpeed)
+                frameVelocity.y = -maxFallSpeed;
         }
     }
+    #endregion
 
-    bool isGrounded()
+    private void flip()
     {
-        return Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.8f, 0.3f), CapsuleDirection2D.Horizontal, 0, groundLayer);
-    }
-
-    void flip()
-    {
-        if (vecMove.x < -0.01f) transform.localScale = new Vector3(-1, 1, 1);
-        if (vecMove.x > 0.01f) transform.localScale = new Vector3(1, 1, 1);
+        if (moveInput.x < -0.01f) transform.localScale = new Vector3(-1, 1, 1);
+        if (moveInput.x > 0.01f) transform.localScale = new Vector3(1, 1, 1);
     }
 }
