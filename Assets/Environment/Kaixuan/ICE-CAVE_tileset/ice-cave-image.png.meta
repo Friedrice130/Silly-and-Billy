@@ -1,15 +1,15 @@
 fileFormatVersion: 2
-guid: 548aa6861c4bb6143994daa87e619d19
+guid: 748f48adf3c6553409392a08e73b402a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6178708042526665401
-    second: ReflectionProbe-0_0
+      213: 5396379011126407024
+    second: ice-cave-image_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -31,22 +31,22 @@ TextureImporter:
   ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
-  cubemapConvolution: 1
-  seamlessCubemap: 1
+  cubemapConvolution: 0
+  seamlessCubemap: 0
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 2
-    aniso: 0
+    filterMode: 1
+    aniso: 1
     mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
-  nPOTScale: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -55,10 +55,10 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
-  textureShape: 2
+  textureType: 8
+  textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
   flipbookColumns: 1
@@ -76,7 +76,7 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
-    compressionQuality: 100
+    compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ReflectionProbe-0_0
+      name: ice-cave-image_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 4
-        height: 4
+        width: 960
+        height: 540
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 745595285c1d04aa0800000000000000
-      internalID: -6178708042526665401
+      spriteID: 07f209f8e1ac3ea40800000000000000
+      internalID: 5396379011126407024
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ReflectionProbe-0_0: -6178708042526665401
+      ice-cave-image_0: 5396379011126407024
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

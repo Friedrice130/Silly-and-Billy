@@ -1,0 +1,4730 @@
+fileFormatVersion: 2
+guid: 452b19fbd4dd90d4c938ee0eef8abd59
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7148388966380254238
+    second: tileset_ICEBURG_0
+  - first:
+      213: 7094814655708695453
+    second: tileset_ICEBURG_1
+  - first:
+      213: 7549282227283109581
+    second: tileset_ICEBURG_2
+  - first:
+      213: -5566272458897363929
+    second: tileset_ICEBURG_3
+  - first:
+      213: -6510815448348866785
+    second: tileset_ICEBURG_4
+  - first:
+      213: -6371495950833102774
+    second: tileset_ICEBURG_5
+  - first:
+      213: 5632802611604389341
+    second: tileset_ICEBURG_6
+  - first:
+      213: 7423924594911003057
+    second: tileset_ICEBURG_7
+  - first:
+      213: 8662727254093548415
+    second: tileset_ICEBURG_8
+  - first:
+      213: 4679401823602456257
+    second: tileset_ICEBURG_9
+  - first:
+      213: -352962579450876059
+    second: tileset_ICEBURG_10
+  - first:
+      213: 3451090858413670649
+    second: tileset_ICEBURG_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tileset_ICEBURG_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 968
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2eb459edb12dbcc90800000000000000
+      internalID: -7148388966380254238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 968
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9b80c4e658d57260800000000000000
+      internalID: 7094814655708695453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 968
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc6216a103074c860800000000000000
+      internalID: 7549282227283109581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 968
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72ce164a0b0a0c2b0800000000000000
+      internalID: -5566272458897363929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 968
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f174a0378dfe4a5a0800000000000000
+      internalID: -6510815448348866785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_5
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 968
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a40d0cab036e397a0800000000000000
+      internalID: -6371495950833102774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 968
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddd7292a12cbb2e40800000000000000
+      internalID: 5632802611604389341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 968
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b1c4fed514170760800000000000000
+      internalID: 7423924594911003057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_8
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 968
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7b475e5a80383870800000000000000
+      internalID: 8662727254093548415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c6b3218a2390f040800000000000000
+      internalID: 4679401823602456257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_10
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56f23d077660a1bf0800000000000000
+      internalID: -352962579450876059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f0485fd9dcb4ef20800000000000000
+      internalID: 3451090858413670649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_12
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f4a4017b4e44494abdc2cee44256b76
+      internalID: 407443777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf52d55a316bea44b9795288697e9dcd
+      internalID: -987328915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_14
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1386767a19040e43a81f7b84dc95731
+      internalID: -1639520787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd12075679e410a4391c7220696a06db
+      internalID: 1028509869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_16
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e891b1b759bd3343b13541f4f3efe62
+      internalID: -1350897302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_17
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6d97b293796bca4591a33bce330d204
+      internalID: -301959269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_18
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01ad32e5cffaa4341b6807d318985969
+      internalID: 2061699112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_19
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e63ccae5f11eb419c524449f2985be
+      internalID: 600688710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_20
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62e141ea86ab3c9478a86b47eb7dcc03
+      internalID: 202233739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_21
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 860dcf38c5aedd3419e98f2dc9022294
+      internalID: 517056397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_22
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2df33ff281c08b48bc4361d77e7bf6b
+      internalID: 1489804091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_23
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6552f16c76d09304b820529c6fa8ac3c
+      internalID: 285243616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_24
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08bd1cd4dd9b1bf488a4d54950e98586
+      internalID: 2077101688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_25
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50117f5280fc65347a16df4e3f90c521
+      internalID: -441778407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_26
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f230d18a89a474498ce26145a6f54d6
+      internalID: -2100289465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_27
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2e094c8f6fb0c4cbd4756c38f3568e
+      internalID: 1911849663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_28
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae9041e4679ce34b8c25066d3dd38c2
+      internalID: 929612628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_29
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b090154a2514ec4091ebbdeabb6f67b
+      internalID: 344722260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_30
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e77494e67459664099b3a879d189042
+      internalID: -1450187046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_31
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2fd7f8027458cc40b923959a40670a8
+      internalID: -1004736577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_32
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e77af0507d0ac140afae15a201b6a1d
+      internalID: -1183496531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_33
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8748c85b17c93947b128e64f03f2c3b
+      internalID: -1657093435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_34
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 936
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6845cf91400284d96ea57685791584
+      internalID: 238652050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75bc08a2fd26ec448814187bc07fc5a9
+      internalID: 1043439920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_36
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb7e923dce294c44b47b3daee57de29
+      internalID: 388716334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca572079e3ec6c498c68da998051447
+      internalID: 1517272195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef77d7586a3fce40a909079ecbeee43
+      internalID: 1100575403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_39
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7e074c329dc98c4eb36bcf087f4e790
+      internalID: 1447636559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9476ac4944a123d4dbf3b02419f4cb8c
+      internalID: 731823889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_41
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904a9fc1e0220e64abef424edd005401
+      internalID: 1711421596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_42
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 958b227a1067b8f4dab53f85ffe5cb9e
+      internalID: 1115903162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_43
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f91eedfb00f85ee4187ccfcd0f6790db
+      internalID: 606541838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_44
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54ff673a8c5ba64bbb055497bd5d075
+      internalID: -585098863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_45
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277ed0d859c3abd4ab4677a2108a0f99
+      internalID: -1760193708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_46
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b0a2295b2aa7647843fdc92d84e488
+      internalID: -1713649860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_47
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8230170fd2b67df42a611de15bd3a5d8
+      internalID: 162655954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_48
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcd849e8396055498ccb372340d56bc
+      internalID: 2090870121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_49
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fee9f25a375e8645822e8c69a3fb818
+      internalID: -1383595211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_50
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7e161758e6fa1f4eab303ec49ed883a
+      internalID: -2038152043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_51
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ed67273b945c2488aae5afcb0d2bf5
+      internalID: -1348196522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_52
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ef018bf3fa0f2498819f67b6e93d91
+      internalID: 2085950050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_53
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fce6b9f0943c7c744bf7b2c2914d7356
+      internalID: 2120384487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_54
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca5102678f3a674fa69240c23d88068
+      internalID: 635737410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_55
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e906b3cdf1a5c3e4f8992c0d4622f875
+      internalID: 2124808358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_56
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f02fad7d1810234c9bf00cf5929a6d9
+      internalID: 10785505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_57
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58078cb27a8de3a41b4210f23737eee2
+      internalID: -22880928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_58
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed7a388de24870f4ea68a7dba3e30b22
+      internalID: 1756846228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_59
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 889b30e518946e84dbe02dbbb908bc5d
+      internalID: -1146884141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_60
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185945dce187867459e1f81a209dc452
+      internalID: -836633736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_61
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dca16b867194f04a90a5d96138832c1
+      internalID: 1449175137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_62
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 904
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ad07fde4b135ff46b887927afa3de34
+      internalID: 1383184407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_63
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351552ef7c9c2a041990f45b15efadde
+      internalID: -1659259524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_64
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f56039ca69f113c4a85c3e9f117a97b9
+      internalID: 206380062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_65
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1adc92739fdf8cb4faec6513b3a1236c
+      internalID: -274624172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_66
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc9d12cd9a435ec47b832a9b7c145793
+      internalID: 2124280137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_67
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89e583c5bdc6ff4abc53de9bf03748c
+      internalID: 838114456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_68
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7255eea029098254e8eddbcab02ace7c
+      internalID: -1985348204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_69
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffc86508f0e436c4a9705550b76379e1
+      internalID: 954074021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_70
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b7d5c9726440ca44a1b617e55690d9a
+      internalID: 1106054182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_71
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37af79cc9955bbc4c86df9c764d08081
+      internalID: 1927964916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_72
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 090de3d9e9de8a149865eccec97678a4
+      internalID: 1189292527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_73
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee8253659836de340b35551888464c6f
+      internalID: 955347407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_74
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f88f20b633aef418169f05c3085653
+      internalID: -167768017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_75
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2dd9d79fb3d05d44b2ac75ccc711f91
+      internalID: 1773544152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_76
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d70f3dec46ac9e64aa49b56c23cedafc
+      internalID: -2005309019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_77
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46a573a53560c148a373f4639bff0a2
+      internalID: -1121967347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_78
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d757d155ddc65347acbdbc18843c81d
+      internalID: 212738559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_79
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7a298c16e4df8f4bb3736f77c94d6a2
+      internalID: -191949215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_80
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4080ffd6c601aac4c88b15de8d4fccbc
+      internalID: -1974784836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_81
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 872
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41da9754f56b38542bd210bf937b25ac
+      internalID: -1866250896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_82
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173addfc5ff6dcd498bcadb445d98da7
+      internalID: 1838150905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_83
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64e8fd995ab876843906192a783ecd12
+      internalID: 71748491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_84
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba69a22eab18c9b46ac5c42d09a2cbca
+      internalID: 273398363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c70669612d6ddf4bb91d6e7074fd0b1
+      internalID: -1421510354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_86
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d266f6b4243954fa060e16c0b3dec0
+      internalID: -213954449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_87
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc147c697ebb174e8568dc7cafb7f6f
+      internalID: 760789543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_88
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b26a2ddda5627ce4d952fb36647bd373
+      internalID: -371260358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_89
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee51646ffa645747ae8c607200d1db9
+      internalID: 1583816461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_90
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb47fa376cc1ba94a82412ed01b13471
+      internalID: -1083908429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_91
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aa42b0679612324c84e3a4e59840a42
+      internalID: -1525593068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_92
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1217a35c84fb904489925eb9f82c656
+      internalID: -1460955357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_93
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a630f3884e69d745917ce18c8f00979
+      internalID: -2030172067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_94
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a9fa920e7012a49bb57fd672c3ef18
+      internalID: -2748358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_95
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8753345772e76f459db6ffda03fc550
+      internalID: 645082685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_96
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20cc526eb302c5e4c8ab5d68a744cf4a
+      internalID: 91333079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_97
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a61615943948d9e488a339103757bd53
+      internalID: 1147317058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_98
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdb3b5e2f8b1b9a40804c30c55b4b90d
+      internalID: 1119469161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_99
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65645597b82287459036a9ad000a947
+      internalID: -2124433671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_100
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 840
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b675c30f93cf194cac8f436a7d4e0f5
+      internalID: 992886883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_101
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f4b2e012116c4945b71c69921f2776a
+      internalID: 909513932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_102
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b717323e0375164438d75d558e514ba0
+      internalID: -388177240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_103
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e22a6a57ec39616418ee10e97764e266
+      internalID: 943690002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_104
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c71847e81a8c7e42996ac5865aefcdc
+      internalID: 99410919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_105
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d806815823af9684d911095bb1e96c8e
+      internalID: -1006975039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_106
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 182fe5f62e200b743926bbbc69bf0714
+      internalID: -674229786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_107
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82aa76b866c634840be2d0cb9131522a
+      internalID: -2098064905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_108
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aec683465b448aa4a80bdd2377e172c6
+      internalID: 1926453274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_109
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5776fe9a51b021847b111282846b0f81
+      internalID: -121700977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_110
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9853be4cd7b819c4385b42e1bc58a977
+      internalID: -1814957404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_111
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a6b1ddda06d4814da95744b296d4a61
+      internalID: 55842252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_112
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf76f85e569597a46875bb1c82c10b8e
+      internalID: -112745249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_113
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11f7c5afe979d1409da6c4574dfed1e
+      internalID: 1650914855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_114
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3afb464e99a541b49977b02cb42971f2
+      internalID: -740190696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_115
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97058f8ac5abb3e4c98a482efa10b923
+      internalID: -1017853878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_116
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1ebf7119b848814bacc180db55007e1
+      internalID: -1671729175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_117
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 045ed2d03d234dc4caa1f44c6f4f5544
+      internalID: -125962007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_118
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa7423cb39ba6646a644e488019b5b2
+      internalID: -1232476935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_119
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 808
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6281df5581acba741bc6af45acf3530d
+      internalID: -117171767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_120
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f5db046b70298c42b6a1f9f6e34f25f
+      internalID: -1475289921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_121
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bc6a5035caed054bb204946df16cdf1
+      internalID: 1529695651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_122
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a9de5b724f4cf7408fcf59552f63369
+      internalID: -1276495414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_123
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95be086a7cdb9564ea1803d8bdf69f0b
+      internalID: 723226431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_124
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d97e31d16c84304e98c25bfd68c394e
+      internalID: 527406066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_125
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4c0c265db1eeb40af75fd85314577c
+      internalID: 325427531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_126
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70d1fc957d5c7214aa6b413884c7a9e5
+      internalID: -659517962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_127
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596690ee331628d429337496db794bd3
+      internalID: -790136139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_128
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5870c220f3271b542802ce58488a64af
+      internalID: -1563749616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_129
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34f012910a266184d88fc02d602aa1ab
+      internalID: 1480449176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_130
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f41309b88dfa65499308e240d91ce65
+      internalID: 1356043575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_131
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9a2ee04f666cda4aa1fe67dcecb2b81
+      internalID: -1266072632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_132
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed05aa0dffb6b214897bab23714b99ff
+      internalID: -1498333234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_133
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23478ae031588824c920624a4896ea21
+      internalID: 2145299969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_134
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a2d2fe43a798e45aa4ec67a8f6ec3f
+      internalID: -1960858995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_135
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2edd781d054eff448f73bb816648f09
+      internalID: -1849441337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_136
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0a5785faeb613e44b905f2398ccf84a
+      internalID: -1483100597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_137
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b73498893b1e042b102bd425732160
+      internalID: -1449112911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_138
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 776
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2427c7fef7ebd3c479837c5715a210a7
+      internalID: -542752209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_139
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265ba525ac247044ab088bd9bc699b33
+      internalID: 1417118601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_140
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55a907cff2dfccb4785d445a80236e74
+      internalID: 1706276965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_141
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a3d031a046fcb247b9229467151a877
+      internalID: 61749739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_142
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be66b0db3acb64c499a8cebf17313d0b
+      internalID: -1055767824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_143
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fca3f462c53d5446a32c6eea3119f63
+      internalID: 1793930219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_144
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f05b28c58af3964ea0c4a937c7e0a00
+      internalID: -1222521799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_145
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845a0524a914a6b418943361a7aad54c
+      internalID: 1024373365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_146
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a79148e94640d9418b077f58b855128
+      internalID: 1753598054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_147
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f86979fa6d965bd45ae26eac5d182cef
+      internalID: 1440327025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_148
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb7f7cd13b05fce42b95f2b2c9a4ee83
+      internalID: 280107798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_149
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13584bde72167ed47a4fb38c6226c1da
+      internalID: 1277663639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_150
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1109a53220a1322449e813bfe05ba58e
+      internalID: -1915836267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_151
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23ec41d5655016d458b2929244428041
+      internalID: 285444689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_152
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a71fe766050fab348aae9269196ac909
+      internalID: -655920965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_153
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bedfe5fc04f30424f8fbd242b9034da2
+      internalID: 772708583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_154
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 448ff9b0dc3fcd443a470fb2294c0e6b
+      internalID: 467344412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_155
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb6a6c543ae013340bea76213204e915
+      internalID: 1538765204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_156
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ae914228b73214ba6d3c5ffc16734f
+      internalID: 1658675615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_157
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e23098de89841124384fdb490a7fce13
+      internalID: -1652918447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_158
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b9afc15dd1c7c438c402d999f0223b
+      internalID: -1599382895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_159
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98f7d59828eb4140bf7c5d5c617d3d8
+      internalID: 1900639653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_160
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848c814d243c738468c1d1d3b53d32d3
+      internalID: 805729871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_161
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 744
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dd9eca5645ede647b577cae57d53918
+      internalID: 926896316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_162
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96fe4d3cf94ab44aa341da461886164
+      internalID: 1046332703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_163
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 216229f014b55e74688af8b01a267f9f
+      internalID: 545458100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_164
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f4001d1158e834097154d7ab2c96b6
+      internalID: -235287032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_165
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7920f3296c3dc3640b4a8ff4c2a43cd5
+      internalID: -303565751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_166
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5be4f7b55e9eced41b26391e1d36ea2b
+      internalID: -1122685664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_167
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ded66731f9d3e448fc729a08e2e23f
+      internalID: 240809396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_168
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c979e3bb19f0ff34285b30c67e0f7290
+      internalID: 318883576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_169
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b63dc4be1663149a4ee67970d0c8f4
+      internalID: -299260077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_170
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c183c3fbd1545c846993abc2b0f175ed
+      internalID: 958603812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_171
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67810b5c4371d394eb5f1137767dd644
+      internalID: 2091999915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_172
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3df1c9dbd7e5de40b0417a52980691b
+      internalID: 1129011722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_173
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187c4b57afdc47744a50c5d97b782624
+      internalID: -1202480940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_174
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60ba542e366bc4469c82b21e9516a06
+      internalID: -1333607491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_175
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6682e13901b6e6449065731c6dc7026
+      internalID: -583002953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_176
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c659c4747a80d14da7331dce69e31b2
+      internalID: -982706308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_177
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a57885c19f1794589327ba69a01e64
+      internalID: -1499523947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_178
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 541663a5134ce0e429a5631deeaf9aee
+      internalID: 1549246612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_179
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 712
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fa170f0a800e354a933bd84d2a06c4a
+      internalID: -1917050467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_180
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 680
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fccd9b17155161f4aae06b214b2647ff
+      internalID: -227841740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_181
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 680
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0baf5634d94204196ab58e3ef72909
+      internalID: 1043191420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_182
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 680
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6a54c3a1215b040a92ff0911ba55fb
+      internalID: -426610999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_183
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 680
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b09a31d615307479fd8ee5be5aecc2
+      internalID: -936613654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_184
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 680
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3bf50a851da3441bd82c7decc1cb68
+      internalID: 1120958603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_185
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 680
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d699f6d16a8e60e499d318fc75ef546c
+      internalID: -1578197531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_186
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 680
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6090524dd2255a34ab42d232184d0013
+      internalID: 1757040408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_187
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 680
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acce65443758f3c4cb27880860cbab1c
+      internalID: -1005443637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_188
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 648
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcc7fc7a0821e54789723155f64b4a9
+      internalID: -1139466719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_189
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 648
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01168e47f9c2dc64fa845aff0b5cc4c4
+      internalID: -2099242356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_190
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 648
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c76fb1fb4e3c8e84ca9ad77932815603
+      internalID: -487554057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_191
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 648
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56aefe1482b15a548bf5e777c7c15155
+      internalID: -2091301995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_192
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 648
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ec2b583a813644f9304a0210b3b299
+      internalID: -465394924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_193
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 648
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7329f32a48f1fc144ae4371c77db30cd
+      internalID: -387819380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_194
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 648
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39f390b7e076e947a7c3af283880e7d
+      internalID: 152366197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_195
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 648
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d41a7921e753fe04bb5a746b6740c170
+      internalID: -251363930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_196
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 616
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddda78b382f551140be58600c99acd63
+      internalID: -1465571691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_197
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 616
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2a0c96a888426b4e9de0c431cdd2d22
+      internalID: 1169344992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_ICEBURG_198
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 296
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84de28897ff02ff4393bf6729a8a23aa
+      internalID: 1867602537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 51479e5dc7805324eb8acac6d80eb3a6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      tileset_ICEBURG_0: -7148388966380254238
+      tileset_ICEBURG_1: 7094814655708695453
+      tileset_ICEBURG_10: -352962579450876059
+      tileset_ICEBURG_100: 992886883
+      tileset_ICEBURG_101: 909513932
+      tileset_ICEBURG_102: -388177240
+      tileset_ICEBURG_103: 943690002
+      tileset_ICEBURG_104: 99410919
+      tileset_ICEBURG_105: -1006975039
+      tileset_ICEBURG_106: -674229786
+      tileset_ICEBURG_107: -2098064905
+      tileset_ICEBURG_108: 1926453274
+      tileset_ICEBURG_109: -121700977
+      tileset_ICEBURG_11: 3451090858413670649
+      tileset_ICEBURG_110: -1814957404
+      tileset_ICEBURG_111: 55842252
+      tileset_ICEBURG_112: -112745249
+      tileset_ICEBURG_113: 1650914855
+      tileset_ICEBURG_114: -740190696
+      tileset_ICEBURG_115: -1017853878
+      tileset_ICEBURG_116: -1671729175
+      tileset_ICEBURG_117: -125962007
+      tileset_ICEBURG_118: -1232476935
+      tileset_ICEBURG_119: -117171767
+      tileset_ICEBURG_12: 407443777
+      tileset_ICEBURG_120: -1475289921
+      tileset_ICEBURG_121: 1529695651
+      tileset_ICEBURG_122: -1276495414
+      tileset_ICEBURG_123: 723226431
+      tileset_ICEBURG_124: 527406066
+      tileset_ICEBURG_125: 325427531
+      tileset_ICEBURG_126: -659517962
+      tileset_ICEBURG_127: -790136139
+      tileset_ICEBURG_128: -1563749616
+      tileset_ICEBURG_129: 1480449176
+      tileset_ICEBURG_13: -987328915
+      tileset_ICEBURG_130: 1356043575
+      tileset_ICEBURG_131: -1266072632
+      tileset_ICEBURG_132: -1498333234
+      tileset_ICEBURG_133: 2145299969
+      tileset_ICEBURG_134: -1960858995
+      tileset_ICEBURG_135: -1849441337
+      tileset_ICEBURG_136: -1483100597
+      tileset_ICEBURG_137: -1449112911
+      tileset_ICEBURG_138: -542752209
+      tileset_ICEBURG_139: 1417118601
+      tileset_ICEBURG_14: -1639520787
+      tileset_ICEBURG_140: 1706276965
+      tileset_ICEBURG_141: 61749739
+      tileset_ICEBURG_142: -1055767824
+      tileset_ICEBURG_143: 1793930219
+      tileset_ICEBURG_144: -1222521799
+      tileset_ICEBURG_145: 1024373365
+      tileset_ICEBURG_146: 1753598054
+      tileset_ICEBURG_147: 1440327025
+      tileset_ICEBURG_148: 280107798
+      tileset_ICEBURG_149: 1277663639
+      tileset_ICEBURG_15: 1028509869
+      tileset_ICEBURG_150: -1915836267
+      tileset_ICEBURG_151: 285444689
+      tileset_ICEBURG_152: -655920965
+      tileset_ICEBURG_153: 772708583
+      tileset_ICEBURG_154: 467344412
+      tileset_ICEBURG_155: 1538765204
+      tileset_ICEBURG_156: 1658675615
+      tileset_ICEBURG_157: -1652918447
+      tileset_ICEBURG_158: -1599382895
+      tileset_ICEBURG_159: 1900639653
+      tileset_ICEBURG_16: -1350897302
+      tileset_ICEBURG_160: 805729871
+      tileset_ICEBURG_161: 926896316
+      tileset_ICEBURG_162: 1046332703
+      tileset_ICEBURG_163: 545458100
+      tileset_ICEBURG_164: -235287032
+      tileset_ICEBURG_165: -303565751
+      tileset_ICEBURG_166: -1122685664
+      tileset_ICEBURG_167: 240809396
+      tileset_ICEBURG_168: 318883576
+      tileset_ICEBURG_169: -299260077
+      tileset_ICEBURG_17: -301959269
+      tileset_ICEBURG_170: 958603812
+      tileset_ICEBURG_171: 2091999915
+      tileset_ICEBURG_172: 1129011722
+      tileset_ICEBURG_173: -1202480940
+      tileset_ICEBURG_174: -1333607491
+      tileset_ICEBURG_175: -583002953
+      tileset_ICEBURG_176: -982706308
+      tileset_ICEBURG_177: -1499523947
+      tileset_ICEBURG_178: 1549246612
+      tileset_ICEBURG_179: -1917050467
+      tileset_ICEBURG_18: 2061699112
+      tileset_ICEBURG_180: -227841740
+      tileset_ICEBURG_181: 1043191420
+      tileset_ICEBURG_182: -426610999
+      tileset_ICEBURG_183: -936613654
+      tileset_ICEBURG_184: 1120958603
+      tileset_ICEBURG_185: -1578197531
+      tileset_ICEBURG_186: 1757040408
+      tileset_ICEBURG_187: -1005443637
+      tileset_ICEBURG_188: -1139466719
+      tileset_ICEBURG_189: -2099242356
+      tileset_ICEBURG_19: 600688710
+      tileset_ICEBURG_190: -487554057
+      tileset_ICEBURG_191: -2091301995
+      tileset_ICEBURG_192: -465394924
+      tileset_ICEBURG_193: -387819380
+      tileset_ICEBURG_194: 152366197
+      tileset_ICEBURG_195: -251363930
+      tileset_ICEBURG_196: -1465571691
+      tileset_ICEBURG_197: 1169344992
+      tileset_ICEBURG_198: 1867602537
+      tileset_ICEBURG_2: 7549282227283109581
+      tileset_ICEBURG_20: 202233739
+      tileset_ICEBURG_21: 517056397
+      tileset_ICEBURG_22: 1489804091
+      tileset_ICEBURG_23: 285243616
+      tileset_ICEBURG_24: 2077101688
+      tileset_ICEBURG_25: -441778407
+      tileset_ICEBURG_26: -2100289465
+      tileset_ICEBURG_27: 1911849663
+      tileset_ICEBURG_28: 929612628
+      tileset_ICEBURG_29: 344722260
+      tileset_ICEBURG_3: -5566272458897363929
+      tileset_ICEBURG_30: -1450187046
+      tileset_ICEBURG_31: -1004736577
+      tileset_ICEBURG_32: -1183496531
+      tileset_ICEBURG_33: -1657093435
+      tileset_ICEBURG_34: 238652050
+      tileset_ICEBURG_35: 1043439920
+      tileset_ICEBURG_36: 388716334
+      tileset_ICEBURG_37: 1517272195
+      tileset_ICEBURG_38: 1100575403
+      tileset_ICEBURG_39: 1447636559
+      tileset_ICEBURG_4: -6510815448348866785
+      tileset_ICEBURG_40: 731823889
+      tileset_ICEBURG_41: 1711421596
+      tileset_ICEBURG_42: 1115903162
+      tileset_ICEBURG_43: 606541838
+      tileset_ICEBURG_44: -585098863
+      tileset_ICEBURG_45: -1760193708
+      tileset_ICEBURG_46: -1713649860
+      tileset_ICEBURG_47: 162655954
+      tileset_ICEBURG_48: 2090870121
+      tileset_ICEBURG_49: -1383595211
+      tileset_ICEBURG_5: -6371495950833102774
+      tileset_ICEBURG_50: -2038152043
+      tileset_ICEBURG_51: -1348196522
+      tileset_ICEBURG_52: 2085950050
+      tileset_ICEBURG_53: 2120384487
+      tileset_ICEBURG_54: 635737410
+      tileset_ICEBURG_55: 2124808358
+      tileset_ICEBURG_56: 10785505
+      tileset_ICEBURG_57: -22880928
+      tileset_ICEBURG_58: 1756846228
+      tileset_ICEBURG_59: -1146884141
+      tileset_ICEBURG_6: 5632802611604389341
+      tileset_ICEBURG_60: -836633736
+      tileset_ICEBURG_61: 1449175137
+      tileset_ICEBURG_62: 1383184407
+      tileset_ICEBURG_63: -1659259524
+      tileset_ICEBURG_64: 206380062
+      tileset_ICEBURG_65: -274624172
+      tileset_ICEBURG_66: 2124280137
+      tileset_ICEBURG_67: 838114456
+      tileset_ICEBURG_68: -1985348204
+      tileset_ICEBURG_69: 954074021
+      tileset_ICEBURG_7: 7423924594911003057
+      tileset_ICEBURG_70: 1106054182
+      tileset_ICEBURG_71: 1927964916
+      tileset_ICEBURG_72: 1189292527
+      tileset_ICEBURG_73: 955347407
+      tileset_ICEBURG_74: -167768017
+      tileset_ICEBURG_75: 1773544152
+      tileset_ICEBURG_76: -2005309019
+      tileset_ICEBURG_77: -1121967347
+      tileset_ICEBURG_78: 212738559
+      tileset_ICEBURG_79: -191949215
+      tileset_ICEBURG_8: 8662727254093548415
+      tileset_ICEBURG_80: -1974784836
+      tileset_ICEBURG_81: -1866250896
+      tileset_ICEBURG_82: 1838150905
+      tileset_ICEBURG_83: 71748491
+      tileset_ICEBURG_84: 273398363
+      tileset_ICEBURG_85: -1421510354
+      tileset_ICEBURG_86: -213954449
+      tileset_ICEBURG_87: 760789543
+      tileset_ICEBURG_88: -371260358
+      tileset_ICEBURG_89: 1583816461
+      tileset_ICEBURG_9: 4679401823602456257
+      tileset_ICEBURG_90: -1083908429
+      tileset_ICEBURG_91: -1525593068
+      tileset_ICEBURG_92: -1460955357
+      tileset_ICEBURG_93: -2030172067
+      tileset_ICEBURG_94: -2748358
+      tileset_ICEBURG_95: 645082685
+      tileset_ICEBURG_96: 91333079
+      tileset_ICEBURG_97: 1147317058
+      tileset_ICEBURG_98: 1119469161
+      tileset_ICEBURG_99: -2124433671
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
