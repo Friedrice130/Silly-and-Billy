@@ -4,19 +4,17 @@ using System.Collections.Generic;
 
 public class GameController : MonoBehaviour
 {
-    Vector2 startPos;
-    //SpriteRenderer spriteRenderer;
+    Vector2 checkpointPos;
     Rigidbody2D playerRb;
 
     private void Awake()
     {
-        //spriteRenderer = GetComponent<SpriteRenderer>();
         playerRb = GetComponent<Rigidbody2D>();
     }
 
     private void Start()
     {
-        startPos = transform.position;
+        checkpointPos = transform.position;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -27,6 +25,11 @@ public class GameController : MonoBehaviour
         }
     }
 
+    public void UpdateCheckpoint(Vector2 pos)
+    {
+        checkpointPos = pos;
+    }
+
     void Die()
     {
         StartCoroutine(Respawn(0.5f));
@@ -34,13 +37,14 @@ public class GameController : MonoBehaviour
 
     IEnumerator Respawn(float duration)
     {
-        //spriteRenderer.enabled = false;
         playerRb.simulated = false;
         transform.localScale = new Vector3(0, 0, 0);
         yield return new WaitForSeconds(duration);
-        transform.position = startPos;
+
+        // this is starting point
+        transform.position = checkpointPos;
+
         transform.localScale = new Vector3(1, 1, 1);
-        //spriteRenderer.enabled = true;
         playerRb.simulated = true;
     }
 }
