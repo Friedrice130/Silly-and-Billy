@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 384539638}
   - component: {fileID: 384539642}
   - component: {fileID: 384539644}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -697,12 +697,12 @@ MonoBehaviour:
   acceleration: 120
   groundDeceleration: 60
   airDeceleration: 30
-  jumpPower: 36
+  jumpPower: 30
   maxFallSpeed: 40
   fallAcceleration: 110
   jumpEndEarlyGravityModifier: 3
   coyoteTime: 0.15
-  jumpBuffer: 0.2
+  jumpBuffer: 0.5
   actionMapName: Player1WASD
 --- !u!232 &384539644
 DistanceJoint2D:
@@ -734,7 +734,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: fba670c20d5e42f41a81599fbc86f254, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -897,7 +897,7 @@ GameObject:
   - component: {fileID: 1911200451}
   - component: {fileID: 1911200447}
   - component: {fileID: 1911200446}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -926,12 +926,12 @@ MonoBehaviour:
   acceleration: 120
   groundDeceleration: 60
   airDeceleration: 30
-  jumpPower: 36
+  jumpPower: 30
   maxFallSpeed: 40
   fallAcceleration: 110
   jumpEndEarlyGravityModifier: 3
   coyoteTime: 0.15
-  jumpBuffer: 0.2
+  jumpBuffer: 0.5
   actionMapName: Player2ArrowKeys
 --- !u!50 &1911200447
 Rigidbody2D:
@@ -1041,7 +1041,7 @@ CapsuleCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: fba670c20d5e42f41a81599fbc86f254, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0

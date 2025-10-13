@@ -107,17 +107,34 @@ public class MovementController : MonoBehaviour
     #region Collisions
     private void CheckCollisions()
     {
-        bool groundHit = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.8f, 0.3f),
-            CapsuleDirection2D.Horizontal, 0, groundLayer);
+        bool groundHit = Physics2D.OverlapCapsule(
+            groundCheck.position,
+            new Vector2(1.8f, 0.3f),
+            CapsuleDirection2D.Horizontal,
+            0,
+            groundLayer
+        );
 
-        if (!grounded && groundHit)
+        Collider2D playerCollider = Physics2D.OverlapCapsule(
+            groundCheck.position,
+            new Vector2(1.8f, 0.3f),
+            CapsuleDirection2D.Horizontal,
+            0,
+            LayerMask.GetMask("Player")
+        );
+
+        bool playerHit = playerCollider != null && playerCollider.gameObject != this.gameObject;
+
+        bool isOnSomething = groundHit || playerHit;
+
+        if (!grounded && isOnSomething)
         {
             grounded = true;
             coyoteUsable = true;
             bufferedJumpUsable = true;
             endedJumpEarly = false;
         }
-        else if (grounded && !groundHit)
+        else if (grounded && !isOnSomething)
         {
             grounded = false;
             frameLeftGrounded = time;
@@ -136,7 +153,8 @@ public class MovementController : MonoBehaviour
 
         if (!jumpToConsume && !HasBufferedJump) return;
 
-        if (grounded || CanUseCoyote) ExecuteJump();
+        if (grounded || CanUseCoyote) 
+            ExecuteJump();
 
         jumpToConsume = false;
     }
@@ -147,7 +165,22 @@ public class MovementController : MonoBehaviour
         timeJumpWasPressed = 0;
         bufferedJumpUsable = false;
         coyoteUsable = false;
-        frameVelocity.y = jumpPower;
+
+        // Track which player jumped and record the time
+        if (actionMapName == "Player1WASD")
+            JumpManager.lastPlayer1JumpTime = Time.time;
+        else if (actionMapName == "Player2ArrowKeys")
+            JumpManager.lastPlayer2JumpTime = Time.time;
+
+        float finalJumpPower = jumpPower;
+
+        // Check for synchronized jump
+        if (JumpManager.IsSynchronized())
+        {
+            finalJumpPower *= 1.3f; // 30% boost when both jump together
+        }
+
+        frameVelocity.y = finalJumpPower;
     }
     #endregion
 
