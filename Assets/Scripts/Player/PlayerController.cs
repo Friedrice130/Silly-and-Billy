@@ -38,7 +38,7 @@ using UnityEngine;
             _time += Time.deltaTime;
             GatherInput();
 
-            if(FrameInput.GetButtonDown("Fire1")) //
+            if(Input.GetButtonDown("Fire1")) //
             {
                 Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
             }
