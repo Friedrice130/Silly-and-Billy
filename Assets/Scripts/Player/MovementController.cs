@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+using Vector2 = UnityEngine.Vector2;
+
 public class MovementController : MonoBehaviour
 {
     [Header("References")]
@@ -41,6 +43,9 @@ public class MovementController : MonoBehaviour
     private bool bufferedJumpUsable;
     private bool coyoteUsable;
     private bool jumpHeld;
+    private bool anchorInputHeld;
+    private bool isAnchored;
+    private bool airJumpUsable;
     private float frameLeftGrounded = float.MinValue;
     private float timeJumpWasPressed;
     private float time;
@@ -90,6 +95,15 @@ public class MovementController : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
+
+        if (moveInput.y < -0.5f) // Check if the down direction is pressed
+        {
+            anchorInputHeld = true;
+        }
+        else
+        {
+            anchorInputHeld = false;
+        }
     }
 
     void FixedUpdate()
@@ -97,6 +111,14 @@ public class MovementController : MonoBehaviour
         frameVelocity = rb.linearVelocity;
 
         CheckCollisions();
+
+        HandleAnchoring();
+        if (isAnchored)
+        {
+            rb.linearVelocity = frameVelocity;
+            return;
+        }
+
         HandleJump();
         HandleHorizontal();
         HandleGravity();
@@ -133,6 +155,7 @@ public class MovementController : MonoBehaviour
             coyoteUsable = true;
             bufferedJumpUsable = true;
             endedJumpEarly = false;
+            airJumpUsable = true;
         }
         else if (grounded && !isOnSomething)
         {
@@ -153,8 +176,20 @@ public class MovementController : MonoBehaviour
 
         if (!jumpToConsume && !HasBufferedJump) return;
 
-        if (grounded || CanUseCoyote) 
+        // NOTE: Assuming the "swinging" player is not anchored. 
+        // This allow ANY player to air jump once, if they aren't anchored.
+        // In final system, this should be tied to the rope being attached.
+
+        bool canAirJump = !grounded && !isAnchored && airJumpUsable;
+
+        if (grounded || CanUseCoyote || canAirJump)
+        {
+            if (canAirJump)
+            {
+                airJumpUsable = false;
+            }
             ExecuteJump();
+        }
 
         jumpToConsume = false;
     }
@@ -180,13 +215,60 @@ public class MovementController : MonoBehaviour
             finalJumpPower *= 1.3f; // 30% boost when both jump together
         }
 
-        frameVelocity.y = finalJumpPower;
+        // Check if this is a Swing Throw (air jump)
+        if (!grounded && !isAnchored)
+        {
+            Vector2 currentVelocity = rb.linearVelocity;
+
+            float throwX = finalJumpPower * 0.5f * (transform.localScale.x > 0 ? 1 : -1); // Boost forward
+            float throwY = finalJumpPower * 0.8f; // Strong vertical boost
+
+            frameVelocity.x += throwX;
+            frameVelocity.y = Mathf.Max(frameVelocity.y, 0) + throwY;
+
+            rb.linearVelocity = frameVelocity;
+        }
+        else
+        {
+            frameVelocity.y = finalJumpPower;
+        }
+    }
+    #endregion
+
+    #region Anchoring
+    private void HandleAnchoring()
+    {
+        if (grounded && anchorInputHeld)
+        {
+            if (!isAnchored)
+            {
+                isAnchored = true;
+                rb.isKinematic = true;
+                rb.linearVelocity = Vector2.zero;
+                frameVelocity = Vector2.zero;
+            }
+            rb.linearVelocity = Vector2.zero;
+            frameVelocity = Vector2.zero;
+        }
+        else
+        {
+            if (isAnchored)
+            {
+                isAnchored = false;
+                rb.isKinematic = false;
+            }
+        }
     }
     #endregion
 
     #region Horizontal
     private void HandleHorizontal()
     {
+        if (isAnchored)
+        {
+            frameVelocity.x = 0;
+            return;
+        }
         if (moveInput.x == 0)
         {
             float decel = grounded ? groundDeceleration : airDeceleration;
