@@ -1,0 +1,6525 @@
+fileFormatVersion: 2
+guid: e14cfbee1e403ac499a6b52e4f96e4d1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3826144682773564429
+    second: Viele_Stein_0
+  - first:
+      213: -6323866337638403506
+    second: Viele_Stein_1
+  - first:
+      213: 579331019195210215
+    second: Viele_Stein_2
+  - first:
+      213: 7422094660118403658
+    second: Viele_Stein_3
+  - first:
+      213: -38908121541615742
+    second: Viele_Stein_4
+  - first:
+      213: 4509533449437430843
+    second: Viele_Stein_5
+  - first:
+      213: -4460502520390593284
+    second: Viele_Stein_6
+  - first:
+      213: 7673897855690676352
+    second: Viele_Stein_7
+  - first:
+      213: -715631248393078359
+    second: Viele_Stein_8
+  - first:
+      213: 3493696346650527116
+    second: Viele_Stein_9
+  - first:
+      213: -5686799055780576895
+    second: Viele_Stein_10
+  - first:
+      213: 6900542575981422983
+    second: Viele_Stein_11
+  - first:
+      213: 831890761823800842
+    second: Viele_Stein_12
+  - first:
+      213: -2180163959706184596
+    second: Viele_Stein_13
+  - first:
+      213: -4831951045502793518
+    second: Viele_Stein_14
+  - first:
+      213: -8604572163897471149
+    second: Viele_Stein_15
+  - first:
+      213: -3137442453455760275
+    second: Viele_Stein_16
+  - first:
+      213: -1504814339463399421
+    second: Viele_Stein_17
+  - first:
+      213: 5416859798353143246
+    second: Viele_Stein_18
+  - first:
+      213: 5101762763529668563
+    second: Viele_Stein_19
+  - first:
+      213: 4934308395958282324
+    second: Viele_Stein_20
+  - first:
+      213: -7168890278920432244
+    second: Viele_Stein_21
+  - first:
+      213: -7571132627894064897
+    second: Viele_Stein_22
+  - first:
+      213: -1552225189273244066
+    second: Viele_Stein_23
+  - first:
+      213: 6902852179415042816
+    second: Viele_Stein_24
+  - first:
+      213: -9120935304485184239
+    second: Viele_Stein_25
+  - first:
+      213: -8191681598608534061
+    second: Viele_Stein_26
+  - first:
+      213: 3532008427541711837
+    second: Viele_Stein_27
+  - first:
+      213: 276469984162321228
+    second: Viele_Stein_28
+  - first:
+      213: -118198076443232282
+    second: Viele_Stein_29
+  - first:
+      213: 6430740278200106519
+    second: Viele_Stein_30
+  - first:
+      213: -5020547777593042131
+    second: Viele_Stein_31
+  - first:
+      213: -1153318336314853509
+    second: Viele_Stein_32
+  - first:
+      213: 5770194235123103744
+    second: Viele_Stein_33
+  - first:
+      213: -8240154998940586101
+    second: Viele_Stein_34
+  - first:
+      213: -1436997253827128153
+    second: Viele_Stein_35
+  - first:
+      213: -6424945163847990169
+    second: Viele_Stein_36
+  - first:
+      213: 4680730372980952554
+    second: Viele_Stein_37
+  - first:
+      213: -1182644784825542775
+    second: Viele_Stein_38
+  - first:
+      213: -2980321641438978769
+    second: Viele_Stein_39
+  - first:
+      213: 7139438734225232877
+    second: Viele_Stein_40
+  - first:
+      213: 3727797405115745451
+    second: Viele_Stein_41
+  - first:
+      213: -1247254904809289625
+    second: Viele_Stein_42
+  - first:
+      213: -387163806624143445
+    second: Viele_Stein_43
+  - first:
+      213: -8236774881450958470
+    second: Viele_Stein_44
+  - first:
+      213: 7077015781366012884
+    second: Viele_Stein_45
+  - first:
+      213: 3381813697969566537
+    second: Viele_Stein_46
+  - first:
+      213: -3611372001010813170
+    second: Viele_Stein_47
+  - first:
+      213: -1904123850281225522
+    second: Viele_Stein_48
+  - first:
+      213: 7715578708410677690
+    second: Viele_Stein_49
+  - first:
+      213: 6427444156782203378
+    second: Viele_Stein_50
+  - first:
+      213: -1291268683366947412
+    second: Viele_Stein_51
+  - first:
+      213: -8833960719918498967
+    second: Viele_Stein_52
+  - first:
+      213: 414644623318925967
+    second: Viele_Stein_53
+  - first:
+      213: -2964154364731799175
+    second: Viele_Stein_54
+  - first:
+      213: 5102899640248491765
+    second: Viele_Stein_55
+  - first:
+      213: -8829757397552981637
+    second: Viele_Stein_56
+  - first:
+      213: -2636545692041087619
+    second: Viele_Stein_57
+  - first:
+      213: 9100293308629346172
+    second: Viele_Stein_58
+  - first:
+      213: 808411862335660725
+    second: Viele_Stein_59
+  - first:
+      213: -5303209481819219069
+    second: Viele_Stein_60
+  - first:
+      213: 3510788557279771017
+    second: Viele_Stein_61
+  - first:
+      213: 2979132969852748740
+    second: Viele_Stein_62
+  - first:
+      213: 6635229852786850201
+    second: Viele_Stein_63
+  - first:
+      213: -2748561040344803572
+    second: Viele_Stein_64
+  - first:
+      213: 7388558727248344032
+    second: Viele_Stein_65
+  - first:
+      213: 3274885746379942634
+    second: Viele_Stein_66
+  - first:
+      213: 2132284894339983976
+    second: Viele_Stein_67
+  - first:
+      213: -4691672971318141679
+    second: Viele_Stein_68
+  - first:
+      213: -1982113096621572487
+    second: Viele_Stein_69
+  - first:
+      213: 5846608211724852473
+    second: Viele_Stein_70
+  - first:
+      213: -7417772589771219975
+    second: Viele_Stein_71
+  - first:
+      213: 2991491080631159585
+    second: Viele_Stein_72
+  - first:
+      213: 467987867008941984
+    second: Viele_Stein_73
+  - first:
+      213: -8277295637659212541
+    second: Viele_Stein_74
+  - first:
+      213: 8534716405367717574
+    second: Viele_Stein_75
+  - first:
+      213: -5125764147834281869
+    second: Viele_Stein_76
+  - first:
+      213: 4766793074259981836
+    second: Viele_Stein_77
+  - first:
+      213: -911241385191184931
+    second: Viele_Stein_78
+  - first:
+      213: 482355013197469954
+    second: Viele_Stein_79
+  - first:
+      213: 8594897592526630132
+    second: Viele_Stein_80
+  - first:
+      213: -4486649983171176298
+    second: Viele_Stein_81
+  - first:
+      213: 2978692309168394011
+    second: Viele_Stein_82
+  - first:
+      213: 5475117561091916654
+    second: Viele_Stein_83
+  - first:
+      213: -2910682519226038872
+    second: Viele_Stein_84
+  - first:
+      213: 520885638598249207
+    second: Viele_Stein_85
+  - first:
+      213: -8150822849948333535
+    second: Viele_Stein_86
+  - first:
+      213: -993336372987842922
+    second: Viele_Stein_87
+  - first:
+      213: -1176303402375547951
+    second: Viele_Stein_88
+  - first:
+      213: 5754676334736140829
+    second: Viele_Stein_89
+  - first:
+      213: -6286124126700415825
+    second: Viele_Stein_90
+  - first:
+      213: -3720633512088665931
+    second: Viele_Stein_91
+  - first:
+      213: -6996079003994471437
+    second: Viele_Stein_92
+  - first:
+      213: 1319470359656212679
+    second: Viele_Stein_93
+  - first:
+      213: 7865225585266710288
+    second: Viele_Stein_94
+  - first:
+      213: 605485047220571297
+    second: Viele_Stein_95
+  - first:
+      213: 4110921877112318073
+    second: Viele_Stein_96
+  - first:
+      213: 6205722677550832842
+    second: Viele_Stein_97
+  - first:
+      213: -2680034387978050576
+    second: Viele_Stein_98
+  - first:
+      213: 4031434748363742115
+    second: Viele_Stein_99
+  - first:
+      213: -7018702847788782812
+    second: Viele_Stein_100
+  - first:
+      213: 2693010446607569927
+    second: Viele_Stein_101
+  - first:
+      213: -704018887835008254
+    second: Viele_Stein_102
+  - first:
+      213: 7988219953323981292
+    second: Viele_Stein_103
+  - first:
+      213: 2942043545524479717
+    second: Viele_Stein_104
+  - first:
+      213: 211867291394003992
+    second: Viele_Stein_105
+  - first:
+      213: -4994337165288210705
+    second: Viele_Stein_106
+  - first:
+      213: 5334408533984463126
+    second: Viele_Stein_107
+  - first:
+      213: 1938655077866338750
+    second: Viele_Stein_108
+  - first:
+      213: 2653037197265429406
+    second: Viele_Stein_109
+  - first:
+      213: -7194916136885930855
+    second: Viele_Stein_110
+  - first:
+      213: 6724075051374897560
+    second: Viele_Stein_111
+  - first:
+      213: -3030077171131197850
+    second: Viele_Stein_112
+  - first:
+      213: -3889471085288395763
+    second: Viele_Stein_113
+  - first:
+      213: 1361882254880069349
+    second: Viele_Stein_114
+  - first:
+      213: 815719649406160144
+    second: Viele_Stein_115
+  - first:
+      213: 6358502662246445495
+    second: Viele_Stein_116
+  - first:
+      213: 9002266553050524705
+    second: Viele_Stein_117
+  - first:
+      213: -450382721009685592
+    second: Viele_Stein_118
+  - first:
+      213: 8692899038078167011
+    second: Viele_Stein_119
+  - first:
+      213: -1180302584517655763
+    second: Viele_Stein_120
+  - first:
+      213: -3642730332112858525
+    second: Viele_Stein_121
+  - first:
+      213: 8633409239456247332
+    second: Viele_Stein_122
+  - first:
+      213: -3283812413226200788
+    second: Viele_Stein_123
+  - first:
+      213: 7470918448701994636
+    second: Viele_Stein_124
+  - first:
+      213: 1567163236913599183
+    second: Viele_Stein_125
+  - first:
+      213: -6937091752700305476
+    second: Viele_Stein_126
+  - first:
+      213: 1764563691096053121
+    second: Viele_Stein_127
+  - first:
+      213: -1163034239747040985
+    second: Viele_Stein_128
+  - first:
+      213: -682823253094896109
+    second: Viele_Stein_129
+  - first:
+      213: -5643611621724609108
+    second: Viele_Stein_130
+  - first:
+      213: 1421694732097707058
+    second: Viele_Stein_131
+  - first:
+      213: -8637703241341244025
+    second: Viele_Stein_132
+  - first:
+      213: -7891632153207351819
+    second: Viele_Stein_133
+  - first:
+      213: 1214259102808326085
+    second: Viele_Stein_134
+  - first:
+      213: -7635384349284874021
+    second: Viele_Stein_135
+  - first:
+      213: 809794355723699123
+    second: Viele_Stein_136
+  - first:
+      213: -4036806879947521819
+    second: Viele_Stein_137
+  - first:
+      213: -8786898703669495449
+    second: Viele_Stein_138
+  - first:
+      213: -8775818042331569368
+    second: Viele_Stein_139
+  - first:
+      213: 1753845298496332238
+    second: Viele_Stein_140
+  - first:
+      213: -8963974100114786882
+    second: Viele_Stein_141
+  - first:
+      213: 2006880130127237502
+    second: Viele_Stein_142
+  - first:
+      213: 2962232282984833739
+    second: Viele_Stein_143
+  - first:
+      213: -8734395598017490723
+    second: Viele_Stein_144
+  - first:
+      213: 3291722704133714890
+    second: Viele_Stein_145
+  - first:
+      213: -1295550476572836872
+    second: Viele_Stein_146
+  - first:
+      213: 3229424276514934348
+    second: Viele_Stein_147
+  - first:
+      213: 972289820451393280
+    second: Viele_Stein_148
+  - first:
+      213: -8906067043067987500
+    second: Viele_Stein_149
+  - first:
+      213: 4958444977296528772
+    second: Viele_Stein_150
+  - first:
+      213: -7092571469790672655
+    second: Viele_Stein_151
+  - first:
+      213: -2231213353220431473
+    second: Viele_Stein_152
+  - first:
+      213: -887773772953151936
+    second: Viele_Stein_153
+  - first:
+      213: 3042411958485848156
+    second: Viele_Stein_154
+  - first:
+      213: -1140815495178371286
+    second: Viele_Stein_155
+  - first:
+      213: -8633649197589308580
+    second: Viele_Stein_156
+  - first:
+      213: 5216467717609211659
+    second: Viele_Stein_157
+  - first:
+      213: 8909372377471388854
+    second: Viele_Stein_158
+  - first:
+      213: 765433032951633459
+    second: Viele_Stein_159
+  - first:
+      213: 6590001742746217015
+    second: Viele_Stein_160
+  - first:
+      213: 2642607556159026595
+    second: Viele_Stein_161
+  - first:
+      213: -1634181387134589872
+    second: Viele_Stein_162
+  - first:
+      213: -6974966097060912008
+    second: Viele_Stein_163
+  - first:
+      213: 3181402032569776283
+    second: Viele_Stein_164
+  - first:
+      213: 5682741166095431430
+    second: Viele_Stein_165
+  - first:
+      213: -6777307278284491338
+    second: Viele_Stein_166
+  - first:
+      213: 8340907941740944823
+    second: Viele_Stein_167
+  - first:
+      213: 7154892215697561576
+    second: Viele_Stein_168
+  - first:
+      213: 3626224855716340614
+    second: Viele_Stein_169
+  - first:
+      213: 1247316093896795703
+    second: Viele_Stein_170
+  - first:
+      213: 1905387505696653546
+    second: Viele_Stein_171
+  - first:
+      213: 3061060380410142807
+    second: Viele_Stein_172
+  - first:
+      213: 1838705851498598615
+    second: Viele_Stein_173
+  - first:
+      213: 8089813263475408968
+    second: Viele_Stein_174
+  - first:
+      213: -3429641974023492592
+    second: Viele_Stein_175
+  - first:
+      213: 5418220205944390588
+    second: Viele_Stein_176
+  - first:
+      213: -1684215473655916291
+    second: Viele_Stein_177
+  - first:
+      213: 7378326150006418030
+    second: Viele_Stein_178
+  - first:
+      213: -4306023107542641513
+    second: Viele_Stein_179
+  - first:
+      213: 2178226682465229807
+    second: Viele_Stein_180
+  - first:
+      213: -5263979026445432082
+    second: Viele_Stein_181
+  - first:
+      213: -2938719395713133948
+    second: Viele_Stein_182
+  - first:
+      213: 1475247856960373959
+    second: Viele_Stein_183
+  - first:
+      213: 8861818378636880024
+    second: Viele_Stein_184
+  - first:
+      213: 8350487263924857062
+    second: Viele_Stein_185
+  - first:
+      213: 1410661343223930534
+    second: Viele_Stein_186
+  - first:
+      213: 7636585836699249557
+    second: Viele_Stein_187
+  - first:
+      213: -5037804221565018863
+    second: Viele_Stein_188
+  - first:
+      213: 7618515279774872061
+    second: Viele_Stein_189
+  - first:
+      213: 6478403859649324037
+    second: Viele_Stein_190
+  - first:
+      213: -4599888421233215684
+    second: Viele_Stein_191
+  - first:
+      213: -3101271335816939488
+    second: Viele_Stein_192
+  - first:
+      213: 6718337904903909286
+    second: Viele_Stein_193
+  - first:
+      213: 7411880108145424248
+    second: Viele_Stein_194
+  - first:
+      213: 8954006096968096799
+    second: Viele_Stein_195
+  - first:
+      213: -7969691549240254636
+    second: Viele_Stein_196
+  - first:
+      213: -369198323667326584
+    second: Viele_Stein_197
+  - first:
+      213: -453714970216095002
+    second: Viele_Stein_198
+  - first:
+      213: 6029452523489154448
+    second: Viele_Stein_199
+  - first:
+      213: 4921135396571017767
+    second: Viele_Stein_200
+  - first:
+      213: 8168771714637936038
+    second: Viele_Stein_201
+  - first:
+      213: -2288325878236353859
+    second: Viele_Stein_202
+  - first:
+      213: 6251447202480674243
+    second: Viele_Stein_203
+  - first:
+      213: -2851027119426835467
+    second: Viele_Stein_204
+  - first:
+      213: 8113294743659589313
+    second: Viele_Stein_205
+  - first:
+      213: 6911088002429202965
+    second: Viele_Stein_206
+  - first:
+      213: 1610026598058412817
+    second: Viele_Stein_207
+  - first:
+      213: 3309067148928311688
+    second: Viele_Stein_208
+  - first:
+      213: -3292888210460313844
+    second: Viele_Stein_209
+  - first:
+      213: 2041041008906743499
+    second: Viele_Stein_210
+  - first:
+      213: -6426449251896275917
+    second: Viele_Stein_211
+  - first:
+      213: 3418242286592050367
+    second: Viele_Stein_212
+  - first:
+      213: -1467633023452514371
+    second: Viele_Stein_213
+  - first:
+      213: 594190534202324491
+    second: Viele_Stein_214
+  - first:
+      213: -660506572868260282
+    second: Viele_Stein_215
+  - first:
+      213: -6617830657519710085
+    second: Viele_Stein_216
+  - first:
+      213: 267403254850413989
+    second: Viele_Stein_217
+  - first:
+      213: 1442783902522344764
+    second: Viele_Stein_218
+  - first:
+      213: 5886198602704144321
+    second: Viele_Stein_219
+  - first:
+      213: -1209766903856745016
+    second: Viele_Stein_220
+  - first:
+      213: 4395080726451160049
+    second: Viele_Stein_221
+  - first:
+      213: -4647504885522557985
+    second: Viele_Stein_222
+  - first:
+      213: 6967589037421474530
+    second: Viele_Stein_223
+  - first:
+      213: 8394230914375495372
+    second: Viele_Stein_224
+  - first:
+      213: 5145969290492938541
+    second: Viele_Stein_225
+  - first:
+      213: 8381743061050994127
+    second: Viele_Stein_226
+  - first:
+      213: -3064187284620064527
+    second: Viele_Stein_227
+  - first:
+      213: 1236870725008329048
+    second: Viele_Stein_228
+  - first:
+      213: 693392080705431680
+    second: Viele_Stein_229
+  - first:
+      213: -773100486878382614
+    second: Viele_Stein_230
+  - first:
+      213: -3205795631933986088
+    second: Viele_Stein_231
+  - first:
+      213: -1926261578800815527
+    second: Viele_Stein_232
+  - first:
+      213: -3945711807950315445
+    second: Viele_Stein_233
+  - first:
+      213: -5320048700102813190
+    second: Viele_Stein_234
+  - first:
+      213: -8382704161925025301
+    second: Viele_Stein_235
+  - first:
+      213: -1723540508395315044
+    second: Viele_Stein_236
+  - first:
+      213: 6705886515283730289
+    second: Viele_Stein_237
+  - first:
+      213: -1002138729248104875
+    second: Viele_Stein_238
+  - first:
+      213: 670885962090375316
+    second: Viele_Stein_239
+  - first:
+      213: 6732832772607096372
+    second: Viele_Stein_240
+  - first:
+      213: -6642902292759375865
+    second: Viele_Stein_241
+  - first:
+      213: 3778753987850044071
+    second: Viele_Stein_242
+  - first:
+      213: -1307637936289737781
+    second: Viele_Stein_243
+  - first:
+      213: 3362822414257042086
+    second: Viele_Stein_244
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 18
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Viele_Stein_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 428
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0cc7f33152391530800000000000000
+      internalID: 3826144682773564429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 428
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e42330a321d1d38a0800000000000000
+      internalID: -6323866337638403506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_2
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 428
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e9de761e723a0800800000000000000
+      internalID: 579331019195210215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 428
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4a5ea9f4c3900760800000000000000
+      internalID: 7422094660118403658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 428
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28f52a40545c57ff0800000000000000
+      internalID: -38908121541615742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_5
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 432
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b34c57c97c4159e30800000000000000
+      internalID: 4509533449437430843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_6
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 432
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf45268279c1912c0800000000000000
+      internalID: -4460502520390593284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_7
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 432
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 088131311792f7a60800000000000000
+      internalID: 7673897855690676352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_8
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 432
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a97c51db219116f0800000000000000
+      internalID: -715631248393078359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_9
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 432
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c854f2f115a1c7030800000000000000
+      internalID: 3493696346650527116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_10
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 432
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1810c23836e6411b0800000000000000
+      internalID: -5686799055780576895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_11
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 432
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 789e4d689e6a3cf50800000000000000
+      internalID: 6900542575981422983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_12
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 432
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0ecf668d387b8b00800000000000000
+      internalID: 831890761823800842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_13
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 432
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c649a9dfd608eb1e0800000000000000
+      internalID: -2180163959706184596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_14
+      rect:
+        serializedVersion: 2
+        x: 457
+        y: 432
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d88ab8ff1671fcb0800000000000000
+      internalID: -4831951045502793518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_15
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 432
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35f4da6b43b669880800000000000000
+      internalID: -8604572163897471149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_16
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 432
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d641a8226b09574d0800000000000000
+      internalID: -3137442453455760275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_17
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 432
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 308be53c453dd1be0800000000000000
+      internalID: -1504814339463399421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_18
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 432
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec5eeee694d8c2b40800000000000000
+      internalID: 5416859798353143246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_19
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 396
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d74080043a1dc640800000000000000
+      internalID: 5101762763529668563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_20
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 396
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4582251d75f2a7440800000000000000
+      internalID: 4934308395958282324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_21
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 396
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c855233164cf28c90800000000000000
+      internalID: -7168890278920432244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_22
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 396
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff8210f0dfeede690800000000000000
+      internalID: -7571132627894064897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_23
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 396
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5e64f51a63657ae0800000000000000
+      internalID: -1552225189273244066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_24
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 401
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00b801bfb7bdbcf50800000000000000
+      internalID: 6902852179415042816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_25
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 401
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d57d45aadeb6180800000000000000
+      internalID: -9120935304485184239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_26
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 401
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d595d9ccfc415e80800000000000000
+      internalID: -8191681598608534061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_27
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 401
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ddb4f4393f6340130800000000000000
+      internalID: 3532008427541711837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_28
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 401
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c439d0d5cf736d300800000000000000
+      internalID: 276469984162321228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_29
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 401
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e77778c9731c5ef0800000000000000
+      internalID: -118198076443232282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_30
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 401
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71ef9e426349e3950800000000000000
+      internalID: 6430740278200106519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_31
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 401
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2b90b2756e635ab0800000000000000
+      internalID: -5020547777593042131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_32
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 401
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77320b65179effe0800000000000000
+      internalID: -1153318336314853509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_33
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 401
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 008f485c519d31050800000000000000
+      internalID: 5770194235123103744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_34
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 401
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8facf9cfa615ad80800000000000000
+      internalID: -8240154998940586101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_35
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 401
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a41c667c92ce0ce0800000000000000
+      internalID: -1436997253827128153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_36
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 400
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7640a7f0a6206d6a0800000000000000
+      internalID: -6424945163847990169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_37
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 400
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aed49e2897b45f040800000000000000
+      internalID: 4680730372980952554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_38
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 362
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 987510985d6669fe0800000000000000
+      internalID: -1182644784825542775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_39
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 362
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2dde9de145c3a6d0800000000000000
+      internalID: -2980321641438978769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_40
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 362
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3d821d3b1641360800000000000000
+      internalID: 7139438734225232877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_41
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 362
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba40c8e3dfbcbb330800000000000000
+      internalID: 3727797405115745451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_42
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 362
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7688a76b54cd0bee0800000000000000
+      internalID: -1247254904809289625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_43
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 368
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba7a744b19480aaf0800000000000000
+      internalID: -387163806624143445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_44
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 368
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a716148b2e811bd80800000000000000
+      internalID: -8236774881450958470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_45
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 368
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4db97268b5c963260800000000000000
+      internalID: 7077015781366012884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_46
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 368
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 943b60404ad9eee20800000000000000
+      internalID: 3381813697969566537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_47
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 368
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0775f78c44d1edc0800000000000000
+      internalID: -3611372001010813170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_48
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 368
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec273a752713395e0800000000000000
+      internalID: -1904123850281225522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_49
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 368
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab9b267d4fd331b60800000000000000
+      internalID: 7715578708410677690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_50
+      rect:
+        serializedVersion: 2
+        x: 391
+        y: 368
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f1d9a2186ed23950800000000000000
+      internalID: 6427444156782203378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_51
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 368
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5a35259fd741ee0800000000000000
+      internalID: -1291268683366947412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_52
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 368
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96bf0819787776580800000000000000
+      internalID: -8833960719918498967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_53
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 368
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8243f8861d11c500800000000000000
+      internalID: 414644623318925967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_54
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 368
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 979ccbe5f453dd6d0800000000000000
+      internalID: -2964154364731799175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_55
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 368
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5feda7dbf2421d640800000000000000
+      internalID: 5102899640248491765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_56
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 367
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b791af1dd66667580800000000000000
+      internalID: -8829757397552981637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_57
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 344
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d75fdcf79ab196bd0800000000000000
+      internalID: -2636545692041087619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_58
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 344
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7767bc7c8cba4e70800000000000000
+      internalID: 9100293308629346172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_59
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 344
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2aabe3e4e083b00800000000000000
+      internalID: 808411862335660725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_60
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 344
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38b9eaae2173766b0800000000000000
+      internalID: -5303209481819219069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_61
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 344
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 989ba268793d8b030800000000000000
+      internalID: 3510788557279771017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_62
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 344
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c34ab6e6a1085920800000000000000
+      internalID: 2979132969852748740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_63
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 344
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9997d6a6562151c50800000000000000
+      internalID: 6635229852786850201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_64
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 344
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0715cadb462bd9d0800000000000000
+      internalID: -2748561040344803572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_65
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 344
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e3ffb3240f698660800000000000000
+      internalID: 7388558727248344032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_66
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 344
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aea67f83c3bb27d20800000000000000
+      internalID: 3274885746379942634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_67
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 335
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86ae01760d5679d10800000000000000
+      internalID: 2132284894339983976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_68
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 335
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11dd7464a44d3eeb0800000000000000
+      internalID: -4691672971318141679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_69
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 335
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97eb83be3ae1e74e0800000000000000
+      internalID: -1982113096621572487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_70
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 335
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fcddb02133532150800000000000000
+      internalID: 5846608211724852473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_71
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 335
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb9e027127ce0990800000000000000
+      internalID: -7417772589771219975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_72
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 335
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12b05c9c949e38920800000000000000
+      internalID: 2991491080631159585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_73
+      rect:
+        serializedVersion: 2
+        x: 359
+        y: 335
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0afb24c4c70ae7600800000000000000
+      internalID: 467987867008941984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_74
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 335
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305ae68f873212d80800000000000000
+      internalID: -8277295637659212541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_75
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 335
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ce34a01a57617670800000000000000
+      internalID: 8534716405367717574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_76
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 335
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 370a7ed3aa0add8b0800000000000000
+      internalID: -5125764147834281869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_77
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 335
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c06fe05ab0d072240800000000000000
+      internalID: 4766793074259981836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_78
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 335
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd56b03c9ce9a53f0800000000000000
+      internalID: -911241385191184931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_79
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 335
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2099341345ba1b600800000000000000
+      internalID: 482355013197469954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_80
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 335
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fce86b92d5374770800000000000000
+      internalID: 8594897592526630132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_81
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 333
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 698d1919c973cb1c0800000000000000
+      internalID: -4486649983171176298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_82
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 333
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1f8b279fd0765920800000000000000
+      internalID: 2978692309168394011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_83
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 333
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e630364d9668bfb40800000000000000
+      internalID: 5475117561091916654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_84
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 333
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5c7939bad2b97d0800000000000000
+      internalID: -2910682519226038872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_85
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 333
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa40418abe8a3700800000000000000
+      internalID: 520885638598249207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_86
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 296
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12a41b98dc572ee80800000000000000
+      internalID: -8150822849948333535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_87
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 300
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69ea599e4d5f632f0800000000000000
+      internalID: -993336372987842922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_88
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 300
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d37251b94eecafe0800000000000000
+      internalID: -1176303402375547951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_89
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 304
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1a6b4903a7bcdf40800000000000000
+      internalID: 5754676334736140829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_90
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 304
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa4520e796333c8a0800000000000000
+      internalID: -6286124126700415825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_91
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 304
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b08a849887ad5cc0800000000000000
+      internalID: -3720633512088665931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_92
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 304
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f34752763fe8ee90800000000000000
+      internalID: -6996079003994471437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_93
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 304
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c827fe1d43bf4210800000000000000
+      internalID: 1319470359656212679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_94
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 304
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 017d2208ff4e62d60800000000000000
+      internalID: 7865225585266710288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_95
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 304
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ac8464417d176800800000000000000
+      internalID: 605485047220571297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_96
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 304
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97869a8aaadec0930800000000000000
+      internalID: 4110921877112318073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_97
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 304
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: accd00a55e72f1650800000000000000
+      internalID: 6205722677550832842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_98
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 304
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f3acbe6cea9ecad0800000000000000
+      internalID: -2680034387978050576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_99
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 304
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab136f4b8882f730800000000000000
+      internalID: 4031434748363742115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_100
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 304
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42be68552fe889e90800000000000000
+      internalID: -7018702847788782812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_101
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 304
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 704d576abbe7f5520800000000000000
+      internalID: 2693010446607569927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_102
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 304
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 203cd633d82da36f0800000000000000
+      internalID: -704018887835008254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_103
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 248
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9309169bbdbde60800000000000000
+      internalID: 7988219953323981292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_104
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 268
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6a7bc540d34d820800000000000000
+      internalID: 2942043545524479717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_105
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 268
+        width: 29
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8145013dd24b0f200800000000000000
+      internalID: 211867291394003992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_106
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 273
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feef67e2fcc80bab0800000000000000
+      internalID: -4994337165288210705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_107
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 273
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 619c4fa7c40a70a40800000000000000
+      internalID: 5334408533984463126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_108
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 273
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9fa3a958c77ea10800000000000000
+      internalID: 1938655077866338750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_109
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 273
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9367e6464b71d420800000000000000
+      internalID: 2653037197265429406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_110
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 273
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9943030d4e5862c90800000000000000
+      internalID: -7194916136885930855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_111
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 273
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 899644032a6b05d50800000000000000
+      internalID: 6724075051374897560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_112
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 273
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66654bcedd003f5d0800000000000000
+      internalID: -3030077171131197850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_113
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 273
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0c6b3db7a2d50ac0800000000000000
+      internalID: -3889471085288395763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_114
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 273
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e6d80cf1b066e210800000000000000
+      internalID: 1361882254880069349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_115
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 273
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01d092303b4025b00800000000000000
+      internalID: 815719649406160144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_116
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 273
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b133968b70fd3850800000000000000
+      internalID: 6358502662246445495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_117
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 273
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12ce4f3ebb97eec70800000000000000
+      internalID: 9002266553050524705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_118
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 273
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ab6e3d2d4befb9f0800000000000000
+      internalID: -450382721009685592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_119
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 273
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7ebf04e9163a870800000000000000
+      internalID: 8692899038078167011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_120
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 234
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d23895a8d09be9fe0800000000000000
+      internalID: -1180302584517655763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_121
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 234
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3625fdd101c627dc0800000000000000
+      internalID: -3642730332112858525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_122
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 241
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42e6d5626f700d770800000000000000
+      internalID: 8633409239456247332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_123
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 241
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2152a0320e8d62d0800000000000000
+      internalID: -3283812413226200788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_124
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 241
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c867bc81fb80ea760800000000000000
+      internalID: 7470918448701994636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_125
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 241
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc2594929aeafb510800000000000000
+      internalID: 1567163236913599183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_126
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 241
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbf91022ecf7abf90800000000000000
+      internalID: -6937091752700305476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_127
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 241
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1851557f35dfc7810800000000000000
+      internalID: 1764563691096053121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_128
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 241
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729d24e55821cdfe0800000000000000
+      internalID: -1163034239747040985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_129
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 241
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31ee6ea7edf1686f0800000000000000
+      internalID: -682823253094896109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_130
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 241
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca5a6d4912ddda1b0800000000000000
+      internalID: -5643611621724609108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_131
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 241
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23c5abd83dfdab310800000000000000
+      internalID: 1421694732097707058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_132
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 241
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78d6d90aaa6b02880800000000000000
+      internalID: -8637703241341244025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_133
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 241
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f5560a4e5a4b7290800000000000000
+      internalID: -7891632153207351819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_134
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 241
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cfbc28783ae9d010800000000000000
+      internalID: 1214259102808326085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_135
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 241
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd84c49636aa90690800000000000000
+      internalID: -7635384349284874021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_136
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 216
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b307021da7fc3b00800000000000000
+      internalID: 809794355723699123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_137
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 216
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e000e5d7816af7c0800000000000000
+      internalID: -4036806879947521819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_138
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 216
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 769707a1f2aae0680800000000000000
+      internalID: -8786898703669495449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_139
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 216
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 823ec5d9cf7063680800000000000000
+      internalID: -8775818042331569368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_140
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 208
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1ecd7b109e65810800000000000000
+      internalID: 1753845298496332238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_141
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 208
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb53bd29c01999380800000000000000
+      internalID: -8963974100114786882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_142
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 208
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e71160f68ded9db10800000000000000
+      internalID: 2006880130127237502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_143
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 208
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc261891196fb1920800000000000000
+      internalID: 2962232282984833739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_144
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 208
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd09e6cfa7139c680800000000000000
+      internalID: -8734395598017490723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_145
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 208
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac37afeeb5c8ead20800000000000000
+      internalID: 3291722704133714890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_146
+      rect:
+        serializedVersion: 2
+        x: 360
+        y: 208
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fbb947a4b7450ee0800000000000000
+      internalID: -1295550476572836872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_147
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 208
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e02bee44831dc20800000000000000
+      internalID: 3229424276514934348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_148
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 208
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00fcbb6b0744e7d00800000000000000
+      internalID: 972289820451393280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_149
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 208
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d97e10f53b476480800000000000000
+      internalID: -8906067043067987500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_150
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 208
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48554169f6fefc440800000000000000
+      internalID: 4958444977296528772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_151
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 208
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f88e0783df129d90800000000000000
+      internalID: -7092571469790672655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_152
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 208
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f812037d6432901e0800000000000000
+      internalID: -2231213353220431473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_153
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 208
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0461836057efda3f0800000000000000
+      internalID: -887773772953151936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_154
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 186
+        width: 12
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5013fd8e81d83a20800000000000000
+      internalID: 3042411958485848156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_155
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 205
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2fb1a7f9520b20f0800000000000000
+      internalID: -1140815495178371286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_156
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 184
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5b5a5e3ccd1f2880800000000000000
+      internalID: -8633649197589308580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_157
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 184
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b07c36a40cd946840800000000000000
+      internalID: 5216467717609211659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_158
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc0cd239f274ab70800000000000000
+      internalID: 8909372377471388854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_159
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3369e6cb94d5f9a00800000000000000
+      internalID: 765433032951633459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_160
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ae7917ba3647b50800000000000000
+      internalID: 6590001742746217015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_161
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a53f99329d6ca420800000000000000
+      internalID: 2642607556159026595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_162
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 054a949cfa83259e0800000000000000
+      internalID: -1634181387134589872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_163
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 874aa482a41f33f90800000000000000
+      internalID: -6974966097060912008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_164
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b98f607fa4c962c20800000000000000
+      internalID: 3181402032569776283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_165
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6077b9b6bf62dde40800000000000000
+      internalID: 5682741166095431430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_166
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b5fe2820fa22f1a0800000000000000
+      internalID: -6777307278284491338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_167
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd14bbb49bd0c370800000000000000
+      internalID: 8340907941740944823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_168
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e75cdadf884b4360800000000000000
+      internalID: 7154892215697561576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_169
+      rect:
+        serializedVersion: 2
+        x: 341
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6832aa03b40f25230800000000000000
+      internalID: 3626224855716340614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_170
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 736a85bf06b5f4110800000000000000
+      internalID: 1247316093896795703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_171
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae0448c57db417a10800000000000000
+      internalID: 1905387505696653546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_172
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7506e52a2321b7a20800000000000000
+      internalID: 3061060380410142807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_173
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d09105ea35648910800000000000000
+      internalID: 1838705851498598615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_174
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84002bc2d4ac44070800000000000000
+      internalID: 8089813263475408968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_175
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c6f8fabc67760d0800000000000000
+      internalID: -3429641974023492592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_176
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb3c8220292613b40800000000000000
+      internalID: 5418220205944390588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_177
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df8d58733f670a8e0800000000000000
+      internalID: -1684215473655916291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_178
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6aab189a84156660800000000000000
+      internalID: 7378326150006418030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_179
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7941c484cceed34c0800000000000000
+      internalID: -4306023107542641513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_180
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: feb1e9080ad9a3e10800000000000000
+      internalID: 2178226682465229807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_181
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea0d9717f692f6b0800000000000000
+      internalID: -5263979026445432082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_182
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 482d7f397429737d0800000000000000
+      internalID: -2938719395713133948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_183
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c487c51c12297410800000000000000
+      internalID: 1475247856960373959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_184
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 898edaa0dd08bfa70800000000000000
+      internalID: 8861818378636880024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_185
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 185
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e82aab7ce3e2e370800000000000000
+      internalID: 8350487263924857062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_186
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 168
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aedc35840da39310800000000000000
+      internalID: 1410661343223930534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_187
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 168
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59bec3dab5a9af960800000000000000
+      internalID: 7636585836699249557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_188
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 169
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11d57ad70cf161ab0800000000000000
+      internalID: -5037804221565018863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_189
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 168
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df1fdd648476ab960800000000000000
+      internalID: 7618515279774872061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_190
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 169
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 504eaed7cf9e7e950800000000000000
+      internalID: 6478403859649324037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_191
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 168
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3736f52ad9e920c0800000000000000
+      internalID: -4599888421233215684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_192
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 169
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 028b78cb62216f4d0800000000000000
+      internalID: -3101271335816939488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_193
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 168
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6afe6deaab45c3d50800000000000000
+      internalID: 6718337904903909286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_194
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 169
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 877bac340b94cd660800000000000000
+      internalID: 7411880108145424248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_195
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 168
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1c1776da15034c70800000000000000
+      internalID: 8954006096968096799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_196
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 169
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45f1a1ed2c7f56190800000000000000
+      internalID: -7969691549240254636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_197
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 168
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 889a32aa41850eaf0800000000000000
+      internalID: -369198323667326584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_198
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 169
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e22ef273a414b9f0800000000000000
+      internalID: -453714970216095002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_199
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 168
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09557acef1beca350800000000000000
+      internalID: 6029452523489154448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_200
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 169
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7227734e1926b4440800000000000000
+      internalID: 4921135396571017767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_201
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 168
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a5b04e289e4d5170800000000000000
+      internalID: 8168771714637936038
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_202
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 169
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dba6361ecbb3e30e0800000000000000
+      internalID: -2288325878236353859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_203
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 168
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c558fbeb1a91c650800000000000000
+      internalID: 6251447202480674243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_204
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 169
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fbee85b0fd1f68d0800000000000000
+      internalID: -2851027119426835467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_205
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 168
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ceafd15596389070800000000000000
+      internalID: 8113294743659589313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_206
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 169
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 512b144fbed19ef50800000000000000
+      internalID: 6911088002429202965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_207
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 168
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11bc33029a6f75610800000000000000
+      internalID: 1610026598058412817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_208
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 169
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88169cd2a0b2ced20800000000000000
+      internalID: 3309067148928311688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_209
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 168
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c07f07a7e9f4d42d0800000000000000
+      internalID: -3292888210460313844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_210
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 169
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce24e3dbfb335c10800000000000000
+      internalID: 2041041008906743499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_211
+      rect:
+        serializedVersion: 2
+        x: 561
+        y: 168
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33cc5a5447aa0d6a0800000000000000
+      internalID: -6426449251896275917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_212
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 169
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb4c980cf39007f20800000000000000
+      internalID: 3418242286592050367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_213
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 168
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db7fa708a8be1abe0800000000000000
+      internalID: -1467633023452514371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_214
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b067708842dfe3800800000000000000
+      internalID: 594190534202324491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_215
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64e606085c865d6f0800000000000000
+      internalID: -660506572868260282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_216
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7019da641eb824a0800000000000000
+      internalID: -6617830657519710085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_217
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a56421f7d106b300800000000000000
+      internalID: 267403254850413989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_218
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c350f7da05cc50410800000000000000
+      internalID: 1442783902522344764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_219
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c7c497517affa150800000000000000
+      internalID: 5886198602704144321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_220
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c5389a196b063fe0800000000000000
+      internalID: -1209766903856745016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_221
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3894372a67efc30800000000000000
+      internalID: 4395080726451160049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_222
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd3198e1eeeb08fb0800000000000000
+      internalID: -4647504885522557985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_223
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2b96c4059d1b060800000000000000
+      internalID: 6967589037421474530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_224
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce24f5ca8c4e7470800000000000000
+      internalID: 8394230914375495372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_225
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2986e02ec72a6740800000000000000
+      internalID: 5145969290492938541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_226
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcd2a88d7eee15470800000000000000
+      internalID: 8381743061050994127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_227
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f8c3fe36e1d975d0800000000000000
+      internalID: -3064187284620064527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_228
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85983350f5f3a2110800000000000000
+      internalID: 1236870725008329048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_229
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08824847c6c6f9900800000000000000
+      internalID: 693392080705431680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_230
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5bee704356545f0800000000000000
+      internalID: -773100486878382614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_231
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8da63189bd9b283d0800000000000000
+      internalID: -3205795631933986088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_232
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9522813cc4b8445e0800000000000000
+      internalID: -1926261578800815527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_233
+      rect:
+        serializedVersion: 2
+        x: 467
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b40ae0514040e39c0800000000000000
+      internalID: -3945711807950315445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_234
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af9d792e4e36b26b0800000000000000
+      internalID: -5320048700102813190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_235
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be1354b6af6aaab80800000000000000
+      internalID: -8382704161925025301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_236
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90e9111a01c418e0800000000000000
+      internalID: -1723540508395315044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_237
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17f919f9148101d50800000000000000
+      internalID: 6705886515283730289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_238
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e5183a220b712f0800000000000000
+      internalID: -1002138729248104875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_239
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498613f5a377f4900800000000000000
+      internalID: 670885962090375316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_240
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 436ba5f0cb3df6d50800000000000000
+      internalID: 6732832772607096372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_241
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 154
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70013727f8bafc3a0800000000000000
+      internalID: -6642902292759375865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_242
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 314
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a284633bb4d07430800000000000000
+      internalID: 3778753987850044071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_243
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 298
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc310a0a9365adde0800000000000000
+      internalID: -1307637936289737781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_244
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 282
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a233843b252bae20800000000000000
+      internalID: 3362822414257042086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Viele_Stein_245
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 266
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 119623cd05538a74fa98c012efb9c014
+      internalID: -543250128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3011a8707a77e44489e937070b50873f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Viele_Stein_0: 3826144682773564429
+      Viele_Stein_1: -6323866337638403506
+      Viele_Stein_10: -5686799055780576895
+      Viele_Stein_100: -7018702847788782812
+      Viele_Stein_101: 2693010446607569927
+      Viele_Stein_102: -704018887835008254
+      Viele_Stein_103: 7988219953323981292
+      Viele_Stein_104: 2942043545524479717
+      Viele_Stein_105: 211867291394003992
+      Viele_Stein_106: -4994337165288210705
+      Viele_Stein_107: 5334408533984463126
+      Viele_Stein_108: 1938655077866338750
+      Viele_Stein_109: 2653037197265429406
+      Viele_Stein_11: 6900542575981422983
+      Viele_Stein_110: -7194916136885930855
+      Viele_Stein_111: 6724075051374897560
+      Viele_Stein_112: -3030077171131197850
+      Viele_Stein_113: -3889471085288395763
+      Viele_Stein_114: 1361882254880069349
+      Viele_Stein_115: 815719649406160144
+      Viele_Stein_116: 6358502662246445495
+      Viele_Stein_117: 9002266553050524705
+      Viele_Stein_118: -450382721009685592
+      Viele_Stein_119: 8692899038078167011
+      Viele_Stein_12: 831890761823800842
+      Viele_Stein_120: -1180302584517655763
+      Viele_Stein_121: -3642730332112858525
+      Viele_Stein_122: 8633409239456247332
+      Viele_Stein_123: -3283812413226200788
+      Viele_Stein_124: 7470918448701994636
+      Viele_Stein_125: 1567163236913599183
+      Viele_Stein_126: -6937091752700305476
+      Viele_Stein_127: 1764563691096053121
+      Viele_Stein_128: -1163034239747040985
+      Viele_Stein_129: -682823253094896109
+      Viele_Stein_13: -2180163959706184596
+      Viele_Stein_130: -5643611621724609108
+      Viele_Stein_131: 1421694732097707058
+      Viele_Stein_132: -8637703241341244025
+      Viele_Stein_133: -7891632153207351819
+      Viele_Stein_134: 1214259102808326085
+      Viele_Stein_135: -7635384349284874021
+      Viele_Stein_136: 809794355723699123
+      Viele_Stein_137: -4036806879947521819
+      Viele_Stein_138: -8786898703669495449
+      Viele_Stein_139: -8775818042331569368
+      Viele_Stein_14: -4831951045502793518
+      Viele_Stein_140: 1753845298496332238
+      Viele_Stein_141: -8963974100114786882
+      Viele_Stein_142: 2006880130127237502
+      Viele_Stein_143: 2962232282984833739
+      Viele_Stein_144: -8734395598017490723
+      Viele_Stein_145: 3291722704133714890
+      Viele_Stein_146: -1295550476572836872
+      Viele_Stein_147: 3229424276514934348
+      Viele_Stein_148: 972289820451393280
+      Viele_Stein_149: -8906067043067987500
+      Viele_Stein_15: -8604572163897471149
+      Viele_Stein_150: 4958444977296528772
+      Viele_Stein_151: -7092571469790672655
+      Viele_Stein_152: -2231213353220431473
+      Viele_Stein_153: -887773772953151936
+      Viele_Stein_154: 3042411958485848156
+      Viele_Stein_155: -1140815495178371286
+      Viele_Stein_156: -8633649197589308580
+      Viele_Stein_157: 5216467717609211659
+      Viele_Stein_158: 8909372377471388854
+      Viele_Stein_159: 765433032951633459
+      Viele_Stein_16: -3137442453455760275
+      Viele_Stein_160: 6590001742746217015
+      Viele_Stein_161: 2642607556159026595
+      Viele_Stein_162: -1634181387134589872
+      Viele_Stein_163: -6974966097060912008
+      Viele_Stein_164: 3181402032569776283
+      Viele_Stein_165: 5682741166095431430
+      Viele_Stein_166: -6777307278284491338
+      Viele_Stein_167: 8340907941740944823
+      Viele_Stein_168: 7154892215697561576
+      Viele_Stein_169: 3626224855716340614
+      Viele_Stein_17: -1504814339463399421
+      Viele_Stein_170: 1247316093896795703
+      Viele_Stein_171: 1905387505696653546
+      Viele_Stein_172: 3061060380410142807
+      Viele_Stein_173: 1838705851498598615
+      Viele_Stein_174: 8089813263475408968
+      Viele_Stein_175: -3429641974023492592
+      Viele_Stein_176: 5418220205944390588
+      Viele_Stein_177: -1684215473655916291
+      Viele_Stein_178: 7378326150006418030
+      Viele_Stein_179: -4306023107542641513
+      Viele_Stein_18: 5416859798353143246
+      Viele_Stein_180: 2178226682465229807
+      Viele_Stein_181: -5263979026445432082
+      Viele_Stein_182: -2938719395713133948
+      Viele_Stein_183: 1475247856960373959
+      Viele_Stein_184: 8861818378636880024
+      Viele_Stein_185: 8350487263924857062
+      Viele_Stein_186: 1410661343223930534
+      Viele_Stein_187: 7636585836699249557
+      Viele_Stein_188: -5037804221565018863
+      Viele_Stein_189: 7618515279774872061
+      Viele_Stein_19: 5101762763529668563
+      Viele_Stein_190: 6478403859649324037
+      Viele_Stein_191: -4599888421233215684
+      Viele_Stein_192: -3101271335816939488
+      Viele_Stein_193: 6718337904903909286
+      Viele_Stein_194: 7411880108145424248
+      Viele_Stein_195: 8954006096968096799
+      Viele_Stein_196: -7969691549240254636
+      Viele_Stein_197: -369198323667326584
+      Viele_Stein_198: -453714970216095002
+      Viele_Stein_199: 6029452523489154448
+      Viele_Stein_2: 579331019195210215
+      Viele_Stein_20: 4934308395958282324
+      Viele_Stein_200: 4921135396571017767
+      Viele_Stein_201: 8168771714637936038
+      Viele_Stein_202: -2288325878236353859
+      Viele_Stein_203: 6251447202480674243
+      Viele_Stein_204: -2851027119426835467
+      Viele_Stein_205: 8113294743659589313
+      Viele_Stein_206: 6911088002429202965
+      Viele_Stein_207: 1610026598058412817
+      Viele_Stein_208: 3309067148928311688
+      Viele_Stein_209: -3292888210460313844
+      Viele_Stein_21: -7168890278920432244
+      Viele_Stein_210: 2041041008906743499
+      Viele_Stein_211: -6426449251896275917
+      Viele_Stein_212: 3418242286592050367
+      Viele_Stein_213: -1467633023452514371
+      Viele_Stein_214: 594190534202324491
+      Viele_Stein_215: -660506572868260282
+      Viele_Stein_216: -6617830657519710085
+      Viele_Stein_217: 267403254850413989
+      Viele_Stein_218: 1442783902522344764
+      Viele_Stein_219: 5886198602704144321
+      Viele_Stein_22: -7571132627894064897
+      Viele_Stein_220: -1209766903856745016
+      Viele_Stein_221: 4395080726451160049
+      Viele_Stein_222: -4647504885522557985
+      Viele_Stein_223: 6967589037421474530
+      Viele_Stein_224: 8394230914375495372
+      Viele_Stein_225: 5145969290492938541
+      Viele_Stein_226: 8381743061050994127
+      Viele_Stein_227: -3064187284620064527
+      Viele_Stein_228: 1236870725008329048
+      Viele_Stein_229: 693392080705431680
+      Viele_Stein_23: -1552225189273244066
+      Viele_Stein_230: -773100486878382614
+      Viele_Stein_231: -3205795631933986088
+      Viele_Stein_232: -1926261578800815527
+      Viele_Stein_233: -3945711807950315445
+      Viele_Stein_234: -5320048700102813190
+      Viele_Stein_235: -8382704161925025301
+      Viele_Stein_236: -1723540508395315044
+      Viele_Stein_237: 6705886515283730289
+      Viele_Stein_238: -1002138729248104875
+      Viele_Stein_239: 670885962090375316
+      Viele_Stein_24: 6902852179415042816
+      Viele_Stein_240: 6732832772607096372
+      Viele_Stein_241: -6642902292759375865
+      Viele_Stein_242: 3778753987850044071
+      Viele_Stein_243: -1307637936289737781
+      Viele_Stein_244: 3362822414257042086
+      Viele_Stein_245: -543250128
+      Viele_Stein_246: -1352750074
+      Viele_Stein_247: 1738364543
+      Viele_Stein_25: -9120935304485184239
+      Viele_Stein_26: -8191681598608534061
+      Viele_Stein_27: 3532008427541711837
+      Viele_Stein_28: 276469984162321228
+      Viele_Stein_29: -118198076443232282
+      Viele_Stein_3: 7422094660118403658
+      Viele_Stein_30: 6430740278200106519
+      Viele_Stein_31: -5020547777593042131
+      Viele_Stein_32: -1153318336314853509
+      Viele_Stein_33: 5770194235123103744
+      Viele_Stein_34: -8240154998940586101
+      Viele_Stein_35: -1436997253827128153
+      Viele_Stein_36: -6424945163847990169
+      Viele_Stein_37: 4680730372980952554
+      Viele_Stein_38: -1182644784825542775
+      Viele_Stein_39: -2980321641438978769
+      Viele_Stein_4: -38908121541615742
+      Viele_Stein_40: 7139438734225232877
+      Viele_Stein_41: 3727797405115745451
+      Viele_Stein_42: -1247254904809289625
+      Viele_Stein_43: -387163806624143445
+      Viele_Stein_44: -8236774881450958470
+      Viele_Stein_45: 7077015781366012884
+      Viele_Stein_46: 3381813697969566537
+      Viele_Stein_47: -3611372001010813170
+      Viele_Stein_48: -1904123850281225522
+      Viele_Stein_49: 7715578708410677690
+      Viele_Stein_5: 4509533449437430843
+      Viele_Stein_50: 6427444156782203378
+      Viele_Stein_51: -1291268683366947412
+      Viele_Stein_52: -8833960719918498967
+      Viele_Stein_53: 414644623318925967
+      Viele_Stein_54: -2964154364731799175
+      Viele_Stein_55: 5102899640248491765
+      Viele_Stein_56: -8829757397552981637
+      Viele_Stein_57: -2636545692041087619
+      Viele_Stein_58: 9100293308629346172
+      Viele_Stein_59: 808411862335660725
+      Viele_Stein_6: -4460502520390593284
+      Viele_Stein_60: -5303209481819219069
+      Viele_Stein_61: 3510788557279771017
+      Viele_Stein_62: 2979132969852748740
+      Viele_Stein_63: 6635229852786850201
+      Viele_Stein_64: -2748561040344803572
+      Viele_Stein_65: 7388558727248344032
+      Viele_Stein_66: 3274885746379942634
+      Viele_Stein_67: 2132284894339983976
+      Viele_Stein_68: -4691672971318141679
+      Viele_Stein_69: -1982113096621572487
+      Viele_Stein_7: 7673897855690676352
+      Viele_Stein_70: 5846608211724852473
+      Viele_Stein_71: -7417772589771219975
+      Viele_Stein_72: 2991491080631159585
+      Viele_Stein_73: 467987867008941984
+      Viele_Stein_74: -8277295637659212541
+      Viele_Stein_75: 8534716405367717574
+      Viele_Stein_76: -5125764147834281869
+      Viele_Stein_77: 4766793074259981836
+      Viele_Stein_78: -911241385191184931
+      Viele_Stein_79: 482355013197469954
+      Viele_Stein_8: -715631248393078359
+      Viele_Stein_80: 8594897592526630132
+      Viele_Stein_81: -4486649983171176298
+      Viele_Stein_82: 2978692309168394011
+      Viele_Stein_83: 5475117561091916654
+      Viele_Stein_84: -2910682519226038872
+      Viele_Stein_85: 520885638598249207
+      Viele_Stein_86: -8150822849948333535
+      Viele_Stein_87: -993336372987842922
+      Viele_Stein_88: -1176303402375547951
+      Viele_Stein_89: 5754676334736140829
+      Viele_Stein_9: 3493696346650527116
+      Viele_Stein_90: -6286124126700415825
+      Viele_Stein_91: -3720633512088665931
+      Viele_Stein_92: -6996079003994471437
+      Viele_Stein_93: 1319470359656212679
+      Viele_Stein_94: 7865225585266710288
+      Viele_Stein_95: 605485047220571297
+      Viele_Stein_96: 4110921877112318073
+      Viele_Stein_97: 6205722677550832842
+      Viele_Stein_98: -2680034387978050576
+      Viele_Stein_99: 4031434748363742115
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

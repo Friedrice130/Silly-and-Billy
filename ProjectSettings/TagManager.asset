@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Monster
   - Platform
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -17,6 +18,9 @@ TagManager:
   - Player
   - Monster
   - 
+  - Ground
+  - 
+  - Player
   - 
   - 
   - 
