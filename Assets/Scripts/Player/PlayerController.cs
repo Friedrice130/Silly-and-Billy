@@ -12,7 +12,8 @@ using UnityEngine;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
 
-        public ProjectileBehaviour ProjectilePrefab; //
+
+    public ProjectileBehaviour ProjectilePrefab; //
         public Transform LaunchOffset; //
 
         #region Interface
