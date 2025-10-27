@@ -572,7 +572,7 @@ GameObject:
   - component: {fileID: 384539642}
   - component: {fileID: 384539644}
   m_Layer: 9
-  m_Name: Player1
+  m_Name: Silly
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -649,7 +649,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9ec0ca269ec0b4f4fa12877c83d9dd88, type: 3}
+  m_Sprite: {fileID: 4334783836991956000, guid: 322cb34091de53445b1bb566752ccb0b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -669,7 +669,7 @@ Transform:
   m_GameObject: {fileID: 384539637}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.778, y: -1.17, z: 0}
+  m_LocalPosition: {x: -6.979, y: -1.17, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -720,10 +720,10 @@ DistanceJoint2D:
   m_BreakTorque: Infinity
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 0
-  m_Anchor: {x: 0, y: 0.7}
-  m_ConnectedAnchor: {x: 0, y: 0.7}
+  m_Anchor: {x: 0.34, y: 0.09}
+  m_ConnectedAnchor: {x: 0.34, y: 0.09}
   m_AutoConfigureDistance: 0
-  m_Distance: 3.8
+  m_Distance: 4
   m_MaxDistanceOnly: 1
 --- !u!70 &384539645
 CapsuleCollider2D:
@@ -759,8 +759,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.671875}
-  m_Size: {x: 1.0253906, y: 1.34375}
+  m_Offset: {x: 0.27240348, y: -0.0029232502}
+  m_Size: {x: 1.2142596, y: 1.5388594}
   m_Direction: 0
 --- !u!1 &543708345
 GameObject:
@@ -787,7 +787,7 @@ Transform:
   m_GameObject: {fileID: 543708345}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.003000021, z: 0.07875973}
+  m_LocalPosition: {x: 0.2724035, y: -0.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1072,9 +1072,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player1: {fileID: 384539641}
   _player2: {fileID: 1911200450}
-  _numOfRopeSegments: 12
+  _numOfRopeSegments: 13
   _ropeSegmentLength: 0.225
-  _ropeHeightOffset: 0.7
+  _ropeHeightOffset: 0.1
   _gravityForce: {x: 0, y: -2}
   _dampingFactor: 0.98
   _collisionMask:
@@ -1134,7 +1134,7 @@ LineRenderer:
   - {x: 0, y: 0, z: 1}
   m_Parameters:
     serializedVersion: 3
-    widthMultiplier: 0.13
+    widthMultiplier: 0.1
     widthCurve:
       serializedVersion: 2
       m_Curve:
@@ -1220,7 +1220,7 @@ GameObject:
   - component: {fileID: 1911200447}
   - component: {fileID: 1911200446}
   m_Layer: 9
-  m_Name: Player2
+  m_Name: Billy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1326,8 +1326,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9ec0ca269ec0b4f4fa12877c83d9dd88, type: 3}
-  m_Color: {r: 0.23899364, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: -6119387374007233121, guid: 322cb34091de53445b1bb566752ccb0b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1387,8 +1387,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.671875}
-  m_Size: {x: 1.0253906, y: 1.34375}
+  m_Offset: {x: 0.24529445, y: 0.015149355}
+  m_Size: {x: 1.1600416, y: 1.5750046}
   m_Direction: 0
 --- !u!1 &1971333336
 GameObject:
@@ -1549,7 +1549,7 @@ Transform:
   m_GameObject: {fileID: 1997213633}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.003000021, z: 0.07875973}
+  m_LocalPosition: {x: 0.2724035, y: -0.75, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

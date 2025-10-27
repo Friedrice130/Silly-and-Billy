@@ -116,7 +116,7 @@ public class RopeRenderer : MonoBehaviour
         lastSegment.CurrentPosition = (Vector2)_player2.position + offset;
         _ropeSegments[_numOfRopeSegments - 1] = lastSegment;
 
-        // Resolve segment lengths
+        // segment lengths
         for (int i = 0; i < _numOfRopeSegments - 1; i++)
         {
             RopeSegment currentSeg = _ropeSegments[i];
