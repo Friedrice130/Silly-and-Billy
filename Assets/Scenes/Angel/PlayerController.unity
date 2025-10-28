@@ -668,13 +668,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 384539637}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.979, y: -1.17, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -5.225361, y: -0.2722962, z: -0.043681696}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 543708346}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 827615153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &384539642
 MonoBehaviour:
@@ -706,6 +706,7 @@ MonoBehaviour:
   jumpBuffer: 0.5
   actionMapName: Player1WASD
   otherPlayerController: {fileID: 1911200446}
+  swingPumpForce: 70
 --- !u!232 &384539644
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -821,8 +822,8 @@ Transform:
   m_GameObject: {fileID: 607544345}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.36, y: 1.94, z: 0}
-  m_LocalScale: {x: 2.7103598, y: 0.22080156, z: 1}
+  m_LocalPosition: {x: 12.75, y: 1.94, z: 0}
+  m_LocalScale: {x: 7.612859, y: 0.22080156, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 120198358}
@@ -928,6 +929,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &827615152
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 827615153}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &827615153
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827615152}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.7536392, y: -0.89770377, z: 0.043681696}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 384539641}
+  - {fileID: 1911200450}
+  - {fileID: 1279953607}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &898055022
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,12 +1235,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1279953604}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.3444285, y: -0.8640994, z: 0.47612318}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5907893, y: 0.033604383, z: 0.43244147}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 827615153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1911200444
 GameObject:
@@ -1257,6 +1292,7 @@ MonoBehaviour:
   jumpBuffer: 0.5
   actionMapName: Player2ArrowKeys
   otherPlayerController: {fileID: 384539642}
+  swingPumpForce: 70
 --- !u!50 &1911200447
 Rigidbody2D:
   serializedVersion: 5
@@ -1347,13 +1383,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911200444}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.978, y: -1.17, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.2243607, y: -0.2722962, z: -0.043681696}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1997213634}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 827615153}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &1911200451
 CapsuleCollider2D:
@@ -1563,6 +1599,4 @@ SceneRoots:
   m_Roots:
   - {fileID: 898055025}
   - {fileID: 120198358}
-  - {fileID: 384539641}
-  - {fileID: 1911200450}
-  - {fileID: 1279953607}
+  - {fileID: 827615153}

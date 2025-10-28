@@ -32,6 +32,9 @@ public class MovementController : MonoBehaviour
     [Header("Co-op")]
     [SerializeField] private MovementController otherPlayerController;
 
+    [Header("Swing")]
+    [SerializeField] private float swingPumpForce = 30f;
+
     private PlayerActions controls;
     private InputAction moveAction;
     private InputAction jumpAction;
@@ -218,27 +221,19 @@ public class MovementController : MonoBehaviour
         // Check if this is a Swing Throw (air jump / swinging)
         if (!grounded && !isAnchored && (airJumpUsable || isSwinging))
         {
-            float swingThrowMultiplier = 1.0f;
-
-            if (isSwinging)
-            {
-                swingThrowMultiplier = 1.1f;
-            }
-
-            // this ensures the throw is strongest when the swing speed is highest
-            float currentHorizontalSpeed = Mathf.Abs(rb.linearVelocity.x);
-            float throwX = currentHorizontalSpeed * swingThrowMultiplier;
-
-            if (rb.linearVelocity.x < 0) throwX *= -1;
-
-            float throwY = finalJumpPower * swingThrowMultiplier;
+            float horizontalMomentumTransfer = Mathf.Abs(rb.linearVelocity.x) * 1.0f;
+            float verticalBoost = finalJumpPower * 1.3f;
+            float throwX = rb.linearVelocity.x + (rb.linearVelocity.x > 0 ? horizontalMomentumTransfer : -horizontalMomentumTransfer);
 
             frameVelocity.y = 0;
 
-            frameVelocity.x += throwX;
-            frameVelocity.y = Mathf.Max(frameVelocity.y, 0) + throwY;
+            frameVelocity.x = throwX;
+            frameVelocity.y = Mathf.Max(frameVelocity.y, 0) + verticalBoost;
 
-            rb.linearVelocity = frameVelocity;
+            if (!isSwinging)
+            {
+                airJumpUsable = false;
+            }
         }
         else // normal jump
         {
@@ -290,14 +285,34 @@ public class MovementController : MonoBehaviour
             frameVelocity.x = 0;
             return;
         }
-        if (moveInput.x == 0)
+
+        if (isSwinging && !grounded)
         {
-            float decel = grounded ? groundDeceleration : airDeceleration;
-            frameVelocity.x = Mathf.MoveTowards(rb.linearVelocity.x, 0, decel * Time.fixedDeltaTime);
+            if (moveInput.x != 0)
+            {
+                frameVelocity.x = Mathf.MoveTowards(
+                    rb.linearVelocity.x,
+                    moveInput.x * maxSpeed,
+                    swingPumpForce * Time.fixedDeltaTime
+                );
+            }
+            else
+            {
+                float decel = airDeceleration * 0.5f;
+                frameVelocity.x = Mathf.MoveTowards(rb.linearVelocity.x, 0, decel * Time.fixedDeltaTime);
+            }
         }
         else
         {
-            frameVelocity.x = Mathf.MoveTowards(rb.linearVelocity.x, moveInput.x * maxSpeed, acceleration * Time.fixedDeltaTime);
+            if (moveInput.x == 0)
+            {
+                float decel = grounded ? groundDeceleration : airDeceleration;
+                frameVelocity.x = Mathf.MoveTowards(rb.linearVelocity.x, 0, decel * Time.fixedDeltaTime);
+            }
+            else
+            {
+                frameVelocity.x = Mathf.MoveTowards(rb.linearVelocity.x, moveInput.x * maxSpeed, acceleration * Time.fixedDeltaTime);
+            }
         }
 
         flip();
