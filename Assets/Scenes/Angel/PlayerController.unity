@@ -1073,7 +1073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player1: {fileID: 384539641}
   _player2: {fileID: 1911200450}
-  _numOfRopeSegments: 26
+  _numOfRopeSegments: 20
   _ropeSegmentLength: 0.1125
   _ropeHeightOffset: 0.1
   _gravityForce: {x: 0, y: -2}
