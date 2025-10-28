@@ -29,6 +29,9 @@ public class MovementController : MonoBehaviour
     [Tooltip("Choose which action map this player should use (Player1WASD / Player2ArrowKeys).")]
     [SerializeField] private string actionMapName = "Player1WASD";
 
+    [Header("Co-op")]
+    [SerializeField] private MovementController otherPlayerController;
+
     private PlayerActions controls;
     private InputAction moveAction;
     private InputAction jumpAction;
@@ -45,6 +48,7 @@ public class MovementController : MonoBehaviour
     private bool jumpHeld;
     private bool anchorInputHeld;
     private bool isAnchored;
+    private bool isSwinging;
     private bool airJumpUsable;
     private float frameLeftGrounded = float.MinValue;
     private float timeJumpWasPressed;
@@ -176,15 +180,11 @@ public class MovementController : MonoBehaviour
 
         if (!jumpToConsume && !HasBufferedJump) return;
 
-        // NOTE: Assuming the "swinging" player is not anchored. 
-        // This allow ANY player to air jump once, if they aren't anchored.
-        // In final system, this should be tied to the rope being attached.
-
-        bool canAirJump = !grounded && !isAnchored && airJumpUsable;
+        bool canAirJump = !grounded && !isAnchored && (airJumpUsable || isSwinging);
 
         if (grounded || CanUseCoyote || canAirJump)
         {
-            if (canAirJump)
+            if (canAirJump && !isSwinging)
             {
                 airJumpUsable = false;
             }
@@ -212,23 +212,35 @@ public class MovementController : MonoBehaviour
         // Check for synchronized jump
         if (JumpManager.IsSynchronized())
         {
-            finalJumpPower *= 1.3f; // 30% boost when both jump together
+            finalJumpPower *= 1.2f; // 20% boost when both jump together
         }
 
-        // Check if this is a Swing Throw (air jump)
-        if (!grounded && !isAnchored)
+        // Check if this is a Swing Throw (air jump / swinging)
+        if (!grounded && !isAnchored && (airJumpUsable || isSwinging))
         {
-            Vector2 currentVelocity = rb.linearVelocity;
+            float swingThrowMultiplier = 1.0f;
 
-            float throwX = finalJumpPower * 0.5f * (transform.localScale.x > 0 ? 1 : -1); // Boost forward
-            float throwY = finalJumpPower * 0.8f; // Strong vertical boost
+            if (isSwinging)
+            {
+                swingThrowMultiplier = 1.3f;
+            }
+
+            // this ensures the throw is strongest when the swing speed is highest
+            float currentHorizontalSpeed = Mathf.Abs(rb.linearVelocity.x);
+            float throwX = currentHorizontalSpeed * swingThrowMultiplier;
+
+            if (rb.linearVelocity.x < 0) throwX *= -1;
+
+            float throwY = finalJumpPower * swingThrowMultiplier;
+
+            frameVelocity.y = 0;
 
             frameVelocity.x += throwX;
             frameVelocity.y = Mathf.Max(frameVelocity.y, 0) + throwY;
 
             rb.linearVelocity = frameVelocity;
         }
-        else
+        else // normal jump
         {
             frameVelocity.y = finalJumpPower;
         }
@@ -257,6 +269,15 @@ public class MovementController : MonoBehaviour
                 isAnchored = false;
                 rb.isKinematic = false;
             }
+        }
+
+        if (otherPlayerController != null)
+        {
+            isSwinging = !isAnchored && otherPlayerController.isAnchored;
+        }
+        else
+        {
+            isSwinging = false;
         }
     }
     #endregion

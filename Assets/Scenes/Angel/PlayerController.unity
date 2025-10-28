@@ -705,6 +705,7 @@ MonoBehaviour:
   coyoteTime: 0.15
   jumpBuffer: 0.5
   actionMapName: Player1WASD
+  otherPlayerController: {fileID: 1911200446}
 --- !u!232 &384539644
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -1255,6 +1256,7 @@ MonoBehaviour:
   coyoteTime: 0.15
   jumpBuffer: 0.5
   actionMapName: Player2ArrowKeys
+  otherPlayerController: {fileID: 384539642}
 --- !u!50 &1911200447
 Rigidbody2D:
   serializedVersion: 5
