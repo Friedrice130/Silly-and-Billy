@@ -135,13 +135,13 @@ public class CScenes : MonoBehaviour
     void EndCutscene()
     {
         // StartCoroutine(Fading());
-        UnityEngine.SceneManagement.SceneManager.LoadScene("BasicController");
+        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1");
     }
 
     IEnumerator Fading()
     {
         anim.SetBool("Fade", true);
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("BasicController");
+        SceneManager.LoadScene("Level 1");
     }
 }
