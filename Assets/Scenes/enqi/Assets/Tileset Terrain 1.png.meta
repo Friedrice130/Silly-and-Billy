@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: b16c0eb962c8abc46a59d7744ea2eb63
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4758937716159331797
+    second: Tileset Terrain 1_0
+  - first:
+      213: 6670222306241526964
+    second: Tileset Terrain 1_1
+  - first:
+      213: -5156127223324177526
+    second: Tileset Terrain 1_2
+  - first:
+      213: 6212806058345121301
+    second: Tileset Terrain 1_3
+  - first:
+      213: 7853976872085755093
+    second: Tileset Terrain 1_4
+  - first:
+      213: 6346343430962371193
+    second: Tileset Terrain 1_5
+  - first:
+      213: 7319977586499268311
+    second: Tileset Terrain 1_6
+  - first:
+      213: 1655013961850553713
+    second: Tileset Terrain 1_7
+  - first:
+      213: -921446275833718693
+    second: Tileset Terrain 1_8
+  - first:
+      213: 6690014454886180292
+    second: Tileset Terrain 1_9
+  - first:
+      213: -3074225814791577897
+    second: Tileset Terrain 1_10
+  - first:
+      213: 9137976537995221439
+    second: Tileset Terrain 1_11
+  - first:
+      213: 2690194865924729661
+    second: Tileset Terrain 1_12
+  - first:
+      213: 2096713098117750071
+    second: Tileset Terrain 1_13
+  - first:
+      213: -5835546939222332047
+    second: Tileset Terrain 1_14
+  - first:
+      213: -7968553995244873262
+    second: Tileset Terrain 1_15
+  - first:
+      213: -3044046675575138994
+    second: Tileset Terrain 1_16
+  - first:
+      213: -555651791064865093
+    second: Tileset Terrain 1_17
+  - first:
+      213: 9172988249282108989
+    second: Tileset Terrain 1_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tileset Terrain 1_0
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 131
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b224d107c5bd4fdb0800000000000000
+      internalID: -4758937716159331797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 131
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bcb960e8d3619c50800000000000000
+      internalID: 6670222306241526964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 131
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8b8a05db91c178b0800000000000000
+      internalID: -5156127223324177526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_3
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 147
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5164e067132583650800000000000000
+      internalID: 6212806058345121301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_4
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 147
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d41ece5a5eeefc60800000000000000
+      internalID: 7853976872085755093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_5
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 115
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a5521e9bdb21850800000000000000
+      internalID: 6346343430962371193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_6
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 115
+        width: 18
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de2c1ff4d8c59560800000000000000
+      internalID: 7319977586499268311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_7
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 60
+        width: 82
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1750a6efd6ac7f610800000000000000
+      internalID: 1655013961850553713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_8
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 115
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5813518e7d5633f0800000000000000
+      internalID: -921446275833718693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_9
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 115
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c528b593b4b7dc50800000000000000
+      internalID: 6690014454886180292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_10
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 115
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de130ec8e72655d0800000000000000
+      internalID: -3074225814791577897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_11
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 83
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb91f090f3d90de70800000000000000
+      internalID: 9137976537995221439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_12
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 83
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3be5003afd755520800000000000000
+      internalID: 2690194865924729661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_13
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 83
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73d97313475091d10800000000000000
+      internalID: 2096713098117750071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_14
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 83
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17de8811af8f30fa0800000000000000
+      internalID: -5835546939222332047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_15
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 83
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d9d8eb4c520a6190800000000000000
+      internalID: -7968553995244873262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_16
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 51
+        width: 34
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4592a63daf51c5d0800000000000000
+      internalID: -3044046675575138994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_17
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 59
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb6e4c6d3ade948f0800000000000000
+      internalID: -555651791064865093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tileset Terrain 1_18
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 41
+        width: 18
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3eda4f46300d4f70800000000000000
+      internalID: 9172988249282108989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Tileset Terrain 1_0: -4758937716159331797
+      Tileset Terrain 1_1: 6670222306241526964
+      Tileset Terrain 1_10: -3074225814791577897
+      Tileset Terrain 1_11: 9137976537995221439
+      Tileset Terrain 1_12: 2690194865924729661
+      Tileset Terrain 1_13: 2096713098117750071
+      Tileset Terrain 1_14: -5835546939222332047
+      Tileset Terrain 1_15: -7968553995244873262
+      Tileset Terrain 1_16: -3044046675575138994
+      Tileset Terrain 1_17: -555651791064865093
+      Tileset Terrain 1_18: 9172988249282108989
+      Tileset Terrain 1_2: -5156127223324177526
+      Tileset Terrain 1_3: 6212806058345121301
+      Tileset Terrain 1_4: 7853976872085755093
+      Tileset Terrain 1_5: 6346343430962371193
+      Tileset Terrain 1_6: 7319977586499268311
+      Tileset Terrain 1_7: 1655013961850553713
+      Tileset Terrain 1_8: -921446275833718693
+      Tileset Terrain 1_9: 6690014454886180292
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
