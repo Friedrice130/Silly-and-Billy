@@ -222,7 +222,7 @@ public class MovementController : MonoBehaviour
 
             if (isSwinging)
             {
-                swingThrowMultiplier = 1.3f;
+                swingThrowMultiplier = 1.1f;
             }
 
             // this ensures the throw is strongest when the swing speed is highest
