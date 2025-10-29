@@ -1485,7 +1485,7 @@ GameObject:
   - component: {fileID: 1971333337}
   - component: {fileID: 1971333339}
   - component: {fileID: 1971333338}
-  m_Layer: 6
+  m_Layer: 10
   m_Name: Left Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1560,7 +1560,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1971333336}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
