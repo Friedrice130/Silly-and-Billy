@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: billyIdle
+  m_Name: sillyWalk
   serializedVersion: 7
   m_Legacy: 0
   m_Compressed: 0
@@ -21,11 +21,11 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -6119387374007233121, guid: 322cb34091de53445b1bb566752ccb0b, type: 3}
+      value: {fileID: 6757282713640645180, guid: 322cb34091de53445b1bb566752ccb0b, type: 3}
+    - time: 0.25
+      value: {fileID: -2418196558428526619, guid: 322cb34091de53445b1bb566752ccb0b, type: 3}
     - time: 0.5
-      value: {fileID: 4425439098077930050, guid: 322cb34091de53445b1bb566752ccb0b, type: 3}
-    - time: 0.6666667
-      value: {fileID: 8871532568298537163, guid: 322cb34091de53445b1bb566752ccb0b, type: 3}
+      value: {fileID: -1205440766039775075, guid: 322cb34091de53445b1bb566752ccb0b, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -48,15 +48,15 @@ AnimationClip:
       isIntCurve: 0
       isSerializeReferenceCurve: 0
     pptrCurveMapping:
-    - {fileID: -6119387374007233121, guid: 322cb34091de53445b1bb566752ccb0b, type: 3}
-    - {fileID: 4425439098077930050, guid: 322cb34091de53445b1bb566752ccb0b, type: 3}
-    - {fileID: 8871532568298537163, guid: 322cb34091de53445b1bb566752ccb0b, type: 3}
+    - {fileID: 6757282713640645180, guid: 322cb34091de53445b1bb566752ccb0b, type: 3}
+    - {fileID: -2418196558428526619, guid: 322cb34091de53445b1bb566752ccb0b, type: 3}
+    - {fileID: -1205440766039775075, guid: 322cb34091de53445b1bb566752ccb0b, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.68333334
+    m_StopTime: 0.51666665
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
