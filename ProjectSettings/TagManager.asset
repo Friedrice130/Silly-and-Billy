@@ -4,17 +4,24 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Monster
+  - Platform
   - Obstacle
+  - CutscenesElement
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Platform
   - Water
   - UI
   - Wall
+  - Player
+  - Monster
+  - 
   - Ground
   - 
+  - Player
   - 
   - 
   - 

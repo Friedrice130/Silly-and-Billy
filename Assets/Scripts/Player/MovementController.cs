@@ -1,13 +1,14 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+using Vector2 = UnityEngine.Vector2;
+
 public class MovementController : MonoBehaviour
 {
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private CapsuleCollider2D col;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private Transform groundCheck;
 
     [Header("Movement")]
     [SerializeField] private float maxSpeed = 14f;
@@ -22,10 +23,17 @@ public class MovementController : MonoBehaviour
     [SerializeField] private float jumpEndEarlyGravityModifier = 3f;
     [SerializeField] private float coyoteTime = 0.15f;
     [SerializeField] private float jumpBuffer = 0.2f;
+    [SerializeField] private float grounderDistance = 0.05f;
 
     [Header("Input Setup")]
     [Tooltip("Choose which action map this player should use (Player1WASD / Player2ArrowKeys).")]
     [SerializeField] private string actionMapName = "Player1WASD";
+
+    [Header("Co-op")]
+    [SerializeField] private MovementController otherPlayerController;
+
+    [Header("Swing")]
+    [SerializeField] private float swingPumpForce = 30f;
 
     private PlayerActions controls;
     private InputAction moveAction;
@@ -33,6 +41,7 @@ public class MovementController : MonoBehaviour
 
     private Vector2 moveInput;
     private Vector2 frameVelocity;
+    private bool cachedQueryStartInColliders;
 
     // state tracking
     private bool grounded;
@@ -41,9 +50,14 @@ public class MovementController : MonoBehaviour
     private bool bufferedJumpUsable;
     private bool coyoteUsable;
     private bool jumpHeld;
+    private bool anchorInputHeld;
+    private bool isAnchored;
+    private bool isSwinging;
+    private bool airJumpUsable;
     private float frameLeftGrounded = float.MinValue;
     private float timeJumpWasPressed;
     private float time;
+    private bool frameJumpExecuted;
 
     void Awake()
     {
@@ -52,6 +66,7 @@ public class MovementController : MonoBehaviour
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
 
         controls = new PlayerActions();
+        cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
     }
 
     void OnEnable()
@@ -90,6 +105,8 @@ public class MovementController : MonoBehaviour
     void Update()
     {
         time += Time.deltaTime;
+
+        anchorInputHeld = moveInput.y < -0.5f;
     }
 
     void FixedUpdate()
@@ -97,6 +114,15 @@ public class MovementController : MonoBehaviour
         frameVelocity = rb.linearVelocity;
 
         CheckCollisions();
+
+        HandleAnchoring();
+
+        if (isAnchored)
+        {
+            rb.linearVelocity = frameVelocity;
+            return;
+        }
+
         HandleJump();
         HandleHorizontal();
         HandleGravity();
@@ -107,8 +133,34 @@ public class MovementController : MonoBehaviour
     #region Collisions
     private void CheckCollisions()
     {
-        bool groundHit = Physics2D.OverlapCapsule(groundCheck.position, new Vector2(1.8f, 0.3f),
-            CapsuleDirection2D.Horizontal, 0, groundLayer);
+        Physics2D.queriesStartInColliders = false;
+
+        // ground check
+        bool groundHit = Physics2D.CapsuleCast(
+            col.bounds.center,
+            col.size,
+            col.direction,
+            0,
+            Vector2.down,
+            grounderDistance,
+            groundLayer
+        );
+
+        // ceiling check
+        bool ceilingHit = Physics2D.CapsuleCast(
+            col.bounds.center,
+            col.size,
+            col.direction,
+            0,
+            Vector2.up,
+            grounderDistance,
+            groundLayer
+        );
+
+        if (ceilingHit)
+        {
+            frameVelocity.y = Mathf.Min(0, frameVelocity.y);
+        }
 
         if (!grounded && groundHit)
         {
@@ -116,12 +168,15 @@ public class MovementController : MonoBehaviour
             coyoteUsable = true;
             bufferedJumpUsable = true;
             endedJumpEarly = false;
+            airJumpUsable = true;
         }
         else if (grounded && !groundHit)
         {
             grounded = false;
             frameLeftGrounded = time;
         }
+
+        Physics2D.queriesStartInColliders = cachedQueryStartInColliders;
     }
     #endregion
 
@@ -136,35 +191,134 @@ public class MovementController : MonoBehaviour
 
         if (!jumpToConsume && !HasBufferedJump) return;
 
-        if (grounded || CanUseCoyote) ExecuteJump();
+        bool canAirJump = !grounded && !isAnchored && (airJumpUsable || isSwinging);
+
+        if (grounded || CanUseCoyote || canAirJump)
+        {
+            ExecuteJump(canAirJump && !isSwinging);
+        }
 
         jumpToConsume = false;
     }
 
-    private void ExecuteJump()
+    private void ExecuteJump(bool consumeAirJump = false)
     {
         endedJumpEarly = false;
         timeJumpWasPressed = 0;
         bufferedJumpUsable = false;
         coyoteUsable = false;
-        frameVelocity.y = jumpPower;
+        frameJumpExecuted = true;
+
+        // Track which player jumped and record the time
+        if (actionMapName == "Player1WASD")
+            JumpManager.lastPlayer1JumpTime = Time.time;
+        else if (actionMapName == "Player2ArrowKeys")
+            JumpManager.lastPlayer2JumpTime = Time.time;
+
+        float finalJumpPower = jumpPower;
+
+        // Check for synchronized jump
+        if (JumpManager.IsSynchronized())
+        {
+            finalJumpPower *= 1.2f; // 20% boost when both jump together
+        }
+
+        // Check if this is a Swing Throw (air jump / swinging)
+        if (!grounded && !isAnchored && (airJumpUsable || isSwinging))
+        {
+            float horizontalMomentumTransfer = Mathf.Abs(rb.linearVelocity.x) * 1.0f;
+            float verticalBoost = finalJumpPower * 1.3f;
+            float throwX = rb.linearVelocity.x + (rb.linearVelocity.x > 0 ? horizontalMomentumTransfer : -horizontalMomentumTransfer);
+
+            frameVelocity.x = throwX;
+            frameVelocity.y = Mathf.Max(frameVelocity.y, 0) + verticalBoost;
+
+            if (consumeAirJump)
+            {
+                airJumpUsable = false;
+            }
+        }
+        else // normal jump
+        {
+            frameVelocity.y = finalJumpPower;
+        }
+    }
+    #endregion
+
+    #region Anchoring
+    private void HandleAnchoring()
+    {
+        if (grounded && anchorInputHeld)
+        {
+            if (!isAnchored)
+            {
+                isAnchored = true;
+                rb.bodyType = RigidbodyType2D.Kinematic;
+                rb.linearVelocity = Vector2.zero;
+                frameVelocity = Vector2.zero;
+            }
+            rb.linearVelocity = Vector2.zero;
+            frameVelocity = Vector2.zero;
+        }
+        else
+        {
+            if (isAnchored)
+            {
+                isAnchored = false;
+                rb.bodyType = RigidbodyType2D.Dynamic;
+            }
+        }
+
+        if (otherPlayerController != null)
+        {
+            isSwinging = !isAnchored && otherPlayerController.isAnchored;
+        }
+        else
+        {
+            isSwinging = false;
+        }
     }
     #endregion
 
     #region Horizontal
     private void HandleHorizontal()
     {
-        if (moveInput.x == 0)
+        if (isAnchored)
         {
-            float decel = grounded ? groundDeceleration : airDeceleration;
-            frameVelocity.x = Mathf.MoveTowards(rb.linearVelocity.x, 0, decel * Time.fixedDeltaTime);
+            frameVelocity.x = 0;
+            return;
+        }
+
+        if (isSwinging && !grounded)
+        {
+            if (moveInput.x != 0)
+            {
+                frameVelocity.x = Mathf.MoveTowards(
+                    frameVelocity.x,
+                    moveInput.x * maxSpeed,
+                    swingPumpForce * Time.fixedDeltaTime
+                );
+            }
+            else
+            {
+                float decel = airDeceleration * 0.5f;
+                frameVelocity.x = Mathf.MoveTowards(frameVelocity.x, 0, decel * Time.fixedDeltaTime);
+            }
         }
         else
         {
-            frameVelocity.x = Mathf.MoveTowards(rb.linearVelocity.x, moveInput.x * maxSpeed, acceleration * Time.fixedDeltaTime);
+            if (moveInput.x == 0)
+            {
+                float decel = grounded ? groundDeceleration : airDeceleration;
+                frameVelocity.x = Mathf.MoveTowards(frameVelocity.x, 0, decel * Time.fixedDeltaTime);
+            }
+            else
+            {
+                frameVelocity.x = Mathf.MoveTowards(frameVelocity.x, moveInput.x * maxSpeed, acceleration * Time.fixedDeltaTime);
+            }
         }
 
-        flip();
+        Flip();
     }
     #endregion
 
@@ -181,17 +335,26 @@ public class MovementController : MonoBehaviour
             if (endedJumpEarly && frameVelocity.y > 0)
                 gravity *= jumpEndEarlyGravityModifier;
 
-            frameVelocity.y += -gravity * Time.fixedDeltaTime;
-
-            if (frameVelocity.y < -maxFallSpeed)
-                frameVelocity.y = -maxFallSpeed;
+            frameVelocity.y = Mathf.MoveTowards(frameVelocity.y, -maxFallSpeed, gravity * Time.fixedDeltaTime);
         }
     }
     #endregion
 
-    private void flip()
+    private void Flip()
     {
         if (moveInput.x < -0.01f) transform.localScale = new Vector3(-1, 1, 1);
         if (moveInput.x > 0.01f) transform.localScale = new Vector3(1, 1, 1);
     }
+
+    // Public getters for other systems
+    public bool IsAnchored => isAnchored;
+    public bool IsGrounded => grounded;
+    public bool IsSwinging => isSwinging;
+    public bool IsJumpExecuted()
+    {
+        bool result = frameJumpExecuted;
+        frameJumpExecuted = false;
+        return result;
+    }
+
 }

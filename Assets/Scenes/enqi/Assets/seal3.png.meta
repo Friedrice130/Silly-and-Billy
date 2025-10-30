@@ -1,0 +1,702 @@
+fileFormatVersion: 2
+guid: 286f227b79de3bd41bf19a71bd83d999
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 283695742834341701
+    second: seal3_0
+  - first:
+      213: -7747834799513794718
+    second: seal3_1
+  - first:
+      213: 6881844599014299468
+    second: seal3_2
+  - first:
+      213: -1848289393933281467
+    second: seal3_3
+  - first:
+      213: -8952337825295469986
+    second: seal3_4
+  - first:
+      213: 6348670433309008090
+    second: seal3_5
+  - first:
+      213: -7575224567254666159
+    second: seal3_6
+  - first:
+      213: -2493569016906104981
+    second: seal3_7
+  - first:
+      213: 1355492326216765814
+    second: seal3_8
+  - first:
+      213: -1631701272026184048
+    second: seal3_9
+  - first:
+      213: -8824222569055811885
+    second: seal3_10
+  - first:
+      213: 5238210915030565614
+    second: seal3_11
+  - first:
+      213: 1739313363849552894
+    second: seal3_12
+  - first:
+      213: 2989208778482485410
+    second: seal3_13
+  - first:
+      213: 6617564291176722210
+    second: seal3_14
+  - first:
+      213: -2031750861321133977
+    second: seal3_15
+  - first:
+      213: 1411212884486289171
+    second: seal3_16
+  - first:
+      213: 980200714625593565
+    second: seal3_17
+  - first:
+      213: 9100438314443374405
+    second: seal3_18
+  - first:
+      213: 1309775262489314629
+    second: seal3_19
+  - first:
+      213: -7608777236705512737
+    second: seal3_20
+  - first:
+      213: -1318957951194676607
+    second: seal3_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: seal3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 319
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5477ee766c3efe300800000000000000
+      internalID: 283695742834341701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 319
+        width: 41
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2670294bc492a7490800000000000000
+      internalID: -7747834799513794718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_2
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 319
+        width: 45
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4710b38339318f50800000000000000
+      internalID: 6881844599014299468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 325
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5471c70c69e8956e0800000000000000
+      internalID: -1848289393933281467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_4
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 326
+        width: 43
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5278fded28e2c380800000000000000
+      internalID: -8952337825295469986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_5
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 319
+        width: 50
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0a8655f120b1850800000000000000
+      internalID: 6348670433309008090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 273
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15439fe24656fd690800000000000000
+      internalID: -7575224567254666159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_7
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 273
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6f346cc030156dd0800000000000000
+      internalID: -2493569016906104981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 272
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6711be7c61dafc210800000000000000
+      internalID: 1355492326216765814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_9
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 275
+        width: 33
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 096835596580b59e0800000000000000
+      internalID: -1631701272026184048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_10
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 281
+        width: 39
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d6817083501a8580800000000000000
+      internalID: -8824222569055811885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_11
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 271
+        width: 50
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee288f0f21dd1b840800000000000000
+      internalID: 5238210915030565614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 58
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3a7550a48432810800000000000000
+      internalID: 1739313363849552894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_13
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 223
+        width: 42
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a88de8eb8dcb7920800000000000000
+      internalID: 2989208778482485410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_14
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 224
+        width: 44
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22fe5e559af46db50800000000000000
+      internalID: 6617564291176722210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_15
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 54
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7602cd63b55cdc3e0800000000000000
+      internalID: -2031750861321133977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175
+        width: 60
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 317724a34a2a59310800000000000000
+      internalID: 1411212884486289171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_17
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 176
+        width: 39
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd0b7db4b5f5a9d00800000000000000
+      internalID: 980200714625593565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_18
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 178
+        width: 46
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f70c84e604b4e70800000000000000
+      internalID: 9100438314443374405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_19
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 175
+        width: 56
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 545054869a14d2210800000000000000
+      internalID: 1309775262489314629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_20
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 101
+        width: 25
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd2f61f8a61386690800000000000000
+      internalID: -7608777236705512737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: seal3_21
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 101
+        width: 23
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1824d554bbe12bde0800000000000000
+      internalID: -1318957951194676607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      seal3_0: 283695742834341701
+      seal3_1: -7747834799513794718
+      seal3_10: -8824222569055811885
+      seal3_11: 5238210915030565614
+      seal3_12: 1739313363849552894
+      seal3_13: 2989208778482485410
+      seal3_14: 6617564291176722210
+      seal3_15: -2031750861321133977
+      seal3_16: 1411212884486289171
+      seal3_17: 980200714625593565
+      seal3_18: 9100438314443374405
+      seal3_19: 1309775262489314629
+      seal3_2: 6881844599014299468
+      seal3_20: -7608777236705512737
+      seal3_21: -1318957951194676607
+      seal3_3: -1848289393933281467
+      seal3_4: -8952337825295469986
+      seal3_5: 6348670433309008090
+      seal3_6: -7575224567254666159
+      seal3_7: -2493569016906104981
+      seal3_8: 1355492326216765814
+      seal3_9: -1631701272026184048
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
