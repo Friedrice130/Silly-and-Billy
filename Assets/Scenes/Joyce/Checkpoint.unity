@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 10705383}
   - component: {fileID: 10705387}
   m_Layer: 0
-  m_Name: Spike faling
+  m_Name: Falling spiike
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
