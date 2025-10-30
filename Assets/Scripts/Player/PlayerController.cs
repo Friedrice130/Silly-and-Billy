@@ -12,6 +12,10 @@ using UnityEngine;
         private Vector2 _frameVelocity;
         private bool _cachedQueryStartInColliders;
 
+
+    public ProjectileBehaviour ProjectilePrefab; //
+        public Transform LaunchOffset; //
+
         #region Interface
 
         public Vector2 FrameInput => _frameInput.Move;
@@ -34,6 +38,11 @@ using UnityEngine;
         {
             _time += Time.deltaTime;
             GatherInput();
+
+            if(Input.GetButtonDown("Fire1")) //
+            {
+                Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
+            }
         }
 
         private void GatherInput()
