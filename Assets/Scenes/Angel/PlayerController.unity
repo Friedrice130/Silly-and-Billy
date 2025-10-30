@@ -572,6 +572,7 @@ GameObject:
   - component: {fileID: 384539642}
   - component: {fileID: 384539644}
   - component: {fileID: 384539646}
+  - component: {fileID: 384539647}
   m_Layer: 0
   m_Name: Silly
   m_TagString: Untagged
@@ -786,6 +787,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &384539647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384539637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b24828d2c5b4a46a98b7c3b7434f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 384539646}
+  movementController: {fileID: 384539642}
+  walkSpeedThreshold: 0.1
 --- !u!1 &607544345
 GameObject:
   m_ObjectHideFlags: 0
@@ -1247,6 +1263,7 @@ GameObject:
   - component: {fileID: 1911200447}
   - component: {fileID: 1911200446}
   - component: {fileID: 1911200452}
+  - component: {fileID: 1911200453}
   m_Layer: 0
   m_Name: Billy
   m_TagString: Untagged
@@ -1441,6 +1458,21 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1911200453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911200444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17b24828d2c5b4a46a98b7c3b7434f1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 1911200452}
+  movementController: {fileID: 1911200446}
+  walkSpeedThreshold: 0.1
 --- !u!1 &1971333336
 GameObject:
   m_ObjectHideFlags: 0

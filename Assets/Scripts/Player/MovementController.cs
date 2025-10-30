@@ -346,5 +346,7 @@ public class MovementController : MonoBehaviour
 
     // Public getters for other systems
     public bool IsAnchored => isAnchored;
+    public bool IsGrounded => grounded;
+    public bool IsSwinging => isSwinging;
 
 }
