@@ -9,7 +9,6 @@ public class MovementController : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private CapsuleCollider2D col;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] private Transform groundCheck;
 
     [Header("Movement")]
     [SerializeField] private float maxSpeed = 14f;
@@ -24,6 +23,7 @@ public class MovementController : MonoBehaviour
     [SerializeField] private float jumpEndEarlyGravityModifier = 3f;
     [SerializeField] private float coyoteTime = 0.15f;
     [SerializeField] private float jumpBuffer = 0.2f;
+    [SerializeField] private float grounderDistance = 0.05f;
 
     [Header("Input Setup")]
     [Tooltip("Choose which action map this player should use (Player1WASD / Player2ArrowKeys).")]
@@ -41,6 +41,7 @@ public class MovementController : MonoBehaviour
 
     private Vector2 moveInput;
     private Vector2 frameVelocity;
+    private bool cachedQueryStartInColliders;
 
     // state tracking
     private bool grounded;
@@ -64,6 +65,7 @@ public class MovementController : MonoBehaviour
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
 
         controls = new PlayerActions();
+        cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
     }
 
     void OnEnable()
@@ -103,14 +105,7 @@ public class MovementController : MonoBehaviour
     {
         time += Time.deltaTime;
 
-        if (moveInput.y < -0.5f) // Check if the down direction is pressed
-        {
-            anchorInputHeld = true;
-        }
-        else
-        {
-            anchorInputHeld = false;
-        }
+        anchorInputHeld = moveInput.y < -0.5f;
     }
 
     void FixedUpdate()
@@ -120,6 +115,7 @@ public class MovementController : MonoBehaviour
         CheckCollisions();
 
         HandleAnchoring();
+
         if (isAnchored)
         {
             rb.linearVelocity = frameVelocity;
@@ -136,27 +132,36 @@ public class MovementController : MonoBehaviour
     #region Collisions
     private void CheckCollisions()
     {
-        bool groundHit = Physics2D.OverlapCapsule(
-            groundCheck.position,
-            new Vector2(1.8f, 0.3f),
-            CapsuleDirection2D.Horizontal,
+        Physics2D.queriesStartInColliders = false;
+
+        // ground check
+        bool groundHit = Physics2D.CapsuleCast(
+            col.bounds.center,
+            col.size,
+            col.direction,
             0,
+            Vector2.down,
+            grounderDistance,
             groundLayer
         );
 
-        Collider2D playerCollider = Physics2D.OverlapCapsule(
-            groundCheck.position,
-            new Vector2(1.8f, 0.3f),
-            CapsuleDirection2D.Horizontal,
+        // ceiling check
+        bool ceilingHit = Physics2D.CapsuleCast(
+            col.bounds.center,
+            col.size,
+            col.direction,
             0,
-            LayerMask.GetMask("Player")
+            Vector2.up,
+            grounderDistance,
+            groundLayer
         );
 
-        bool playerHit = playerCollider != null && playerCollider.gameObject != this.gameObject;
+        if (ceilingHit)
+        {
+            frameVelocity.y = Mathf.Min(0, frameVelocity.y);
+        }
 
-        bool isOnSomething = groundHit || playerHit;
-
-        if (!grounded && isOnSomething)
+        if (!grounded && groundHit)
         {
             grounded = true;
             coyoteUsable = true;
@@ -164,11 +169,13 @@ public class MovementController : MonoBehaviour
             endedJumpEarly = false;
             airJumpUsable = true;
         }
-        else if (grounded && !isOnSomething)
+        else if (grounded && !groundHit)
         {
             grounded = false;
             frameLeftGrounded = time;
         }
+
+        Physics2D.queriesStartInColliders = cachedQueryStartInColliders;
     }
     #endregion
 
@@ -187,17 +194,13 @@ public class MovementController : MonoBehaviour
 
         if (grounded || CanUseCoyote || canAirJump)
         {
-            if (canAirJump && !isSwinging)
-            {
-                airJumpUsable = false;
-            }
-            ExecuteJump();
+            ExecuteJump(canAirJump && !isSwinging);
         }
 
         jumpToConsume = false;
     }
 
-    private void ExecuteJump()
+    private void ExecuteJump(bool consumeAirJump = false)
     {
         endedJumpEarly = false;
         timeJumpWasPressed = 0;
@@ -225,12 +228,10 @@ public class MovementController : MonoBehaviour
             float verticalBoost = finalJumpPower * 1.3f;
             float throwX = rb.linearVelocity.x + (rb.linearVelocity.x > 0 ? horizontalMomentumTransfer : -horizontalMomentumTransfer);
 
-            frameVelocity.y = 0;
-
             frameVelocity.x = throwX;
             frameVelocity.y = Mathf.Max(frameVelocity.y, 0) + verticalBoost;
 
-            if (!isSwinging)
+            if (consumeAirJump)
             {
                 airJumpUsable = false;
             }
@@ -250,7 +251,7 @@ public class MovementController : MonoBehaviour
             if (!isAnchored)
             {
                 isAnchored = true;
-                rb.isKinematic = true;
+                rb.bodyType = RigidbodyType2D.Kinematic;
                 rb.linearVelocity = Vector2.zero;
                 frameVelocity = Vector2.zero;
             }
@@ -262,7 +263,7 @@ public class MovementController : MonoBehaviour
             if (isAnchored)
             {
                 isAnchored = false;
-                rb.isKinematic = false;
+                rb.bodyType = RigidbodyType2D.Dynamic;
             }
         }
 
@@ -291,7 +292,7 @@ public class MovementController : MonoBehaviour
             if (moveInput.x != 0)
             {
                 frameVelocity.x = Mathf.MoveTowards(
-                    rb.linearVelocity.x,
+                    frameVelocity.x,
                     moveInput.x * maxSpeed,
                     swingPumpForce * Time.fixedDeltaTime
                 );
@@ -299,7 +300,7 @@ public class MovementController : MonoBehaviour
             else
             {
                 float decel = airDeceleration * 0.5f;
-                frameVelocity.x = Mathf.MoveTowards(rb.linearVelocity.x, 0, decel * Time.fixedDeltaTime);
+                frameVelocity.x = Mathf.MoveTowards(frameVelocity.x, 0, decel * Time.fixedDeltaTime);
             }
         }
         else
@@ -307,15 +308,15 @@ public class MovementController : MonoBehaviour
             if (moveInput.x == 0)
             {
                 float decel = grounded ? groundDeceleration : airDeceleration;
-                frameVelocity.x = Mathf.MoveTowards(rb.linearVelocity.x, 0, decel * Time.fixedDeltaTime);
+                frameVelocity.x = Mathf.MoveTowards(frameVelocity.x, 0, decel * Time.fixedDeltaTime);
             }
             else
             {
-                frameVelocity.x = Mathf.MoveTowards(rb.linearVelocity.x, moveInput.x * maxSpeed, acceleration * Time.fixedDeltaTime);
+                frameVelocity.x = Mathf.MoveTowards(frameVelocity.x, moveInput.x * maxSpeed, acceleration * Time.fixedDeltaTime);
             }
         }
 
-        flip();
+        Flip();
     }
     #endregion
 
@@ -332,17 +333,18 @@ public class MovementController : MonoBehaviour
             if (endedJumpEarly && frameVelocity.y > 0)
                 gravity *= jumpEndEarlyGravityModifier;
 
-            frameVelocity.y += -gravity * Time.fixedDeltaTime;
-
-            if (frameVelocity.y < -maxFallSpeed)
-                frameVelocity.y = -maxFallSpeed;
+            frameVelocity.y = Mathf.MoveTowards(frameVelocity.y, -maxFallSpeed, gravity * Time.fixedDeltaTime);
         }
     }
     #endregion
 
-    private void flip()
+    private void Flip()
     {
         if (moveInput.x < -0.01f) transform.localScale = new Vector3(-1, 1, 1);
         if (moveInput.x > 0.01f) transform.localScale = new Vector3(1, 1, 1);
     }
+
+    // Public getters for other systems
+    public bool IsAnchored => isAnchored;
+
 }
