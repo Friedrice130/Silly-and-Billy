@@ -10,13 +10,13 @@ public class PlayerAnimationController : MonoBehaviour
 
     [Header("Animation Settings")]
     [SerializeField] private float walkSpeedThreshold = 0.1f;
-    [SerializeField] private float jumpVelocityThreshold = 0.5f; // Must be moving upward to show jump
 
-    // Cached animator parameter hashes (more efficient than strings)
+    // Cached animator parameter hashes
     private int isGroundedHash;
     private int isWalkingHash;
-    private int isJumpingHash;
+    private int isAirborneHash;
     private int isAnchoredHash;
+    private int jumpTriggerHash;
 
     private Rigidbody2D rb;
 
@@ -30,8 +30,9 @@ public class PlayerAnimationController : MonoBehaviour
         // Cache parameter hashes for better performance
         isGroundedHash = Animator.StringToHash("isGrounded");
         isWalkingHash = Animator.StringToHash("isWalking");
-        isJumpingHash = Animator.StringToHash("isJumping");
+        isAirborneHash = Animator.StringToHash("isAirborne");
         isAnchoredHash = Animator.StringToHash("isAnchored");
+        jumpTriggerHash = Animator.StringToHash("JumpTrigger");
     }
 
     void Update()
@@ -43,34 +44,36 @@ public class PlayerAnimationController : MonoBehaviour
     {
         if (animator == null || movementController == null) return;
 
-        // Get current velocity
-        Vector2 velocity = rb.linearVelocity;
-        float absVelocityX = Mathf.Abs(velocity.x);
-
-        // Get states from movement controller
         bool isGrounded = movementController.IsGrounded;
         bool isAnchored = movementController.IsAnchored;
         bool isSwinging = movementController.IsSwinging;
+        
+        // check and consume the jump flag
+        bool jumpedThisFrame = movementController.IsJumpExecuted(); 
+        
+        Vector2 velocity = rb.linearVelocity;
+        float absVelocityX = Mathf.Abs(velocity.x);
 
-        // Determine if walking (moving horizontally while grounded)
+        // Horizontal/Grounded States
+        // isWalking is true only on ground and not anchored
         bool isWalking = isGrounded && !isAnchored && absVelocityX > walkSpeedThreshold;
+        
+        // Air State (Jump/Fall/Swing)
+        // Airborne is true whenever we are not touching the ground AND not anchored to the ground.
+        bool isAirborne = !isGrounded && !isAnchored;
 
-        // Determine if jumping - only show jump when:
-        // 1. Not grounded AND
-        // 2. Not anchored AND
-        // 3. Either moving upward OR not swinging (if swinging and not jumping up, show idle)
-        bool isJumping = !isGrounded && !isAnchored && (velocity.y > jumpVelocityThreshold || !isSwinging);
-
-        // Update animator parameters
-        animator.SetBool(isGroundedHash, isGrounded);
-        animator.SetBool(isWalkingHash, isWalking);
-        animator.SetBool(isJumpingHash, isJumping);
+        
+        // Set Anchor first, as it's the highest priority state
         animator.SetBool(isAnchoredHash, isAnchored);
-
-        // Debug logging (remove after testing)
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow))
+        
+        // Use a Trigger for the instant Jump
+        if (jumpedThisFrame)
         {
-            Debug.Log($"Jump pressed! isGrounded: {isGrounded}, isJumping: {isJumping}, isSwinging: {isSwinging}, velocity.y: {velocity.y}");
+            animator.SetTrigger(jumpTriggerHash);
         }
+        
+        // The Airborne state is used for the sustain/fall animation AFTER the jump
+        animator.SetBool(isAirborneHash, isAirborne);
+        animator.SetBool(isWalkingHash, isWalking);
     }
 }

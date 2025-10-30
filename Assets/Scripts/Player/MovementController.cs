@@ -57,6 +57,7 @@ public class MovementController : MonoBehaviour
     private float frameLeftGrounded = float.MinValue;
     private float timeJumpWasPressed;
     private float time;
+    private bool frameJumpExecuted;
 
     void Awake()
     {
@@ -206,6 +207,7 @@ public class MovementController : MonoBehaviour
         timeJumpWasPressed = 0;
         bufferedJumpUsable = false;
         coyoteUsable = false;
+        frameJumpExecuted = true;
 
         // Track which player jumped and record the time
         if (actionMapName == "Player1WASD")
@@ -348,5 +350,11 @@ public class MovementController : MonoBehaviour
     public bool IsAnchored => isAnchored;
     public bool IsGrounded => grounded;
     public bool IsSwinging => isSwinging;
+    public bool IsJumpExecuted()
+    {
+        bool result = frameJumpExecuted;
+        frameJumpExecuted = false;
+        return result;
+    }
 
 }
