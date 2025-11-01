@@ -82,6 +82,7 @@ public class MovementController : MonoBehaviour
 
     void OnEnable()
     {
+        PlayerActions controlsInstance = Controls;
 
         if (actionMapName == "Player1WASD")
         {

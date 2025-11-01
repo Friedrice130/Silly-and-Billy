@@ -39,17 +39,33 @@ public class Bullet : MonoBehaviour
         transform.localScale = new Vector3(visualFlipDirection * scaleValue, scaleValue, scaleValue);
     }
 
+    // In Bullet.cs
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-
+        // 1. IGNORE PLAYERS
         if (other.CompareTag("Player"))
         {
             return;
         }
 
+        // 2. HIT DAMAGEABLE TARGET (Enemy/Target)
+        // Try to get the Health component from the collided object
+        Health targetHealth = other.GetComponent<Health>();
+
+        if (targetHealth != null)
+        {
+            // Found a target! Deal damage and destroy the bullet.
+            targetHealth.TakeDamage(damage);
+
+            Destroy(gameObject);
+            return;
+        }
+
+        // 3. HIT ENVIRONMENT/OBSTACLE (If the bullet hits anything else that is solid)
         if (!other.isTrigger)
         {
-            Destroy(gameObject); 
+            Destroy(gameObject);
         }
     }
 }
