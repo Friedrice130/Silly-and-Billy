@@ -45,35 +45,7 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // 1. ENEMY BULLET VS PLAYER
-        if (isHostile && other.CompareTag("Player"))
-        {
-            // If hostile, check if the player is shielding
-            PlayerAbilities playerAbilities = other.GetComponent<PlayerAbilities>();
-            if (playerAbilities != null && playerAbilities.IsShielding)
-            {
-                // Blocked! Destroy the bullet (and maybe reflect it later)
-                Destroy(gameObject);
-                Debug.Log("Bullet Blocked by Shield!");
-                return;
-            }
-
-            // --- NEW: Player Death Logic ---
-
-            // Find the GameController to initiate respawn sequence
-            PlayerStateController gc = FindFirstObjectByType<PlayerStateController>();
-
-            if (gc != null)
-            {
-                // Since any hit kills both players, call the GameController's respawn/death method.
-                gc.PlayerDied(); // <--- We will create this method next!
-            }
-
-            // Destroy the bullet after it hits the player (lethal or not)
-            Destroy(gameObject);
-            return;
-        }
-
+        
         // --- 2. PLAYER BULLET VS PLAYER (Original Friendly Fire Check) ---
         if (!isHostile && other.CompareTag("Player"))
         {
