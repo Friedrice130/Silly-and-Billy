@@ -33,5 +33,6 @@ EditorBuildSettings:
     path: Assets/Scenes/enqi/Level 3.unity
     guid: 10aad46d8908b394ea905dbdb54c3272
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    com.unity.input.settings: {fileID: 11400000, guid: 2719d1f719ebe724ab87fdd851bf9c7f, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: e9a3da25e32221147a3ef5c4cdbdc79d, type: 3}
   m_UseUCBPForAssetBundles: 0

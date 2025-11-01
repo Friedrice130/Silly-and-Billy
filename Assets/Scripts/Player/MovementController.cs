@@ -27,7 +27,7 @@ public class MovementController : MonoBehaviour
 
     [Header("Input Setup")]
     [Tooltip("Choose which action map this player should use (Player1WASD / Player2ArrowKeys).")]
-    [SerializeField] private string actionMapName = "Player1WASD";
+    [SerializeField] public string actionMapName = "Player1WASD";
 
     [Header("Co-op")]
     [SerializeField] private MovementController otherPlayerController;
@@ -38,6 +38,18 @@ public class MovementController : MonoBehaviour
     private PlayerActions controls;
     private InputAction moveAction;
     private InputAction jumpAction;
+
+    public PlayerActions Controls
+    {
+        get
+        {
+            if (controls == null)
+            {
+                controls = new PlayerActions();
+            }
+            return controls;
+        }
+    }
 
     private Vector2 moveInput;
     private Vector2 frameVelocity;
@@ -65,21 +77,23 @@ public class MovementController : MonoBehaviour
         col = GetComponent<CapsuleCollider2D>();
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
 
-        controls = new PlayerActions();
         cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
     }
 
     void OnEnable()
     {
+
         if (actionMapName == "Player1WASD")
         {
             controls.Player1WASD.Enable();
+            controls.Player2ArrowKeys.Disable(); // <-- Still needed to ensure it's not enabled if P2 was enabled before.
             moveAction = controls.Player1WASD.Movement;
             jumpAction = controls.Player1WASD.Jump;
         }
         else if (actionMapName == "Player2ArrowKeys")
         {
             controls.Player2ArrowKeys.Enable();
+            controls.Player1WASD.Disable(); // <-- Still needed to ensure it's not enabled if P1 was enabled before.
             moveAction = controls.Player2ArrowKeys.Movement;
             jumpAction = controls.Player2ArrowKeys.Jump;
         }
@@ -87,21 +101,38 @@ public class MovementController : MonoBehaviour
         moveAction.Enable();
         jumpAction.Enable();
 
-        // Subscribe to movement
+        // Subscribe to movement and jump (this part is perfect)
         moveAction.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
         moveAction.canceled += ctx => moveInput = Vector2.zero;
 
-        // Subscribe to jump
         jumpAction.started += ctx => { jumpToConsume = true; timeJumpWasPressed = time; jumpHeld = true; };
         jumpAction.canceled += ctx => jumpHeld = false;
     }
 
     void OnDisable()
     {
+        // The individual actions must be disabled
         moveAction?.Disable();
         jumpAction?.Disable();
-    }
 
+        // **NEW/CRITICAL ADDITION:**
+        // To prevent the "Disable() has not been called" warnings, 
+        // we explicitly disable the map that was enabled on this player's controls instance.
+        if (actionMapName == "Player1WASD")
+        {
+            controls?.Player1WASD.Disable();
+        }
+        else if (actionMapName == "Player2ArrowKeys")
+        {
+            controls?.Player2ArrowKeys.Disable();
+        }
+    }
+    void OnDestroy()
+    {
+        // CRITICAL FIX: Dispose of the entire control object instance to prevent leaks.
+        // This implicitly cleans up all action maps.
+        controls?.Dispose();
+    }
     void Update()
     {
         time += Time.deltaTime;
