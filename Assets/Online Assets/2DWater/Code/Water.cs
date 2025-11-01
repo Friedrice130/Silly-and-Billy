@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections.Generic;
+using Bundos.WaterSystem; // Ensure this is present if Spring is in the same namespace
 
 namespace Bundos.WaterSystem
 {
@@ -7,7 +9,7 @@ namespace Bundos.WaterSystem
         public Vector2 weightPosition, sineOffset, velocity, acceleration;
     }
 
-    [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer))]
+    [RequireComponent(typeof(MeshFilter), typeof(MeshRenderer), typeof(PolygonCollider2D))]
     public class Water : MonoBehaviour
     {
         [Header("Dynamic Wave Settings")]
@@ -29,6 +31,12 @@ namespace Bundos.WaterSystem
 
         [Header("Particles")]
         public GameObject splashParticle;
+
+        // --- NEW WATER PHYSICS SETTINGS ---
+        [Header("Water Physics")]
+        public float buoyancyForce = 25f;       // Constant upward force
+        public float waterDrag = 3f;            // High drag for water movement
+        public float waterAngularDamping = 2f;     // Renamed: angularDrag -> angularDamping
 
         [HideInInspector]
         Spring[] springs;
@@ -59,6 +67,10 @@ namespace Bundos.WaterSystem
 
             meshFilter = GetComponent<MeshFilter>();
             meshFilter.mesh = mesh;
+
+            // Set the PolygonCollider2D to be a trigger
+            PolygonCollider2D polyCollider = GetComponent<PolygonCollider2D>();
+            polyCollider.isTrigger = true;
         }
 
         private void InitializeSprings()
@@ -83,7 +95,7 @@ namespace Bundos.WaterSystem
             {
                 for (int y = 0; y < 2; y++)
                 {
-                    vertices[i] = new Vector3(x, y);
+                    vertices[i] = new Vector3(x * spacing, y * 2);
                     i++;
                 }
             }
@@ -150,7 +162,6 @@ namespace Bundos.WaterSystem
 
         private void UpdateSpringPositions()
         {
-            // Random spring movement
             for (int i = 0; i < springs.Length; i++)
             {
                 springs[i].acceleration = (-springConstant * springs[i].weightPosition.y) * Vector2.up - (springs[i].velocity * springDamping);
@@ -210,26 +221,46 @@ namespace Bundos.WaterSystem
 
         void OnTriggerEnter2D(Collider2D other)
         {
-            if (!interactive)
-                return;
+            if (!interactive) return;
+
+            Rigidbody2D otherRigidbody = other.GetComponent<Rigidbody2D>();
+            MovementController playerController = other.GetComponent<MovementController>();
+
+            if (otherRigidbody != null && playerController != null)
+            {
+                // Pass the new angular damping parameter
+                playerController.SetInWater(true, waterDrag, waterAngularDamping);
+
+                Vector2 contactPoint = other.ClosestPoint(transform.position);
+                Ripple(contactPoint, false);
+            }
+        }
+
+        void OnTriggerStay2D(Collider2D other)
+        {
+            if (!interactive) return;
 
             Rigidbody2D otherRigidbody = other.GetComponent<Rigidbody2D>();
             if (otherRigidbody != null)
             {
-                Vector2 contactPoint = other.ClosestPoint(transform.position);
-
-                Ripple(contactPoint, false);
+                // Apply the Buoyancy Force constantly
+                Vector2 buoyancy = Vector2.up * buoyancyForce;
+                otherRigidbody.AddForce(buoyancy, ForceMode2D.Force);
             }
         }
 
         void OnTriggerExit2D(Collider2D other)
         {
-            if (!interactive)
-                return;
+            if (!interactive) return;
 
             Rigidbody2D otherRigidbody = other.GetComponent<Rigidbody2D>();
-            if (otherRigidbody != null)
+            MovementController playerController = other.GetComponent<MovementController>();
+
+            if (otherRigidbody != null && playerController != null)
             {
+                // Set inWater to false
+                playerController.SetInWater(false, 0, 0);
+
                 Vector2 contactPoint = other.ClosestPoint(transform.position);
                 Ripple(contactPoint, true);
             }
