@@ -86,14 +86,14 @@ public class MovementController : MonoBehaviour
         if (actionMapName == "Player1WASD")
         {
             controls.Player1WASD.Enable();
-            controls.Player2ArrowKeys.Disable(); // <-- Still needed to ensure it's not enabled if P2 was enabled before.
+            controls.Player2ArrowKeys.Disable(); 
             moveAction = controls.Player1WASD.Movement;
             jumpAction = controls.Player1WASD.Jump;
         }
         else if (actionMapName == "Player2ArrowKeys")
         {
             controls.Player2ArrowKeys.Enable();
-            controls.Player1WASD.Disable(); // <-- Still needed to ensure it's not enabled if P1 was enabled before.
+            controls.Player1WASD.Disable(); 
             moveAction = controls.Player2ArrowKeys.Movement;
             jumpAction = controls.Player2ArrowKeys.Jump;
         }
@@ -101,7 +101,6 @@ public class MovementController : MonoBehaviour
         moveAction.Enable();
         jumpAction.Enable();
 
-        // Subscribe to movement and jump (this part is perfect)
         moveAction.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
         moveAction.canceled += ctx => moveInput = Vector2.zero;
 
@@ -111,13 +110,9 @@ public class MovementController : MonoBehaviour
 
     void OnDisable()
     {
-        // The individual actions must be disabled
         moveAction?.Disable();
         jumpAction?.Disable();
 
-        // **NEW/CRITICAL ADDITION:**
-        // To prevent the "Disable() has not been called" warnings, 
-        // we explicitly disable the map that was enabled on this player's controls instance.
         if (actionMapName == "Player1WASD")
         {
             controls?.Player1WASD.Disable();
@@ -129,8 +124,6 @@ public class MovementController : MonoBehaviour
     }
     void OnDestroy()
     {
-        // CRITICAL FIX: Dispose of the entire control object instance to prevent leaks.
-        // This implicitly cleans up all action maps.
         controls?.Dispose();
     }
     void Update()
