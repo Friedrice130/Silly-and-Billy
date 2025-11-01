@@ -378,15 +378,30 @@ public class MovementController : MonoBehaviour
     #endregion
 
     // --- WATER MOVEMENT LOGIC ---
+    // Inside MovementController.cs, in the HandleSwimmingMovement method
+
     private void HandleSwimmingMovement()
     {
+        Vector2 totalSwimForce = Vector2.zero;
+
+        // 1. Calculate force from standard movement input (left/right/up/down)
         if (moveInput.magnitude > 0.01f)
         {
-            Vector2 swimDirection = moveInput.normalized;
-            rb.AddForce(swimDirection * swimForce * Time.fixedDeltaTime, ForceMode2D.Force);
+            totalSwimForce += moveInput.normalized * swimForce;
         }
 
-        // Use linearVelocity
+        // 2. Optional: Add extra upward force if the jump button is held
+        // You might need a separate 'swimUpForce' variable for tuning this.
+        if (jumpHeld)
+        {
+            // Example: Add 50% of the swimForce upward boost when jumping
+            totalSwimForce += Vector2.up * (swimForce * 0.5f);
+        }
+
+        // Apply the combined force
+        rb.AddForce(totalSwimForce, ForceMode2D.Force);
+
+        // Limit max swimming speed... (rest of the function is the same)
         if (rb.linearVelocity.magnitude > swimMaxSpeed)
         {
             rb.linearVelocity = rb.linearVelocity.normalized * swimMaxSpeed;
@@ -397,7 +412,7 @@ public class MovementController : MonoBehaviour
     // ----------------------------------
 
     // --- WATER STATE METHOD ---
-    public void SetInWater(bool state, float waterDrag, float waterAngularDamping) // Renamed parameter
+    public void SetInWater(bool state, float waterDrag, float waterAngularDamping)
     {
         if (inWater == state) return;
 
@@ -407,19 +422,22 @@ public class MovementController : MonoBehaviour
         {
             // Store original drag and damping values
             originalDrag = rb.linearDamping;
-            originalAngularDamping = rb.angularDamping; // Use angularDamping
+            originalAngularDamping = rb.angularDamping;
 
             // Set water drag and damping
             rb.linearDamping = waterDrag;
-            rb.angularDamping = waterAngularDamping; // Use angularDamping
+            rb.angularDamping = waterAngularDamping;
 
             rb.gravityScale = 0f;
+
+            // This prevents the player from maintaining high sinking speed.
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
         }
         else
         {
             // Restore original drag and damping values
             rb.linearDamping = originalDrag;
-            rb.angularDamping = originalAngularDamping; // Use angularDamping
+            rb.angularDamping = originalAngularDamping;
 
             rb.gravityScale = originalGravityScale;
         }

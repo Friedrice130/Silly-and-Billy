@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
-using Bundos.WaterSystem; // Ensure this is present if Spring is in the same namespace
+using Bundos.WaterSystem;
 
 namespace Bundos.WaterSystem
 {
@@ -32,11 +32,12 @@ namespace Bundos.WaterSystem
         [Header("Particles")]
         public GameObject splashParticle;
 
-        // --- NEW WATER PHYSICS SETTINGS ---
-        [Header("Water Physics")]
-        public float buoyancyForce = 25f;       // Constant upward force
-        public float waterDrag = 3f;            // High drag for water movement
-        public float waterAngularDamping = 2f;     // Renamed: angularDrag -> angularDamping
+        // --- AMENDED WATER PHYSICS SETTINGS ---
+        [Header("Water Physics (Depth-Based Buoyancy)")]
+        public float maxBuoyancyForce = 25f;      // The maximum upward force applied
+        public float buoyancyDepthFactor = 5f;    // Controls how quickly buoyancy scales with depth
+        public float waterDrag = 3f;              // High drag for water movement
+        public float waterAngularDamping = 2f;    // High angular damping
 
         [HideInInspector]
         Spring[] springs;
@@ -68,9 +69,11 @@ namespace Bundos.WaterSystem
             meshFilter = GetComponent<MeshFilter>();
             meshFilter.mesh = mesh;
 
-            // Set the PolygonCollider2D to be a trigger
             PolygonCollider2D polyCollider = GetComponent<PolygonCollider2D>();
-            polyCollider.isTrigger = true;
+            if (polyCollider != null)
+            {
+                polyCollider.isTrigger = true;
+            }
         }
 
         private void InitializeSprings()
@@ -228,7 +231,6 @@ namespace Bundos.WaterSystem
 
             if (otherRigidbody != null && playerController != null)
             {
-                // Pass the new angular damping parameter
                 playerController.SetInWater(true, waterDrag, waterAngularDamping);
 
                 Vector2 contactPoint = other.ClosestPoint(transform.position);
@@ -243,8 +245,20 @@ namespace Bundos.WaterSystem
             Rigidbody2D otherRigidbody = other.GetComponent<Rigidbody2D>();
             if (otherRigidbody != null)
             {
-                // Apply the Buoyancy Force constantly
-                Vector2 buoyancy = Vector2.up * buoyancyForce;
+                float waterSurfaceY = transform.position.y;
+                float playerCenterY = otherRigidbody.transform.position.y;
+                float depth = waterSurfaceY - playerCenterY;
+
+                // 1. Calculate the minimum upward force needed to counteract weight (mass * gravity)
+                float massCompensationForce = otherRigidbody.mass * 9.81f;
+
+                // 2. Calculate force: depth factor scales force + mass compensation + capped at max
+                float calculatedBuoyancy = Mathf.Min(
+                    depth * buoyancyDepthFactor + massCompensationForce, // This line is the key fix
+                    maxBuoyancyForce
+                );
+
+                Vector2 buoyancy = Vector2.up * calculatedBuoyancy;
                 otherRigidbody.AddForce(buoyancy, ForceMode2D.Force);
             }
         }
@@ -258,7 +272,6 @@ namespace Bundos.WaterSystem
 
             if (otherRigidbody != null && playerController != null)
             {
-                // Set inWater to false
                 playerController.SetInWater(false, 0, 0);
 
                 Vector2 contactPoint = other.ClosestPoint(transform.position);
