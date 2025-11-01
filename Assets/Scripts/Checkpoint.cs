@@ -10,7 +10,11 @@ public class Checkpoint : MonoBehaviour
 
     private void Awake()
     {
-        gameController = GameObject.FindGameObjectWithTag("Player").GetComponent<GameController>();
+        gameController = FindFirstObjectByType<GameController>();
+        if (gameController == null)
+        {
+            Debug.LogError("Checkpoint could not find a GameController in the scene!");
+        }
         coll = GetComponent<Collider2D>();
     }
 

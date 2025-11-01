@@ -12,7 +12,7 @@ public class EnemyShooting : MonoBehaviour
     [Tooltip("Time delay between shots (e.g., 2.0 means one shot every 2 seconds).")]
     [SerializeField] private float fireRate = 2f;
     [Tooltip("The range within which the enemy will start shooting.")]
-    [SerializeField] private float attackRange = 10f;
+    [SerializeField] private float attackRange = 15f;
 
     private float nextFireTime;
 

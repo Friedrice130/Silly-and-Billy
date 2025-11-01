@@ -3,7 +3,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [Header("Settings")]
-    [SerializeField] private float speed = 1f;
+    [SerializeField] private float speed = 20f;
     [SerializeField] private float lifeTime = 2f;
     [SerializeField] private int damage = 1;
 
@@ -37,7 +37,6 @@ public class Bullet : MonoBehaviour
 
         rb.linearVelocity = new Vector2(speed * direction, 0f);
         Debug.Log("Bullet launched with velocity: " + rb.linearVelocity);
-
         float visualFlipDirection = -direction;
         float scaleValue = 0.6f; // Use your desired scale value here
 

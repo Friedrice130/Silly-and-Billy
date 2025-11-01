@@ -5,6 +5,9 @@ using Vector2 = UnityEngine.Vector2;
 
 public class MovementController : MonoBehaviour
 {
+    [Header("System")]
+    private GameController gameController;
+
     [Header("References")]
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private CapsuleCollider2D col;
@@ -78,6 +81,12 @@ public class MovementController : MonoBehaviour
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
 
         cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
+
+        gameController = FindFirstObjectByType<GameController>();
+        if (gameController == null)
+        {
+            Debug.LogError("MovementController could not find a GameController in the scene!");
+        }
     }
 
     void OnEnable()
@@ -382,4 +391,12 @@ public class MovementController : MonoBehaviour
         return result;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Obstacle"))
+        {
+            // The 'Die' method now resides in the GameController
+            gameController.Die(this);
+        }
+    }
 }
