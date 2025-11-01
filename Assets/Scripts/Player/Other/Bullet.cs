@@ -13,6 +13,10 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D rb;
     private int direction = 1; // 1 for right, -1 for left
 
+    public GameObject explosion;
+    public GameObject explosionTwo;
+    private Animator camAnim;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -21,14 +25,9 @@ public class Bullet : MonoBehaviour
 
     private void Start()
     {
-        // Destroy the bullet after a set time to prevent memory leaks
         Destroy(gameObject, lifeTime);
     }
 
-    // This method is called by PlayerAbilities when the bullet is spawned
-    // In Bullet.cs
-
-    // In Bullet.cs
 
     public void Launch(int launchDirection)
     {
@@ -45,9 +44,18 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
-        // --- 2. PLAYER BULLET VS PLAYER (Original Friendly Fire Check) ---
-        if (!isHostile && other.CompareTag("Player"))
+        if (other.CompareTag("Boss"))
+        {
+            camAnim = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Animator>();
+            camAnim.SetTrigger("shake");
+            other.GetComponent<Boss>().health -= damage;
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Instantiate(explosionTwo, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
+
+            // --- 2. PLAYER BULLET VS PLAYER (Original Friendly Fire Check) ---
+            if (!isHostile && other.CompareTag("Player"))
         {
             // Player-fired bullets pass through teammates
             return;
