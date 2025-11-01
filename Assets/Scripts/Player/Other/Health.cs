@@ -18,7 +18,7 @@ public class Health : MonoBehaviour
     [Tooltip("Color for high health (e.g., Green).")]
     [SerializeField] private Color highColor = Color.green;
     [Tooltip("Offset for the health bar's world position.")]
-    [SerializeField] private Vector3 uiOffset = new Vector3(0, 1.5f, 0);
+    [SerializeField] private Vector3 uiOffset = new Vector3(0, 0.5f, 0);
 
     private float currentHealth;
 
