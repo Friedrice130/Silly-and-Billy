@@ -13,8 +13,6 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D rb;
     private int direction = 1; // 1 for right, -1 for left
 
-    public GameObject explosion;
-    public GameObject explosionTwo;
     private Animator camAnim;
 
     private void Awake()
@@ -44,18 +42,19 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Boss"))
+        Boss boss = other.GetComponent<Boss>();
+        if (boss != null)
         {
-            camAnim = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Animator>();
-            camAnim.SetTrigger("shake");
-            other.GetComponent<Boss>().health -= damage;
-            Instantiate(explosion, transform.position, Quaternion.identity);
-            Instantiate(explosionTwo, transform.position, Quaternion.identity);
+            // Player's attack strength (e.g., 50)
+            int playerDamageAmount = 50;
+            boss.TakeDamage(playerDamageAmount);
+
+            // Destroy the projectile here
             Destroy(gameObject);
         }
 
-            // --- 2. PLAYER BULLET VS PLAYER (Original Friendly Fire Check) ---
-            if (!isHostile && other.CompareTag("Player"))
+        // --- 2. PLAYER BULLET VS PLAYER (Original Friendly Fire Check) ---
+        if (!isHostile && other.CompareTag("Player"))
         {
             // Player-fired bullets pass through teammates
             return;

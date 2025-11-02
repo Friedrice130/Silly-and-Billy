@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq; // Add this for easily finding components
+using System.Linq;
 
 public class GameController : MonoBehaviour
 {
@@ -12,7 +12,6 @@ public class GameController : MonoBehaviour
 
     private void Awake()
     {
-        // Find all MovementControllers in the scene and store them
         players = Object.FindObjectsByType<MovementController>(FindObjectsSortMode.None);
 
         if (players.Length == 0)
@@ -23,22 +22,18 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        // Initial checkpoint is the position of the first player at Start
         if (players.Length > 0)
         {
             checkpointPos = players[0].transform.position;
         }
     }
 
-    // This is still needed for the Checkpoint script to call
     public void UpdateCheckpoint(Vector2 pos)
     {
         checkpointPos = pos;
         Debug.Log("Checkpoint Updated to: " + pos);
     }
 
-    // OnTriggerEnter2D will remain on the *player* objects now. 
-    // This is the public method to call when a player dies.
     public void Die(MovementController deadPlayer)
     {
         Debug.Log(deadPlayer.gameObject.name + " died! Triggering Co-op Respawn.");
@@ -72,9 +67,15 @@ public class GameController : MonoBehaviour
             {
                 player.transform.localScale = new Vector3(1, 1, 1);
                 playerRb.simulated = true;
-                // Optional: Reset velocity upon respawn
                 playerRb.linearVelocity = Vector2.zero;
             }
+        }
+
+        // 4. Reset the Boss state
+        Boss boss = FindFirstObjectByType<Boss>();
+        if (boss != null)
+        {
+            boss.ResetBossState();
         }
     }
 }
