@@ -8,6 +8,9 @@ TagManager:
   - Platform
   - Obstacle
   - CutscenesElement
+  - key
+  - Door
+  - spike
   layers:
   - Default
   - TransparentFX
