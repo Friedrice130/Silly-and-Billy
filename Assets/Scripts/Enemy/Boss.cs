@@ -265,7 +265,7 @@ public class Boss : MonoBehaviour
     {
         // 0. Initial Wind-up
         anim.SetTrigger("Attack");
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.3f);
         if (camAnim != null) camAnim.SetTrigger("shake");
 
         // Safety check immediately before damage is applied

@@ -5,7 +5,7 @@ public class Bullet : MonoBehaviour
     [Header("Settings")]
     [SerializeField] private float speed = 20f;
     [SerializeField] private float lifeTime = 2f;
-    [SerializeField] private int damage = 1;
+    [SerializeField] private int damage = 1; // MAKE SURE THIS VALUE IS SET CORRECTLY IN THE INSPECTOR!
 
     [Header("Enemy Bullet Source")]
     public bool isHostile = false;
@@ -42,15 +42,15 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // 1. HIT BOSS
         Boss boss = other.GetComponent<Boss>();
         if (boss != null)
         {
-            // Player's attack strength (e.g., 50)
-            int playerDamageAmount = 50;
-            boss.TakeDamage(playerDamageAmount);
+            // FIX: Use the 'damage' variable, not a hardcoded 50!
+            boss.TakeDamage(damage);
 
-            // Destroy the projectile here
             Destroy(gameObject);
+            return; // Exit the function after hitting the Boss
         }
 
         // --- 2. PLAYER BULLET VS PLAYER (Original Friendly Fire Check) ---
@@ -60,7 +60,7 @@ public class Bullet : MonoBehaviour
             return;
         }
 
-        // --- 3. PLAYER BULLET VS TARGET (Original Enemy/Wall Logic) ---
+        // --- 3. PLAYER BULLET VS GENERIC HEALTH TARGET (Original Enemy/Wall Logic) ---
         Health targetHealth = other.GetComponent<Health>();
 
         if (targetHealth != null)
