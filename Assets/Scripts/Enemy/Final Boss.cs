@@ -21,6 +21,7 @@ public class FinalBoss : MonoBehaviour
     public float disengageRange = 15f;
     public float reEngageRange = 8f; // Distance player must be within to stop a Reset
     private const float ARRIVAL_THRESHOLD = 0.1f;
+    private const float ATTACK_WINDUP_TIME = 0.3f; // Time delay for animation before damage is applied
 
     // --- REFERENCES ---
     [Header("References")]
@@ -206,6 +207,7 @@ public class FinalBoss : MonoBehaviour
                 break;
 
             case BossState.Attack:
+                // No action needed here, the Coroutine handles the attack and state transition
                 break;
         }
     }
@@ -215,6 +217,7 @@ public class FinalBoss : MonoBehaviour
         if (currentState == newState) return;
         currentState = newState;
 
+        // Note: StopAllCoroutines() is slightly aggressive, but safe for a boss with simple states.
         StopAllCoroutines();
 
         if (newState == BossState.Attack) StartCoroutine(AttackPlayer());
@@ -265,21 +268,30 @@ public class FinalBoss : MonoBehaviour
     {
         // 0. Initial Wind-up
         anim.SetTrigger("Attack");
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(ATTACK_WINDUP_TIME); // Wait for the animation to wind up
         if (camAnim != null) camAnim.SetTrigger("shake");
 
         // Safety check immediately before damage is applied
         if (targetPlayer == null)
         {
+            // Transition back to Run instantly if the target disappeared during wind-up
+            lastAttackTime = Time.time;
             SetState(BossState.Run);
             yield break;
         }
 
-        MovementController targetedPlayerController = targetPlayer.GetComponent<MovementController>()
-            ?? targetPlayer.GetComponentInParent<MovementController>();
-
+        // Use GetComponentInChildren first, as components might be on a child
+        MovementController targetedPlayerController = targetPlayer.GetComponentInChildren<MovementController>();
         if (targetedPlayerController == null)
         {
+            // Check in parent as a fallback, though less likely for a player root.
+            targetedPlayerController = targetPlayer.GetComponentInParent<MovementController>();
+        }
+
+        // Final safety check for controller existence
+        if (targetedPlayerController == null)
+        {
+            lastAttackTime = Time.time;
             SetState(BossState.Run);
             yield break;
         }
@@ -291,8 +303,13 @@ public class FinalBoss : MonoBehaviour
         {
             if (playerTransform == null) continue;
 
-            PlayerAbilities abilities = playerTransform.GetComponent<PlayerAbilities>()
-                ?? playerTransform.GetComponentInParent<PlayerAbilities>();
+            // Use GetComponentInChildren for PlayerAbilities for robustness
+            PlayerAbilities abilities = playerTransform.GetComponentInChildren<PlayerAbilities>();
+            if (abilities == null)
+            {
+                // Fallback to GetComponent (original logic)
+                abilities = playerTransform.GetComponent<PlayerAbilities>();
+            }
 
             if (abilities != null && abilities.IsShielding)
             {
@@ -306,23 +323,26 @@ public class FinalBoss : MonoBehaviour
         {
             if (gameController != null)
             {
+                Debug.Log($"Boss hit {targetedPlayerController.gameObject.name}. Calling GameController.Die().");
                 gameController.Die(targetedPlayerController);
             }
         }
+        else
+        {
+            Debug.Log("Boss attack blocked by shield!");
+        }
 
-        // 3. Finish and reset
-        yield return new WaitForSeconds(attackCooldown);
+        // 3. Finish and reset: DO NOT WAIT for attackCooldown here.
         lastAttackTime = Time.time;
         SetState(BossState.Run);
+
     }
 
     // ------------------------------------
     // ## HEALTH AND DAMAGE LOGIC
     // ------------------------------------
 
-    /// <summary>
-    /// Reduces boss health and checks for death condition.
-    /// </summary>
+
     public void TakeDamage(int amount)
     {
         if (isDead) return;
@@ -339,9 +359,6 @@ public class FinalBoss : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Handles the Boss death sequence.
-    /// </summary>
     private void Die()
     {
         isDead = true;
@@ -349,6 +366,8 @@ public class FinalBoss : MonoBehaviour
         // 1. Stop all AI logic and movement
         StopAllCoroutines();
         SetState(BossState.Idle);
+
+        // Animation trigger for death can go here: anim.SetTrigger("Die");
 
         if (healthBar != null)
         {
@@ -380,9 +399,7 @@ public class FinalBoss : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Forces the boss to stop chasing and return to the start position.
-    /// </summary>
+
     public void ResetBossState()
     {
         StopAllCoroutines();

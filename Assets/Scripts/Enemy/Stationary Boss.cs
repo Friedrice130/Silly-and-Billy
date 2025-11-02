@@ -51,9 +51,8 @@ public class StationaryBoss : MonoBehaviour
     private const string BULLET_COMPONENT_NAME = "Bullet";
 
 
-    // ------------------------------------
+
     // ## START & SETUP
-    // ------------------------------------
     private void Start()
     {
         anim = GetComponent<Animator>();
@@ -87,9 +86,8 @@ public class StationaryBoss : MonoBehaviour
         }
     }
 
-    // ------------------------------------
+
     // ## UPDATE & TARGETING
-    // ------------------------------------
     private void Update()
     {
         if (isDead) return;
@@ -133,9 +131,8 @@ public class StationaryBoss : MonoBehaviour
         return nearestDistance;
     }
 
-    // ------------------------------------
     // ## AI STATE MACHINE
-    // ------------------------------------
+
     private void HandleStates()
     {
         float distanceToNearestPlayer = FindNearestTarget();
@@ -173,12 +170,8 @@ public class StationaryBoss : MonoBehaviour
         }
     }
 
-    // ------------------------------------
     // ## UTILITY FOR PROJECTILES (NEW CO-OP SHIELD CHECK)
-    // ------------------------------------
-    /// <summary>
-    /// Checks if ANY active player is currently shielding.
-    /// </summary>
+
     public bool IsAnyPlayerShielding()
     {
         // Clean up the list just in case
@@ -200,9 +193,8 @@ public class StationaryBoss : MonoBehaviour
         return false; // No players are shielding
     }
 
-    // ------------------------------------
+
     // ## ATTACK SEQUENCE (Snowball Projectiles)
-    // ------------------------------------
     private IEnumerator ProjectileAttack()
     {
         SetState(BossState.Attack);
@@ -264,9 +256,7 @@ public class StationaryBoss : MonoBehaviour
         SetState(BossState.Idle);
     }
 
-    // ------------------------------------
     // ## MOVEMENT & FLIP LOGIC
-    // ------------------------------------
     private void FlipSprite(Vector3 targetPos)
     {
         Vector3 currentScale = transform.localScale;
@@ -280,9 +270,8 @@ public class StationaryBoss : MonoBehaviour
         }
     }
 
-    // ------------------------------------
     // ## HEALTH AND DAMAGE LOGIC
-    // ------------------------------------
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
