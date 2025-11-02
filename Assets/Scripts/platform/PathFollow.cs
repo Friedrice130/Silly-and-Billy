@@ -1,112 +1,79 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class PathFollow : MonoBehaviour
 {
-    public enum MoveDirections { LEFT, RIGHT }
-
-    [Header("Settings")]
     [SerializeField] private float moveSpeed = 6f;
     [SerializeField] private float minDistanceToPoint = 0.1f;
+    [SerializeField] private LayerMask playerLayer;
+    [SerializeField] private float carryHeight = 0.3f; 
 
-    public float MoveSpeed => moveSpeed;
-    public MoveDirections Direction { get; private set; }
     public List<Vector3> points = new List<Vector3>();
 
-    private bool _playing;
-    private bool _moved;
-    private int _currentPoint = 0;
-    private Vector3 _currentPosition;
-    private Vector3 _previousPosition;
-    private Vector3 _platformDelta;
-
-    // Players follow the platform
-    private Transform _playerOnPlatform;
+    private int currentPoint = 0;
+    private Vector3 startPosition;
+    private Vector3 prevPosition;
+    private Rigidbody2D rb;
 
     private void Start()
     {
-        _playing = true;
-        _previousPosition = transform.position;
-        _currentPosition = transform.position;
+        rb = GetComponent<Rigidbody2D>();
+        rb.bodyType = RigidbodyType2D.Kinematic;
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+        rb.interpolation = RigidbodyInterpolation2D.Interpolate;
 
-        if (points.Count > 0)
+        startPosition = transform.position;
+        prevPosition = transform.position;
+    }
+
+    private void FixedUpdate()
+    {
+        if (points.Count == 0) return;
+
+        // 
+        Vector3 targetPos = startPosition + points[currentPoint];
+        Vector3 newPos = Vector3.MoveTowards(transform.position, targetPos, moveSpeed * Time.fixedDeltaTime);
+        Vector3 deltaMove = newPos - transform.position;
+        rb.MovePosition(newPos);
+
+        // 
+        if (Vector3.Distance(newPos, targetPos) < minDistanceToPoint)
         {
-            transform.position = _currentPosition + points[0];
-            _currentPoint = 1;
-            _moved = true;
+            currentPoint++;
+            if (currentPoint >= points.Count) currentPoint = 0;
+        }
+        //
+        
+        if (deltaMove != Vector3.zero)
+        {
+            PushPlayers(deltaMove);
+        }
+
+        prevPosition = newPos;
+    }
+
+    private void PushPlayers(Vector3 deltaMove)
+    {
+        // 
+        Collider2D[] hits = Physics2D.OverlapBoxAll(
+            transform.position + Vector3.up * carryHeight,
+            new Vector2(1.2f, 0.5f), 
+            0f,
+            playerLayer
+        );
+
+        foreach (var hit in hits)
+        {
+            //
+            hit.transform.position += deltaMove;
         }
     }
 
-    private void Update()
+    private void OnDrawGizmosSelected()
     {
-        Move();
-    }
-
-    private void Move()
-    {
-        if (!_moved || points.Count == 0) return;
-
-        Vector3 targetPos = _currentPosition + points[_currentPoint];
-        Vector3 oldPos = transform.position;
-
-        transform.position = Vector3.MoveTowards(transform.position, targetPos, Time.deltaTime * moveSpeed);
-        _platformDelta = transform.position - oldPos; // Platform movement
-
-        // If there is a player on the platform, follow the movement
-        if (_playerOnPlatform != null)
-        {
-            _playerOnPlatform.position += _platformDelta;
-        }
-
-        // Determine the direction of movement
-        if (_previousPosition != Vector3.zero)
-        {
-            if (transform.position.x > _previousPosition.x) Direction = MoveDirections.RIGHT;
-            else if (transform.position.x < _previousPosition.x) Direction = MoveDirections.LEFT;
-        }
-
-        _previousPosition = transform.position;
-
-        // Reach the destination?
-        if (Vector3.Distance(transform.position, targetPos) < minDistanceToPoint)
-        {
-            _currentPoint++;
-            if (_currentPoint >= points.Count) _currentPoint = 0;
-        }
-    }
-
-    // Player enters platform collision
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Player"))
-        {
-            _playerOnPlatform = collision.collider.transform;
-        }
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Player"))
-        {
-            _playerOnPlatform = null;
-        }
-    }
-
-    private void OnDrawGizmos()
-    {
-        if (points != null && points.Count > 0)
-        {
-            for (int i = 0; i < points.Count; i++)
-            {
-                Gizmos.color = Color.red;
-                Gizmos.DrawWireSphere(_currentPosition + points[i], 0.4f);
-
-                Gizmos.color = Color.black;
-                if (i < points.Count - 1)
-                    Gizmos.DrawLine(_currentPosition + points[i], _currentPosition + points[i + 1]);
-                else
-                    Gizmos.DrawLine(_currentPosition + points[i], _currentPosition + points[0]);
-            }
-        }
+        // 
+        Gizmos.color = Color.cyan;
+        Gizmos.DrawWireCube(transform.position + Vector3.up * carryHeight, new Vector3(1.2f, 0.5f, 0));
     }
 }
