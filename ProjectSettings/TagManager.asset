@@ -8,6 +8,9 @@ TagManager:
   - Platform
   - Obstacle
   - CutscenesElement
+  - Ground
+  - Boss
+  - Shield
   layers:
   - Default
   - TransparentFX

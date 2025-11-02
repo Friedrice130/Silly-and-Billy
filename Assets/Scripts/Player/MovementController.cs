@@ -5,10 +5,15 @@ using Vector2 = UnityEngine.Vector2;
 
 public class MovementController : MonoBehaviour
 {
+    [Header("System")]
+    private GameController gameController;
+
     [Header("References")]
-    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] public Rigidbody2D rb;
     [SerializeField] private CapsuleCollider2D col;
     [SerializeField] private LayerMask groundLayer;
+
+    [SerializeField] private PlayerAbilities playerAbilities;
 
     [Header("Movement")]
     [SerializeField] private float maxSpeed = 14f;
@@ -27,7 +32,7 @@ public class MovementController : MonoBehaviour
 
     [Header("Input Setup")]
     [Tooltip("Choose which action map this player should use (Player1WASD / Player2ArrowKeys).")]
-    [SerializeField] private string actionMapName = "Player1WASD";
+    [SerializeField] public string actionMapName = "Player1WASD";
 
     [Header("Co-op")]
     [SerializeField] private MovementController otherPlayerController;
@@ -35,13 +40,37 @@ public class MovementController : MonoBehaviour
     [Header("Swing")]
     [SerializeField] private float swingPumpForce = 30f;
 
+    // --- SWIM SETTINGS ---
+    [Header("Swimming")]
+    [SerializeField] private float swimForce = 80f; // Force applied when moving in water
+    [SerializeField] private float swimMaxSpeed = 7f; // Max speed in water
+
     private PlayerActions controls;
     private InputAction moveAction;
     private InputAction jumpAction;
 
+    public PlayerActions Controls
+    {
+        get
+        {
+            if (controls == null)
+            {
+                controls = new PlayerActions();
+            }
+            return controls;
+        }
+    }
+
     private Vector2 moveInput;
     private Vector2 frameVelocity;
     private bool cachedQueryStartInColliders;
+
+    // --- WATER STATE TRACKING ---
+    private bool inWater = false;
+    private float originalGravityScale;
+    private float originalDrag;
+    private float originalAngularDamping; // Renamed: originalAngularDrag -> originalAngularDamping
+    // --------------------------------
 
     // state tracking
     private bool grounded;
@@ -65,21 +94,39 @@ public class MovementController : MonoBehaviour
         col = GetComponent<CapsuleCollider2D>();
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
 
-        controls = new PlayerActions();
         cachedQueryStartInColliders = Physics2D.queriesStartInColliders;
+
+        // Store original gravity scale on Awake
+        originalGravityScale = rb.gravityScale;
+
+        gameController = FindFirstObjectByType<GameController>();
+        if (gameController == null)
+        {
+            Debug.LogError("MovementController could not find a GameController in the scene!");
+        }
+
+        playerAbilities = GetComponent<PlayerAbilities>();
+        if (playerAbilities == null)
+        {
+            Debug.LogWarning("MovementController: PlayerAbilities component not found. Shield check will fail.");
+        }
     }
 
     void OnEnable()
     {
+        PlayerActions controlsInstance = Controls;
+
         if (actionMapName == "Player1WASD")
         {
             controls.Player1WASD.Enable();
+            controls.Player2ArrowKeys.Disable();
             moveAction = controls.Player1WASD.Movement;
             jumpAction = controls.Player1WASD.Jump;
         }
         else if (actionMapName == "Player2ArrowKeys")
         {
             controls.Player2ArrowKeys.Enable();
+            controls.Player1WASD.Disable();
             moveAction = controls.Player2ArrowKeys.Movement;
             jumpAction = controls.Player2ArrowKeys.Jump;
         }
@@ -87,11 +134,9 @@ public class MovementController : MonoBehaviour
         moveAction.Enable();
         jumpAction.Enable();
 
-        // Subscribe to movement
         moveAction.performed += ctx => moveInput = ctx.ReadValue<Vector2>();
         moveAction.canceled += ctx => moveInput = Vector2.zero;
 
-        // Subscribe to jump
         jumpAction.started += ctx => { jumpToConsume = true; timeJumpWasPressed = time; jumpHeld = true; };
         jumpAction.canceled += ctx => jumpHeld = false;
     }
@@ -100,8 +145,20 @@ public class MovementController : MonoBehaviour
     {
         moveAction?.Disable();
         jumpAction?.Disable();
-    }
 
+        if (actionMapName == "Player1WASD")
+        {
+            controls?.Player1WASD.Disable();
+        }
+        else if (actionMapName == "Player2ArrowKeys")
+        {
+            controls?.Player2ArrowKeys.Disable();
+        }
+    }
+    void OnDestroy()
+    {
+        controls?.Dispose();
+    }
     void Update()
     {
         time += Time.deltaTime;
@@ -111,7 +168,11 @@ public class MovementController : MonoBehaviour
 
     void FixedUpdate()
     {
-        frameVelocity = rb.linearVelocity;
+        // Use linearVelocity
+        if (!inWater)
+        {
+            frameVelocity = rb.linearVelocity;
+        }
 
         CheckCollisions();
 
@@ -119,15 +180,23 @@ public class MovementController : MonoBehaviour
 
         if (isAnchored)
         {
-            rb.linearVelocity = frameVelocity;
+            rb.linearVelocity = frameVelocity; // Use linearVelocity
             return;
         }
 
-        HandleJump();
-        HandleHorizontal();
-        HandleGravity();
+        if (inWater)
+        {
+            HandleSwimmingMovement();
+        }
+        else // Normal Land/Air Movement
+        {
+            HandleJump();
+            HandleHorizontal();
+            HandleGravity();
 
-        rb.linearVelocity = frameVelocity;
+            // Use linearVelocity
+            rb.linearVelocity = frameVelocity;
+        }
     }
 
     #region Collisions
@@ -135,29 +204,15 @@ public class MovementController : MonoBehaviour
     {
         Physics2D.queriesStartInColliders = false;
 
-        // ground check
+        // ... (Collision logic - Unchanged) ...
         bool groundHit = Physics2D.CapsuleCast(
-            col.bounds.center,
-            col.size,
-            col.direction,
-            0,
-            Vector2.down,
-            grounderDistance,
-            groundLayer
+            col.bounds.center, col.size, col.direction, 0, Vector2.down, grounderDistance, groundLayer
         );
-
-        // ceiling check
         bool ceilingHit = Physics2D.CapsuleCast(
-            col.bounds.center,
-            col.size,
-            col.direction,
-            0,
-            Vector2.up,
-            grounderDistance,
-            groundLayer
+            col.bounds.center, col.size, col.direction, 0, Vector2.up, grounderDistance, groundLayer
         );
 
-        if (ceilingHit)
+        if (ceilingHit && !inWater)
         {
             frameVelocity.y = Mathf.Min(0, frameVelocity.y);
         }
@@ -209,36 +264,25 @@ public class MovementController : MonoBehaviour
         coyoteUsable = false;
         frameJumpExecuted = true;
 
-        // Track which player jumped and record the time
-        if (actionMapName == "Player1WASD")
-            JumpManager.lastPlayer1JumpTime = Time.time;
-        else if (actionMapName == "Player2ArrowKeys")
-            JumpManager.lastPlayer2JumpTime = Time.time;
+        if (actionMapName == "Player1WASD") JumpManager.lastPlayer1JumpTime = Time.time;
+        else if (actionMapName == "Player2ArrowKeys") JumpManager.lastPlayer2JumpTime = Time.time;
 
         float finalJumpPower = jumpPower;
+        if (JumpManager.IsSynchronized()) finalJumpPower *= 1.2f;
 
-        // Check for synchronized jump
-        if (JumpManager.IsSynchronized())
-        {
-            finalJumpPower *= 1.2f; // 20% boost when both jump together
-        }
-
-        // Check if this is a Swing Throw (air jump / swinging)
+        // Swing Throw logic uses linearVelocity (fixed)
         if (!grounded && !isAnchored && (airJumpUsable || isSwinging))
         {
-            float horizontalMomentumTransfer = Mathf.Abs(rb.linearVelocity.x) * 1.0f;
+            float horizontalMomentumTransfer = Mathf.Abs(rb.linearVelocity.x) * 1.0f; // Use linearVelocity
             float verticalBoost = finalJumpPower * 1.3f;
-            float throwX = rb.linearVelocity.x + (rb.linearVelocity.x > 0 ? horizontalMomentumTransfer : -horizontalMomentumTransfer);
+            float throwX = rb.linearVelocity.x + (rb.linearVelocity.x > 0 ? horizontalMomentumTransfer : -horizontalMomentumTransfer); // Use linearVelocity
 
             frameVelocity.x = throwX;
             frameVelocity.y = Mathf.Max(frameVelocity.y, 0) + verticalBoost;
 
-            if (consumeAirJump)
-            {
-                airJumpUsable = false;
-            }
+            if (consumeAirJump) airJumpUsable = false;
         }
-        else // normal jump
+        else
         {
             frameVelocity.y = finalJumpPower;
         }
@@ -254,10 +298,10 @@ public class MovementController : MonoBehaviour
             {
                 isAnchored = true;
                 rb.bodyType = RigidbodyType2D.Kinematic;
-                rb.linearVelocity = Vector2.zero;
+                rb.linearVelocity = Vector2.zero; // Use linearVelocity
                 frameVelocity = Vector2.zero;
             }
-            rb.linearVelocity = Vector2.zero;
+            rb.linearVelocity = Vector2.zero; // Use linearVelocity
             frameVelocity = Vector2.zero;
         }
         else
@@ -289,6 +333,7 @@ public class MovementController : MonoBehaviour
             return;
         }
 
+        // ... (Existing horizontal movement logic - Unchanged) ...
         if (isSwinging && !grounded)
         {
             if (moveInput.x != 0)
@@ -327,7 +372,7 @@ public class MovementController : MonoBehaviour
     {
         if (grounded && frameVelocity.y <= 0f)
         {
-            frameVelocity.y = -1.5f; // grounding force
+            frameVelocity.y = -1.5f;
         }
         else
         {
@@ -340,6 +385,73 @@ public class MovementController : MonoBehaviour
     }
     #endregion
 
+    // --- WATER MOVEMENT LOGIC ---
+    // Inside MovementController.cs, in the HandleSwimmingMovement method
+
+    private void HandleSwimmingMovement()
+    {
+        Vector2 totalSwimForce = Vector2.zero;
+
+        // 1. Calculate force from standard movement input (left/right/up/down)
+        if (moveInput.magnitude > 0.01f)
+        {
+            totalSwimForce += moveInput.normalized * swimForce;
+        }
+
+        // 2. Optional: Add extra upward force if the jump button is held
+        // You might need a separate 'swimUpForce' variable for tuning this.
+        if (jumpHeld)
+        {
+            // Example: Add 50% of the swimForce upward boost when jumping
+            totalSwimForce += Vector2.up * (swimForce * 0.5f);
+        }
+
+        // Apply the combined force
+        rb.AddForce(totalSwimForce, ForceMode2D.Force);
+
+        // Limit max swimming speed... (rest of the function is the same)
+        if (rb.linearVelocity.magnitude > swimMaxSpeed)
+        {
+            rb.linearVelocity = rb.linearVelocity.normalized * swimMaxSpeed;
+        }
+
+        Flip();
+    }
+    // ----------------------------------
+
+    // --- WATER STATE METHOD ---
+    public void SetInWater(bool state, float waterDrag, float waterAngularDamping)
+    {
+        if (inWater == state) return;
+
+        inWater = state;
+
+        if (inWater)
+        {
+            // Store original drag and damping values
+            originalDrag = rb.linearDamping;
+            originalAngularDamping = rb.angularDamping;
+
+            // Set water drag and damping
+            rb.linearDamping = waterDrag;
+            rb.angularDamping = waterAngularDamping;
+
+            rb.gravityScale = 0f;
+
+            // This prevents the player from maintaining high sinking speed.
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0f);
+        }
+        else
+        {
+            // Restore original drag and damping values
+            rb.linearDamping = originalDrag;
+            rb.angularDamping = originalAngularDamping;
+
+            rb.gravityScale = originalGravityScale;
+        }
+    }
+    // ------------------------------
+
     private void Flip()
     {
         if (moveInput.x < -0.01f) transform.localScale = new Vector3(-1, 1, 1);
@@ -350,6 +462,7 @@ public class MovementController : MonoBehaviour
     public bool IsAnchored => isAnchored;
     public bool IsGrounded => grounded;
     public bool IsSwinging => isSwinging;
+
     public bool IsJumpExecuted()
     {
         bool result = frameJumpExecuted;
@@ -357,4 +470,11 @@ public class MovementController : MonoBehaviour
         return result;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Obstacle"))
+        {
+            gameController.Die(this);
+        }
+    }
 }

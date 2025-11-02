@@ -109,6 +109,24 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Attack"",
+                    ""type"": ""Button"",
+                    ""id"": ""05cf0c7f-4895-4d92-8407-a5c32a8d9aa9"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Shield"",
+                    ""type"": ""Button"",
+                    ""id"": ""43c459ff-6897-4f99-8325-bdaae727cd67"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -166,6 +184,28 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fcb1723c-5612-4c1a-83a9-e47bf3214f3b"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""f6941e70-83cf-4448-8e10-ceaa39c313ea"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shield"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         },
@@ -186,6 +226,24 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""name"": ""Jump"",
                     ""type"": ""Button"",
                     ""id"": ""c0e6f6d9-e976-4684-a77e-a434b7c14570"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Attack"",
+                    ""type"": ""Button"",
+                    ""id"": ""41840be1-530d-4b38-b54e-e27ef32214e9"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Shield"",
+                    ""type"": ""Button"",
+                    ""id"": ""a8566c11-3926-4af9-bd10-669600f2a5a2"",
                     ""expectedControlType"": """",
                     ""processors"": """",
                     ""interactions"": """",
@@ -247,6 +305,28 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
                     ""action"": ""Jump"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7e9f6f0e-2e3a-4978-bcc8-cd0eedf8ac5a"",
+                    ""path"": ""<Keyboard>/rightCtrl"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Shield"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4a0f3392-0efc-42ec-99a9-41494a2788fb"",
+                    ""path"": ""<Keyboard>/rightShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -257,10 +337,14 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         m_Player1WASD = asset.FindActionMap("Player 1 (WASD)", throwIfNotFound: true);
         m_Player1WASD_Movement = m_Player1WASD.FindAction("Movement", throwIfNotFound: true);
         m_Player1WASD_Jump = m_Player1WASD.FindAction("Jump", throwIfNotFound: true);
+        m_Player1WASD_Attack = m_Player1WASD.FindAction("Attack", throwIfNotFound: true);
+        m_Player1WASD_Shield = m_Player1WASD.FindAction("Shield", throwIfNotFound: true);
         // Player 2 (Arrow Keys)
         m_Player2ArrowKeys = asset.FindActionMap("Player 2 (Arrow Keys)", throwIfNotFound: true);
         m_Player2ArrowKeys_Movement = m_Player2ArrowKeys.FindAction("Movement", throwIfNotFound: true);
         m_Player2ArrowKeys_Jump = m_Player2ArrowKeys.FindAction("Jump", throwIfNotFound: true);
+        m_Player2ArrowKeys_Attack = m_Player2ArrowKeys.FindAction("Attack", throwIfNotFound: true);
+        m_Player2ArrowKeys_Shield = m_Player2ArrowKeys.FindAction("Shield", throwIfNotFound: true);
     }
 
     ~@PlayerActions()
@@ -344,6 +428,8 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
     private List<IPlayer1WASDActions> m_Player1WASDActionsCallbackInterfaces = new List<IPlayer1WASDActions>();
     private readonly InputAction m_Player1WASD_Movement;
     private readonly InputAction m_Player1WASD_Jump;
+    private readonly InputAction m_Player1WASD_Attack;
+    private readonly InputAction m_Player1WASD_Shield;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player 1 (WASD)".
     /// </summary>
@@ -363,6 +449,14 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player1WASD/Jump".
         /// </summary>
         public InputAction @Jump => m_Wrapper.m_Player1WASD_Jump;
+        /// <summary>
+        /// Provides access to the underlying input action "Player1WASD/Attack".
+        /// </summary>
+        public InputAction @Attack => m_Wrapper.m_Player1WASD_Attack;
+        /// <summary>
+        /// Provides access to the underlying input action "Player1WASD/Shield".
+        /// </summary>
+        public InputAction @Shield => m_Wrapper.m_Player1WASD_Shield;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -395,6 +489,12 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
+            @Attack.started += instance.OnAttack;
+            @Attack.performed += instance.OnAttack;
+            @Attack.canceled += instance.OnAttack;
+            @Shield.started += instance.OnShield;
+            @Shield.performed += instance.OnShield;
+            @Shield.canceled += instance.OnShield;
         }
 
         /// <summary>
@@ -412,6 +512,12 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
+            @Attack.started -= instance.OnAttack;
+            @Attack.performed -= instance.OnAttack;
+            @Attack.canceled -= instance.OnAttack;
+            @Shield.started -= instance.OnShield;
+            @Shield.performed -= instance.OnShield;
+            @Shield.canceled -= instance.OnShield;
         }
 
         /// <summary>
@@ -451,6 +557,8 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
     private List<IPlayer2ArrowKeysActions> m_Player2ArrowKeysActionsCallbackInterfaces = new List<IPlayer2ArrowKeysActions>();
     private readonly InputAction m_Player2ArrowKeys_Movement;
     private readonly InputAction m_Player2ArrowKeys_Jump;
+    private readonly InputAction m_Player2ArrowKeys_Attack;
+    private readonly InputAction m_Player2ArrowKeys_Shield;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player 2 (Arrow Keys)".
     /// </summary>
@@ -470,6 +578,14 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player2ArrowKeys/Jump".
         /// </summary>
         public InputAction @Jump => m_Wrapper.m_Player2ArrowKeys_Jump;
+        /// <summary>
+        /// Provides access to the underlying input action "Player2ArrowKeys/Attack".
+        /// </summary>
+        public InputAction @Attack => m_Wrapper.m_Player2ArrowKeys_Attack;
+        /// <summary>
+        /// Provides access to the underlying input action "Player2ArrowKeys/Shield".
+        /// </summary>
+        public InputAction @Shield => m_Wrapper.m_Player2ArrowKeys_Shield;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -502,6 +618,12 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @Jump.started += instance.OnJump;
             @Jump.performed += instance.OnJump;
             @Jump.canceled += instance.OnJump;
+            @Attack.started += instance.OnAttack;
+            @Attack.performed += instance.OnAttack;
+            @Attack.canceled += instance.OnAttack;
+            @Shield.started += instance.OnShield;
+            @Shield.performed += instance.OnShield;
+            @Shield.canceled += instance.OnShield;
         }
 
         /// <summary>
@@ -519,6 +641,12 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
             @Jump.started -= instance.OnJump;
             @Jump.performed -= instance.OnJump;
             @Jump.canceled -= instance.OnJump;
+            @Attack.started -= instance.OnAttack;
+            @Attack.performed -= instance.OnAttack;
+            @Attack.canceled -= instance.OnAttack;
+            @Shield.started -= instance.OnShield;
+            @Shield.performed -= instance.OnShield;
+            @Shield.canceled -= instance.OnShield;
         }
 
         /// <summary>
@@ -573,6 +701,20 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnJump(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Attack" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAttack(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Shield" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnShield(InputAction.CallbackContext context);
     }
     /// <summary>
     /// Interface to implement callback methods for all input action callbacks associated with input actions defined by "Player 2 (Arrow Keys)" which allows adding and removing callbacks.
@@ -595,5 +737,19 @@ public partial class @PlayerActions: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnJump(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Attack" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnAttack(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Shield" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnShield(InputAction.CallbackContext context);
     }
 }

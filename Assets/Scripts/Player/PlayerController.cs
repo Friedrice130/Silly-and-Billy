@@ -13,8 +13,7 @@ using UnityEngine;
         private bool _cachedQueryStartInColliders;
 
 
-    public ProjectileBehaviour ProjectilePrefab; //
-        public Transform LaunchOffset; //
+    
 
         #region Interface
 
@@ -39,10 +38,7 @@ using UnityEngine;
             _time += Time.deltaTime;
             GatherInput();
 
-            if(Input.GetButtonDown("Fire1")) //
-            {
-                Instantiate(ProjectilePrefab, LaunchOffset.position, transform.rotation);
-            }
+            
         }
 
         private void GatherInput()

@@ -6,10 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Joyce/Portal switch scene.unity
+    path: Assets/Scenes/Joyce/other/Portal switch scene.unity
     guid: 639351f9e144aaf4aa68a8b793137eb8
   - enabled: 1
-    path: Assets/Scenes/Joyce/BasicController.unity
+    path: Assets/Scenes/Joyce/other/BasicController.unity
     guid: 413d9ccf547294d43b5c37db185a47e1
   - enabled: 1
     path: Assets/Scenes/Angel/PlayerController.unity
@@ -18,20 +18,24 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
+    path: Assets/Scenes/Joyce/Combine.unity
+    guid: d65400377dc26ce46b407b2e0a077fbe
+  - enabled: 1
     path: Assets/Scenes/enqi/MainMenu.unity
     guid: eaf195bf3a5e5404aa765a166ef41746
   - enabled: 1
     path: Assets/Scenes/enqi/Intro.unity
     guid: f9b81cc0b3708474ea242e4afd8fdb0e
   - enabled: 1
-    path: Assets/Scenes/Joyce/Level 1.unity
+    path: Assets/Scenes/Joyce/other/Level 1.unity
     guid: f2012e048a9e4b6458d2299b415614a9
   - enabled: 1
-    path: Assets/Scenes/Joyce/Level 2.unity
+    path: Assets/Scenes/Joyce/other/Level 2.unity
     guid: b7e0636a0b931634d8a613f0c8956080
   - enabled: 1
     path: Assets/Scenes/enqi/Level 3.unity
     guid: 10aad46d8908b394ea905dbdb54c3272
   m_configObjects:
-    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+    com.unity.input.settings: {fileID: 11400000, guid: 2719d1f719ebe724ab87fdd851bf9c7f, type: 2}
+    com.unity.input.settings.actions: {fileID: -944628639613478452, guid: e9a3da25e32221147a3ef5c4cdbdc79d, type: 3}
   m_UseUCBPForAssetBundles: 0
