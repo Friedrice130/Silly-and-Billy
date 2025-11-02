@@ -4,16 +4,18 @@ using UnityEngine;
 [ExecuteInEditMode]
 public class ParallaxBackground : MonoBehaviour
 {
-    public ParallaxCamera parallaxCamera;
+    public CameraController cameraController;
     List<ParallaxLayer> parallaxLayers = new List<ParallaxLayer>();
  
     void Start()
     {
-        if (parallaxCamera == null)
-            parallaxCamera = Camera.main.GetComponent<ParallaxCamera>();
+        if (cameraController == null)
+            cameraController = Camera.main.GetComponent<CameraController>();
  
-        if (parallaxCamera != null)
-            parallaxCamera.onCameraTranslate += Move;
+        if (cameraController != null)
+        {
+            cameraController.onCameraTranslate += Move;
+        }
  
         SetLayers();
     }
