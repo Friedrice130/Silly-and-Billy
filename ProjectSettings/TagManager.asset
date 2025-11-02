@@ -8,6 +8,9 @@ TagManager:
   - Platform
   - Obstacle
   - CutscenesElement
+  - key
+  - Door
+  - spike
   - Ground
   - Boss
   - Shield

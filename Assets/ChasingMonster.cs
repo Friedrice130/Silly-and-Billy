@@ -3,110 +3,114 @@ using System.Collections;
 
 public class ChasingMonster : MonoBehaviour
 {
-    [Header("????")]
+    [Header("Player Target")]
     public Transform player;
     public float moveSpeed = 3f;
-    public float jumpForce = 10f;
-    public float groundCheckDistance = 2f;
-    public LayerMask platformLayer;
+    public float jumpForce = 8f;
+    public float jumpCooldown = 0.5f;
+    public LayerMask groundLayer;
+
+    [Header("Feet Detector")]
+    public MonsterFeet feet;
 
     private Rigidbody2D rb;
-    private bool isGrounded;
-    private bool isJumping;
-    private int monsterLayer;
-    private int platformLayerIndex;
+    private bool isJumping = false;
+    private bool canJump = true;
+    private bool isChasing = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        monsterLayer = LayerMask.NameToLayer("Monster");
-        platformLayerIndex = LayerMask.NameToLayer("Platform");
-        Debug.Log("?? Monster started!");
+        rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
+
+        if (feet == null)
+            feet = GetComponentInChildren<MonsterFeet>();
     }
 
     void Update()
     {
-        if (!player) return;
+        if (!feet) return;
 
-        // ????????????
-        isGrounded = CheckGrounded();
+        bool isGrounded = feet.isGrounded;
 
-        float distanceX = player.position.x - transform.position.x;
-        float distanceY = player.position.y - transform.position.y;
-
-        // ????
-        if (distanceX != 0)
-            transform.localScale = new Vector3(Mathf.Sign(distanceX), 1, 1);
-
-        // ? ??????
-        rb.linearVelocity = new Vector2(Mathf.Sign(distanceX) * moveSpeed, rb.linearVelocity.y);
-
-        // ? ?????? ? ???
-        if (distanceY > 1.5f && isGrounded && !isJumping)
+        // ? If the monster has a target (player), chase it
+        if (player != null)
         {
-            StartCoroutine(JumpToPlayer());
-        }
+            if (!isChasing)
+            {
+                isChasing = true;
+                Debug.Log(" Monster started chasing the player!");
+            }
 
-        // ? ???????
-        if (isGrounded && isJumping)
+            float distX = player.position.x - transform.position.x;
+            float distY = player.position.y - transform.position.y;
+
+            // Move horizontally toward the player
+            rb.linearVelocity = new Vector2(Mathf.Sign(distX) * moveSpeed, rb.linearVelocity.y);
+
+            // Flip to face the player
+            if (distX != 0)
+                transform.localScale = new Vector3(Mathf.Sign(distX), 1, 1);
+
+            // Jump if player is higher and grounded
+            if (distY > 1.5f && isGrounded && canJump)
+            {
+                StartCoroutine(JumpToPlayer());
+            }
+
+            Debug.Log($"Chasing: {isChasing}, Grounded: {isGrounded}, Jumping: {isJumping}, DistY: {distY:F2}");
+        }
+        else
         {
-            Physics2D.IgnoreLayerCollision(monsterLayer, platformLayerIndex, false);
-            isJumping = false;
+            // Stop chasing when player leaves detection zone
+            if (isChasing)
+            {
+                Debug.Log(" Monster lost the player, stopping chase.");
+                isChasing = false;
+                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            }
         }
-
-        // ?? ??????????0??????????
-        if (isJumping && Mathf.Abs(rb.linearVelocity.y) < 0.05f)
-        {
-            Physics2D.IgnoreLayerCollision(monsterLayer, platformLayerIndex, false);
-        }
-
-        Debug.Log($"Grounded: {isGrounded}, DistX: {distanceX:F2}, DistY: {distanceY:F2}, Vel: {rb.linearVelocity}");
     }
 
     private IEnumerator JumpToPlayer()
     {
+        canJump = false;
         isJumping = true;
 
-        // ?? ?????????
-        Physics2D.IgnoreLayerCollision(monsterLayer, platformLayerIndex, true);
-
         Vector2 dir = (player.position - transform.position).normalized;
-        rb.linearVelocity = Vector2.zero;
-        rb.AddForce(new Vector2(dir.x * moveSpeed, jumpForce), ForceMode2D.Impulse);
+        if (Mathf.Abs(dir.x) < 0.2f)
+            dir.x = transform.localScale.x;
 
-        yield return new WaitForSeconds(2.5f);
+        // Reset vertical velocity before jumping
+        rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
+        rb.AddForce(new Vector2(dir.x * moveSpeed * 0.8f, jumpForce), ForceMode2D.Impulse);
 
-        // ????
-        Physics2D.IgnoreLayerCollision(monsterLayer, platformLayerIndex, false);
+        yield return new WaitUntil(() => feet.isGrounded);
+        yield return new WaitForSeconds(jumpCooldown);
+
         isJumping = false;
+        canJump = true;
     }
 
-    private bool CheckGrounded()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        // ????????????
-        Vector2 pos = transform.position;
-        Vector2[] offsets = new Vector2[]
+        if (collision.gameObject.CompareTag("Player"))
         {
-            Vector2.zero,
-            new Vector2(0.4f, 0f),
-            new Vector2(-0.4f, 0f)
-        };
-
-        foreach (var offset in offsets)
-        {
-            RaycastHit2D hit = Physics2D.Raycast(pos + offset, Vector2.down, groundCheckDistance, platformLayer);
-            if (hit.collider != null)
-                return true;
+            Debug.Log("Monster hit the player! Triggering spikes!");
+            TriggerAllSpikes();
         }
-        return false;
     }
 
-    private void OnDrawGizmosSelected()
+    private void TriggerAllSpikes()
     {
-        Gizmos.color = Color.yellow;
-        Vector2 pos = transform.position;
-        Gizmos.DrawLine(pos, pos + Vector2.down * groundCheckDistance);
-        Gizmos.DrawLine(pos + new Vector2(0.4f, 0f), pos + new Vector2(0.4f, -groundCheckDistance));
-        Gizmos.DrawLine(pos + new Vector2(-0.4f, 0f), pos + new Vector2(-0.4f, -groundCheckDistance));
+        GameObject[] spikes = GameObject.FindGameObjectsWithTag("spike");
+        foreach (GameObject spike in spikes)
+        {
+            monsterfallspike spikeScript = spike.GetComponent<monsterfallspike>();
+            if (spikeScript != null)
+            {
+                spikeScript.TriggerDrop();
+            }
+        }
     }
 }
