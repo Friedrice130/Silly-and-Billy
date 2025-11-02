@@ -11,6 +11,9 @@ TagManager:
   - key
   - Door
   - spike
+  - Ground
+  - Boss
+  - Shield
   layers:
   - Default
   - TransparentFX
