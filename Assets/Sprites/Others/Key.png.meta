@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: fb97b503bf513e34bbc2b225c844cbd1
+guid: 71155fd3ca5fd404e8ad77c2ac73631d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6723963429988506304
-    second: Spikes_0
+      213: 1694913177206695654
+    second: Key_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -51,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 10
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -96,30 +96,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WindowsStoreApps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Spikes_0
+      name: Key_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 16
-        height: 16
+        x: 48
+        y: 32
+        width: 55
+        height: 97
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0ca9e2f4d11505d50800000000000000
-      internalID: 6723963429988506304
+      spriteID: 6e6a88cfd8a858710800000000000000
+      internalID: 1694913177206695654
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Spikes_0: 6723963429988506304
+      Key_0: 1694913177206695654
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
