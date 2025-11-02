@@ -65,7 +65,7 @@ public class Bullet : MonoBehaviour
         }
 
         // --- 2. PLAYER BULLET VS PLAYER (Original Friendly Fire Check) ---
-        if (!isHostile && other.CompareTag("Player") && other.CompareTag("Shield"))
+        if (!isHostile && other.CompareTag("Player") || other.CompareTag("Shield"))
         {
             // Player-fired bullets pass through teammates
             return;
