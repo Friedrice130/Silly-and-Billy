@@ -9,9 +9,11 @@ public class MovementController : MonoBehaviour
     private GameController gameController;
 
     [Header("References")]
-    [SerializeField] private Rigidbody2D rb;
+    [SerializeField] public Rigidbody2D rb;
     [SerializeField] private CapsuleCollider2D col;
     [SerializeField] private LayerMask groundLayer;
+
+    [SerializeField] private PlayerAbilities playerAbilities;
 
     [Header("Movement")]
     [SerializeField] private float maxSpeed = 14f;
@@ -101,6 +103,12 @@ public class MovementController : MonoBehaviour
         if (gameController == null)
         {
             Debug.LogError("MovementController could not find a GameController in the scene!");
+        }
+
+        playerAbilities = GetComponent<PlayerAbilities>();
+        if (playerAbilities == null)
+        {
+            Debug.LogWarning("MovementController: PlayerAbilities component not found. Shield check will fail.");
         }
     }
 
@@ -454,6 +462,7 @@ public class MovementController : MonoBehaviour
     public bool IsAnchored => isAnchored;
     public bool IsGrounded => grounded;
     public bool IsSwinging => isSwinging;
+
     public bool IsJumpExecuted()
     {
         bool result = frameJumpExecuted;

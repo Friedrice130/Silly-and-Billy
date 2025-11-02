@@ -9,7 +9,6 @@ public class PlayerAbilities : MonoBehaviour
     [SerializeField] private Transform attackPoint;    
     [SerializeField] private GameObject shieldVisual; 
     [SerializeField] private Collider2D shieldCollider; 
-    [SerializeField] private Transform shieldPointParent;
 
     [Header("Attack Settings")]
     [SerializeField] private float fireRate = 0.5f;

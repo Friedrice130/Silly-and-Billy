@@ -3,9 +3,9 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     [Header("Settings")]
-    [SerializeField] private float speed = 20f;
+    [SerializeField] public float speed = 20f;
     [SerializeField] private float lifeTime = 2f;
-    [SerializeField] private int damage = 1; // MAKE SURE THIS VALUE IS SET CORRECTLY IN THE INSPECTOR!
+    [SerializeField] public int damage = 1; // MAKE SURE THIS VALUE IS SET CORRECTLY IN THE INSPECTOR!
 
     [Header("Enemy Bullet Source")]
     public bool isHostile = false;
@@ -43,11 +43,22 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         // 1. HIT BOSS
-        Boss boss = other.GetComponent<Boss>();
-        if (boss != null)
+        FinalBoss finalboss = other.GetComponent<FinalBoss>();
+        StationaryBoss secondboss = other.GetComponent<StationaryBoss>();
+
+        if (finalboss != null)
         {
             // FIX: Use the 'damage' variable, not a hardcoded 50!
-            boss.TakeDamage(damage);
+            finalboss.TakeDamage(damage);
+
+            Destroy(gameObject);
+            return; // Exit the function after hitting the Boss
+        }
+
+        if (secondboss != null)
+        {
+            // FIX: Use the 'damage' variable, not a hardcoded 50!
+            secondboss.TakeDamage(damage);
 
             Destroy(gameObject);
             return; // Exit the function after hitting the Boss

@@ -72,10 +72,17 @@ public class GameController : MonoBehaviour
         }
 
         // 4. Reset the Boss state
-        Boss boss = FindFirstObjectByType<Boss>();
-        if (boss != null)
+        FinalBoss finalBoss = FindFirstObjectByType<FinalBoss>();
+        if (finalBoss != null)
         {
-            boss.ResetBossState();
+            finalBoss.ResetBossState();
+        }
+
+        // Add this check for the Stationary Boss
+        StationaryBoss stationaryBoss = FindFirstObjectByType<StationaryBoss>();
+        if (stationaryBoss != null)
+        {
+            stationaryBoss.ResetBossState();
         }
     }
 }

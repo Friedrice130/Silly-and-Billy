@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Linq; // Added for List manipulation
+using System.Linq;
 
-public class Boss : MonoBehaviour
+public class FinalBoss : MonoBehaviour
 {
     // --- CONSTANTS & STATS ---
     [Header("Stats")]
@@ -350,13 +350,34 @@ public class Boss : MonoBehaviour
         StopAllCoroutines();
         SetState(BossState.Idle);
 
-        // 2. Disable collider
-        Collider2D col = GetComponent<Collider2D>();
-        if (col != null) col.enabled = false;
+        if (healthBar != null)
+        {
+            GameObject healthBarRoot = healthBar.gameObject;
 
-        // 3. Destroy after animation time
-        float deathAnimationTime = 2.0f;
-        Destroy(gameObject, deathAnimationTime);
+            if (healthBarRoot != null)
+            {
+                StartCoroutine(DisableHealthBarAfterDelay(1f, healthBarRoot));
+            }
+
+            // 2. Disable collider
+            Collider2D col = GetComponent<Collider2D>();
+            if (col != null) col.enabled = false;
+
+            // 3. Destroy after animation time
+            float deathAnimationTime = 2.0f;
+            Destroy(gameObject, deathAnimationTime);
+        }
+    }
+
+    private IEnumerator DisableHealthBarAfterDelay(float delay, GameObject healthBarObject)
+    {
+        yield return new WaitForSeconds(delay);
+
+        if (healthBarObject != null)
+        {
+            // Disabling the root GameObject makes the slider disappear from the UI.
+            healthBarObject.SetActive(false);
+        }
     }
 
     /// <summary>
