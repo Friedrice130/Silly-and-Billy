@@ -2,10 +2,11 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-using UnityEngine.InputSystem;
 
 public class SceneFader : MonoBehaviour
 {
+    public static SceneFader Instance { get; private set; }
+
     public float FadeDuration = 1f;
     public FadeType CurrentFadeType;
 
@@ -31,6 +32,13 @@ public class SceneFader : MonoBehaviour
 
     public void Awake()
     {
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
+
         _image = GetComponent<Image>();
 
         Material mat = _image.material;
@@ -38,20 +46,20 @@ public class SceneFader : MonoBehaviour
         _material = _image.material;
 
         _lastEffect = _useShutters;
-    }
-
-    public void Update()
-    {
-        if (Keyboard.current.numpad1Key.wasPressedThisFrame)
-        {
-            FadeOut(CurrentFadeType);
-        }
-
-        if (Keyboard.current.numpad2Key.wasPressedThisFrame)
-        {
-            FadeIn(CurrentFadeType);
-        }
     } 
+
+    public IEnumerator StartTransition(FadeType fadeType, Action onMidpointAction)
+    {
+        ChangeFadeEffect(fadeType);
+        
+        yield return StartCoroutine(HandleFade(1f, 0f)); 
+
+        onMidpointAction?.Invoke();
+
+        yield return null; 
+
+        yield return StartCoroutine(HandleFade(0f, 1f)); 
+    }
 
     public void FadeOut(FadeType fadeType)
     {

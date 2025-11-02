@@ -25,6 +25,8 @@ public class Health : MonoBehaviour
     // Public property to allow the Enemy.cs to set the starting health
     public float MaxHealth { get => maxHealth; set => maxHealth = value; }
 
+    private GameController gameController;
+
     private void Awake()
     {
         currentHealth = maxHealth;
@@ -87,11 +89,20 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log(gameObject.name + " has been destroyed!");
+        Debug.Log(gameObject.name + " has died! Calling GameController.");
 
-        // OPTIONAL: Hide the health bar immediately upon death
         if (healthSlider != null) healthSlider.gameObject.SetActive(false);
 
-        Destroy(gameObject);
+        if (gameController != null && TryGetComponent(out MovementController deadPlayer))
+        {
+            gameController.Die(deadPlayer);
+        }
+        
+        // Debug.Log(gameObject.name + " has been destroyed!");
+
+        // // OPTIONAL: Hide the health bar immediately upon death
+        // if (healthSlider != null) healthSlider.gameObject.SetActive(false);
+
+        // Destroy(gameObject);
     }
 }
