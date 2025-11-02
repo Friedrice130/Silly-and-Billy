@@ -1,50 +1,88 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 
 public class GameController : MonoBehaviour
 {
     Vector2 checkpointPos;
-    Rigidbody2D playerRb;
+
+    // References to all player controllers
+    public MovementController[] players;
 
     private void Awake()
     {
-        playerRb = GetComponent<Rigidbody2D>();
+        players = Object.FindObjectsByType<MovementController>(FindObjectsSortMode.None);
+
+        if (players.Length == 0)
+        {
+            Debug.LogError("No MovementController found in the scene. Check player setup.");
+        }
     }
 
     private void Start()
     {
-        checkpointPos = transform.position;
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.CompareTag("Obstacle"))
+        if (players.Length > 0)
         {
-            Die();
+            checkpointPos = players[0].transform.position;
         }
     }
 
     public void UpdateCheckpoint(Vector2 pos)
     {
         checkpointPos = pos;
+        Debug.Log("Checkpoint Updated to: " + pos);
     }
 
-    void Die()
+    public void Die(MovementController deadPlayer)
     {
+        Debug.Log(deadPlayer.gameObject.name + " died! Triggering Co-op Respawn.");
         StartCoroutine(Respawn(0.5f));
     }
 
     IEnumerator Respawn(float duration)
     {
-        playerRb.simulated = false;
-        transform.localScale = new Vector3(0, 0, 0);
+        // 1. Disable player simulation and visibility for all players
+        foreach (var player in players)
+        {
+            if (player.TryGetComponent(out Rigidbody2D playerRb))
+            {
+                playerRb.simulated = false;
+                player.transform.localScale = new Vector3(0, 0, 0);
+            }
+        }
+
         yield return new WaitForSeconds(duration);
 
-        // this is starting point
-        transform.position = checkpointPos;
+        // 2. Teleport both players to the checkpoint
+        foreach (var player in players)
+        {
+            player.transform.position = checkpointPos;
+        }
 
-        transform.localScale = new Vector3(1, 1, 1);
-        playerRb.simulated = true;
+        // 3. Re-enable player simulation and visibility for all players
+        foreach (var player in players)
+        {
+            if (player.TryGetComponent(out Rigidbody2D playerRb))
+            {
+                player.transform.localScale = new Vector3(1, 1, 1);
+                playerRb.simulated = true;
+                playerRb.linearVelocity = Vector2.zero;
+            }
+        }
+
+        // 4. Reset the Boss state
+        FinalBoss finalBoss = FindFirstObjectByType<FinalBoss>();
+        if (finalBoss != null)
+        {
+            finalBoss.ResetBossState();
+        }
+
+        // Add this check for the Stationary Boss
+        StationaryBoss stationaryBoss = FindFirstObjectByType<StationaryBoss>();
+        if (stationaryBoss != null)
+        {
+            stationaryBoss.ResetBossState();
+        }
     }
 }
