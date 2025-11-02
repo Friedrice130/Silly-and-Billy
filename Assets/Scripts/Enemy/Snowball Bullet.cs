@@ -3,7 +3,6 @@ using UnityEngine;
 public class SnowballBullet : MonoBehaviour
 {
     [Header("Hostile Settings")]
-    [Tooltip("Speed the projectile travels. This is overridden by the Boss.")]
     public float speed = 10f;
     [Tooltip("Damage dealt to players (unused if GameController.Die is called).")]
     public int damage = 20;
@@ -15,15 +14,11 @@ public class SnowballBullet : MonoBehaviour
 
     private Rigidbody2D rb;
     private GameController gameController;
-    // NEW: Reference to the StationaryBoss for co-op shield check
-    private StationaryBoss stationaryBoss;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         gameController = FindFirstObjectByType<GameController>();
-        // Find the boss when the projectile is created
-        stationaryBoss = FindFirstObjectByType<StationaryBoss>();
     }
 
     private void Start()
@@ -33,57 +28,45 @@ public class SnowballBullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Use CompareTag for reliable player identification
-        if (other.CompareTag("Player"))
+        Debug.Log("Touched: " + other.name + " | Tag: " + other.tag + " | Has PlayerAbilities: " + (other.GetComponent<PlayerAbilities>() != null));
+
+        //  BLOCKED BY SHIELD
+        if (other.CompareTag("Shield") || other.name.Contains("Shield"))
         {
-            // Check if the projectile hit a Player
-            MovementController playerController = other.GetComponent<MovementController>()
-                 ?? other.GetComponentInParent<MovementController>();
-
-            if (playerController != null)
-            {
-                Rigidbody2D playerRb = playerController.rb;
-
-                // --- KNOCKBACK IMPLEMENTATION ---
-                if (playerRb != null)
-                {
-                    Vector2 direction = (playerRb.transform.position - transform.position).normalized;
-                    playerRb.AddForce(direction * knockbackForce, ForceMode2D.Impulse);
-                }
-
-                // GLOBAL SHIELD CHECK (Co-op Shield Logic from StationaryBoss)
-                bool attackBlocked = false;
-                if (stationaryBoss != null)
-                {
-                    attackBlocked = stationaryBoss.IsAnyPlayerShielding();
-                }
-                else
-                {
-                    // Fallback to checking only the hit player's shield if boss reference is missing
-                    PlayerAbilities abilities = playerController.GetComponent<PlayerAbilities>();
-                    attackBlocked = abilities != null && abilities.IsShielding;
-                }
-
-                // 2. APPLY DAMAGE OR BLOCK EFFECT
-                if (!attackBlocked)
-                {
-                    if (gameController != null)
-                    {
-                        gameController.Die(playerController);
-                    }
-                }
-
-                // Destroy the bullet 
-                Destroy(gameObject);
-                return;
-            }
+            Debug.Log("Snowball blocked by shield!");
+            Destroy(gameObject); // bullet destroyed when shield hit
+            return;
         }
 
-        // Check if the projectile hit a wall/obstacle AND it's not a trigger (like a collectible)
-        if (!other.isTrigger)
+        // HITS PLAYER
+        if (other.CompareTag("Player") || other.GetComponentInParent<MovementController>() != null)
         {
+            MovementController playerController = other.GetComponent<MovementController>()
+                ?? other.GetComponentInParent<MovementController>();
+
+            if (playerController != null && gameController != null)
+            {
+                Debug.Log("--- GUARANTEED KILL ATTEMPTED --- " + playerController.gameObject.name);
+                gameController.Die(playerController);
+            }
+
             Destroy(gameObject);
             return;
         }
+
+        if (other.gameObject.layer == LayerMask.NameToLayer("Ground"))
+        {
+            Debug.Log("Snowball hit the floor — staying until lifetime ends.");
+            return;
+        }
+            
+
+        // HITS ANYTHING ELSE (walls, etc.)
+        if (!other.isTrigger)
+        {
+            Destroy(gameObject);
+        }
     }
+
+
 }

@@ -5,7 +5,7 @@ public class Bullet : MonoBehaviour
     [Header("Settings")]
     [SerializeField] public float speed = 20f;
     [SerializeField] private float lifeTime = 2f;
-    [SerializeField] public int damage = 1; // MAKE SURE THIS VALUE IS SET CORRECTLY IN THE INSPECTOR!
+    [SerializeField] public int damage = 1; 
 
     [Header("Enemy Bullet Source")]
     public bool isHostile = false;
@@ -65,7 +65,7 @@ public class Bullet : MonoBehaviour
         }
 
         // --- 2. PLAYER BULLET VS PLAYER (Original Friendly Fire Check) ---
-        if (!isHostile && other.CompareTag("Player"))
+        if (!isHostile && other.CompareTag("Player") && other.CompareTag("Shield"))
         {
             // Player-fired bullets pass through teammates
             return;

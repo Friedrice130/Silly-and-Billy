@@ -169,7 +169,7 @@ public class StationaryBoss : MonoBehaviour
 
         if (newState == BossState.Idle)
         {
-            anim.SetBool("Run", false);
+            anim.SetBool("Attack", false);
         }
     }
 
@@ -247,6 +247,15 @@ public class StationaryBoss : MonoBehaviour
                 snowball.speed = scaledSpeed;
                 // Note: Using velocity is better for instant movement than linearVelocity in some Unity versions/setups
                 projRb.linearVelocity = rotation * Vector2.right * scaledSpeed;
+            }
+
+            Collider2D projectileCollider = projectile.GetComponent<Collider2D>();
+            Collider2D bossCollider = GetComponent<Collider2D>();
+
+            if (projectileCollider != null && bossCollider != null)
+            {
+                // Tell Unity to ignore collisions between the boss and the new snowball
+                Physics2D.IgnoreCollision(projectileCollider, bossCollider, true);
             }
 
             yield return new WaitForSeconds(interShotDelay);
