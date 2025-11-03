@@ -1,5 +1,6 @@
-using UnityEngine;
 using System.Collections;
+using UnityEngine;
+using UnityEngine.UIElements;
 
 public class ChasingMonster : MonoBehaviour
 {
@@ -48,9 +49,15 @@ public class ChasingMonster : MonoBehaviour
             // Move horizontally toward the player
             rb.linearVelocity = new Vector2(Mathf.Sign(distX) * moveSpeed, rb.linearVelocity.y);
 
+            
             // Flip to face the player
             if (distX != 0)
-                transform.localScale = new Vector3(Mathf.Sign(distX), 1, 1);
+            {
+                Vector3 scale = transform.localScale;
+                scale.x = Mathf.Abs(scale.x) * Mathf.Sign(distX);
+                transform.localScale = scale;
+            }
+
 
             // Jump if player is higher and grounded
             if (distY > 1.5f && isGrounded && canJump)
