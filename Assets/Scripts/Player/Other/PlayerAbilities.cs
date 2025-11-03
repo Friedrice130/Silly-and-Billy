@@ -106,6 +106,11 @@ public class PlayerAbilities : MonoBehaviour
     {
         int direction = (int)Mathf.Sign(transform.localScale.x);
 
+        if (movementController != null)
+        {
+            movementController.PlayShootSound();
+        }
+
         GameObject bulletObject = Instantiate(bulletPrefab, attackPoint.position, Quaternion.identity);
 
         Bullet bulletScript = bulletObject.GetComponent<Bullet>();
@@ -117,6 +122,11 @@ public class PlayerAbilities : MonoBehaviour
 
     private void OnShieldStart(InputAction.CallbackContext context)
     {
+        if (movementController != null)
+        {
+            movementController.PlayShieldStartSound();
+        }
+
         isShielding = true;
         if (shieldVisual != null) shieldVisual.SetActive(true);
         if (shieldCollider != null) shieldCollider.enabled = true;

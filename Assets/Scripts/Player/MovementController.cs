@@ -5,6 +5,12 @@ using Vector2 = UnityEngine.Vector2;
 
 public class MovementController : MonoBehaviour
 {
+    [Header("Audio Clips")]
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip[] landFootsteps;
+    [SerializeField] private AudioClip[] shootSound;
+    [SerializeField] private AudioClip[] shieldStartSound;
+
     [Header("System")]
     private GameController gameController;
 
@@ -224,6 +230,12 @@ public class MovementController : MonoBehaviour
             bufferedJumpUsable = true;
             endedJumpEarly = false;
             airJumpUsable = true;
+
+            if (audioSource != null && landFootsteps.Length > 0)
+            {
+                AudioClip clip = landFootsteps[Random.Range(0, landFootsteps.Length)];
+                audioSource.PlayOneShot(clip);
+            }
         }
         else if (grounded && !groundHit)
         {
@@ -475,6 +487,24 @@ public class MovementController : MonoBehaviour
         if (collision.CompareTag("Obstacle"))
         {
             gameController.Die(this);
+        }
+    }
+
+    public void PlayShootSound()
+    {
+        if (audioSource != null && shootSound != null)
+        {
+            AudioClip clip = shootSound[Random.Range(0, shootSound.Length)];
+            audioSource.PlayOneShot(clip);
+        }
+    }
+
+    public void PlayShieldStartSound()
+    {
+        if (audioSource != null && shieldStartSound != null)
+        {
+            AudioClip clip = shieldStartSound[Random.Range(0, shieldStartSound.Length)];
+            audioSource.PlayOneShot(clip);
         }
     }
 }
