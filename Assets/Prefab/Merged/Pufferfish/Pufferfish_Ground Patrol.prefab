@@ -379,7 +379,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2786591811364384921}
   m_Layer: 0
-  m_Name: Pufferfish
+  m_Name: Pufferfish_Ground Patrol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

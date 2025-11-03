@@ -42,6 +42,16 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        PufferBehaviour pufferfish = other.GetComponent<PufferBehaviour>();
+        if (pufferfish != null)
+        {
+            // PufferBehaviour uses TakeHit, not TakeDamage
+            pufferfish.TakeHit(damage);
+
+            Destroy(gameObject);
+            return; // Exit the function after hitting the Pufferfish
+        }
+
         // 1. HIT BOSS
         FinalBoss finalboss = other.GetComponent<FinalBoss>();
         StationaryBoss secondboss = other.GetComponent<StationaryBoss>();
