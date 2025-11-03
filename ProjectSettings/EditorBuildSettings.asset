@@ -38,6 +38,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/enqi/Level 4.unity
     guid: 8e012dcb1feb8c544b5a4f61b2950350
+  - enabled: 1
+    path: Assets/Scenes/Kaixuan/Level 6.unity
+    guid: a0d3da901c0c7cd429de9728fd1407be
+  - enabled: 1
+    path: Assets/Scenes/Kaixuan/Level 5.unity
+    guid: 17907658db86e5843b17700d80ec81c8
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2719d1f719ebe724ab87fdd851bf9c7f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: e9a3da25e32221147a3ef5c4cdbdc79d, type: 3}
