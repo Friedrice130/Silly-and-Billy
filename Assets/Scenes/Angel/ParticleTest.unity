@@ -1869,6 +1869,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FogParticles
       objectReference: {fileID: 0}
+    - target: {fileID: 8679562703633947987, guid: 9a351239f94a1224f9129ab299f2e258, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
