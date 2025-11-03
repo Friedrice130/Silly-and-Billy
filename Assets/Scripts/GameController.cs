@@ -5,6 +5,7 @@ using System.Linq;
 
 public class GameController : MonoBehaviour
 {
+    [SerializeField] private AudioSource audioSource;
     Vector2 checkpointPos;
 
     // References to all player controllers
