@@ -30,10 +30,9 @@ public class FragmentManager : MonoBehaviour
 
     private void Start()
     {
-        UpdateFragmentCount(false); // no popup on start
         PlayerPrefs.DeleteAll();
+        UpdateFragmentCount(false); // no popup on start
 
-        UpdateFragmentCount(false);
     }
 
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)

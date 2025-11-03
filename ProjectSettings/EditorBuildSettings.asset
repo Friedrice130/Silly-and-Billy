@@ -26,11 +26,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/enqi/Intro.unity
     guid: f9b81cc0b3708474ea242e4afd8fdb0e
-  - enabled: 1
-    path: Assets/Scenes/Joyce/other/Level 1.unity
+  - enabled: 0
+    path: Assets/Scenes/Joyce/other/Level 1 old.unity
     guid: f2012e048a9e4b6458d2299b415614a9
-  - enabled: 1
-    path: Assets/Scenes/Joyce/other/Level 2.unity
+  - enabled: 0
+    path: Assets/Scenes/Joyce/other/Level 2 old.unity
     guid: b7e0636a0b931634d8a613f0c8956080
   - enabled: 1
     path: Assets/Scenes/enqi/Level 3.unity
@@ -44,6 +44,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Kaixuan/Level 5.unity
     guid: 17907658db86e5843b17700d80ec81c8
+  - enabled: 1
+    path: Assets/Scenes/Joyce/Level 1.unity
+    guid: 43f3e73ea3e0aa145a1520affb06d292
+  - enabled: 1
+    path: Assets/Scenes/Joyce/Level 2.unity
+    guid: a63f332b16550aa4bb471bc62778fac1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2719d1f719ebe724ab87fdd851bf9c7f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: e9a3da25e32221147a3ef5c4cdbdc79d, type: 3}
