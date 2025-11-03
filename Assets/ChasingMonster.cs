@@ -110,7 +110,7 @@ public class ChasingMonster : MonoBehaviour
 
     private void TriggerAllSpikes()
     {
-        GameObject[] spikes = GameObject.FindGameObjectsWithTag("spike");
+        GameObject[] spikes = GameObject.FindGameObjectsWithTag("Obstacle");
         foreach (GameObject spike in spikes)
         {
             monsterfallspike spikeScript = spike.GetComponent<monsterfallspike>();
@@ -120,4 +120,5 @@ public class ChasingMonster : MonoBehaviour
             }
         }
     }
+
 }
