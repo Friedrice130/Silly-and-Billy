@@ -87,7 +87,7 @@ SpriteRenderer:
   m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &2219220031738587827
@@ -99,11 +99,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8053358004849131519}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8c5df7fd77bfe4d448cece05c9b3b359, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc782c3c04668640bbe40e0473cdf37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Hitpoints: 0
   MaxHitpoints: 5
+  Healthbar: {fileID: 0}
 --- !u!50 &4982373258415294203
 Rigidbody2D:
   serializedVersion: 5
