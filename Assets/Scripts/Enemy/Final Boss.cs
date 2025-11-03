@@ -68,6 +68,16 @@ public class FinalBoss : MonoBehaviour
             Debug.LogWarning("Boss: reEngageRange should be smaller than sightRange. Adjusting to sightRange - 1.");
             reEngageRange = sightRange - 1f;
         }
+
+        ToggleHealthBar(false);
+    }
+
+    public void ToggleHealthBar(bool isVisible)
+    {
+        if (healthBar != null && healthBar.gameObject != null)
+        {
+            healthBar.gameObject.SetActive(isVisible);
+        }
     }
 
     // --- UTILITY SETUP ---

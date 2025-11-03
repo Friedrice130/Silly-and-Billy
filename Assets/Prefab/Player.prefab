@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5660656033260475176}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52,7 +52,7 @@ GameObject:
   - component: {fileID: 3251244073659750989}
   m_Layer: 0
   m_Name: Silly
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -208,6 +208,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 1024
+  playerAbilities: {fileID: 0}
   maxSpeed: 14
   acceleration: 120
   groundDeceleration: 60
@@ -222,6 +223,8 @@ MonoBehaviour:
   actionMapName: Player1WASD
   otherPlayerController: {fileID: 8143535605166257835}
   swingPumpForce: 70
+  swimForce: 80
+  swimMaxSpeed: 7
 --- !u!232 &2209665757851917488
 DistanceJoint2D:
   m_ObjectHideFlags: 0
@@ -296,7 +299,7 @@ GameObject:
   - component: {fileID: 8613366868808546492}
   m_Layer: 0
   m_Name: Billy
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -452,6 +455,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 1024
+  playerAbilities: {fileID: 0}
   maxSpeed: 14
   acceleration: 120
   groundDeceleration: 60
@@ -466,6 +470,8 @@ MonoBehaviour:
   actionMapName: Player2ArrowKeys
   otherPlayerController: {fileID: 4927827390445817953}
   swingPumpForce: 70
+  swimForce: 80
+  swimMaxSpeed: 7
 --- !u!95 &7351980215084824264
 Animator:
   serializedVersion: 7

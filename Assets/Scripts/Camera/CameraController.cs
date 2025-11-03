@@ -1,7 +1,11 @@
 using UnityEngine;
+using System;
 
 public class CameraController : MonoBehaviour
 {
+    public event Action<float> onCameraTranslate;
+    private float oldPositionX;
+
     [Header("Targets and Speed")]
     public Transform player1;
     public Transform player2;
@@ -32,12 +36,19 @@ public class CameraController : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        oldPositionX = transform.position.x;
+    }
+
     void LateUpdate()
     {
         Vector3 targetPosition = CalculateTargetPosition();
         float targetZoom = CalculateTargetZoom();
         MoveCamera(targetPosition);
         ZoomCamera(targetZoom);
+
+        CheckForCameraMovement();
     }
 
     private Vector3 CalculateTargetPosition()
@@ -82,5 +93,21 @@ public class CameraController : MonoBehaviour
             targetZoom,
             zoomSmoothSpeed * Time.deltaTime
         );
+    }
+
+    // Parallax Bg 
+    private void CheckForCameraMovement()
+    {
+        if (transform.position.x != oldPositionX)
+        {
+            if (onCameraTranslate != null)
+            {
+                float delta = oldPositionX - transform.position.x; 
+                onCameraTranslate(delta);
+            }
+
+            // update old position to new current position
+            oldPositionX = transform.position.x; 
+        }
     }
 }
