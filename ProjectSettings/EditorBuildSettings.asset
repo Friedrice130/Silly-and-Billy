@@ -50,6 +50,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Angel/Level 8.unity
     guid: 6e201e629cd9bac45b61ee6a7fb28d24
+  - enabled: 1
+    path: Assets/Scenes/enqi/End.unity
+    guid: f18792ccec5e9c049869ea571f2eb321
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 2719d1f719ebe724ab87fdd851bf9c7f, type: 2}
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: e9a3da25e32221147a3ef5c4cdbdc79d, type: 3}
