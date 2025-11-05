@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class PufferBehaviour : MonoBehaviour
 {
+    [SerializeField] private float damageToPlayer = 1f;
     public float Hitpoints;
     public float MaxHitpoints = 5;
     public HealthbarBehaviour Healthbar;
 
-    // patrol
-    public float speed = 2f; 
-    public Transform[] waypoints; 
+    public float speed = 2f;
+    public Transform[] waypoints;
     private int currentWaypointIndex = 0;
     public float rotationSpeed = 5f;
 
@@ -16,6 +16,8 @@ public class PufferBehaviour : MonoBehaviour
     {
         Hitpoints = MaxHitpoints;
         Healthbar.SetHealth(Hitpoints, MaxHitpoints);
+
+        Healthbar.SetVisible(false);
     }
 
     void Update()
@@ -26,23 +28,19 @@ public class PufferBehaviour : MonoBehaviour
         targetPosition.z = transform.position.z;
         float directionX = targetPosition.x - transform.position.x;
 
-        if (Mathf.Abs(directionX) > 0.01f) // Check if moving left/right
+        if (Mathf.Abs(directionX) > 0.01f) 
         {
-            // Get the current local scale
             Vector3 localScale = transform.localScale;
 
-            // If moving right (positive X direction), ensure scale X is positive
             if (directionX > 0)
             {
                 localScale.x = -Mathf.Abs(localScale.x);
             }
-            // If moving left (negative X direction), ensure scale X is negative (flipped)
             else
             {
                 localScale.x = Mathf.Abs(localScale.x);
             }
 
-            // Apply the new scale (flip)
             transform.localScale = localScale;
         }
 
@@ -66,10 +64,39 @@ public class PufferBehaviour : MonoBehaviour
 
         if (Hitpoints <= 0)
         {
+            if (Healthbar != null)
+            {
+                Healthbar.gameObject.SetActive(false);
+            }
+
             Destroy(gameObject);
         }
 
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            PlayerAbilities playerAbilities = collision.GetComponent<PlayerAbilities>();
 
+            if (playerAbilities != null && playerAbilities.IsShielding)
+            {
+                Debug.Log("Puffer attack blocked by shield!");
+                return; 
+            }
+
+            Debug.Log("Player hit! Not shielding.");
+
+            MovementController playerMovementController = collision.GetComponent<MovementController>();
+            if (playerMovementController != null)
+            {
+                GameController gameController = FindFirstObjectByType<GameController>();
+                if (gameController != null)
+                {
+                    gameController.Die(playerMovementController);
+                }
+            }
+        }
+    }
 }
