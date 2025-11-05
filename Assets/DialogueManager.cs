@@ -17,7 +17,8 @@ public class DialogueManager : MonoBehaviour
     public float typingSpeed = 0.05f;
     public Animator animator;
 
-    // State Variables
+    private AudioSource audioSource;
+
     private Queue<DialogueLine> lines;
     public bool isDialogueActive = false;
     private bool isTyping = false;
@@ -25,7 +26,6 @@ public class DialogueManager : MonoBehaviour
 
     private void Awake()
     {
-        // Singleton Implementation
         if (Instance == null)
             Instance = this;
         else
@@ -33,27 +33,24 @@ public class DialogueManager : MonoBehaviour
 
         lines = new Queue<DialogueLine>();
 
-        // Ensure the dialogue box is hidden/off-screen at start
+        audioSource = GetComponent<AudioSource>();
+
         if (animator != null)
         {
-            // Assumes "idle" is the off-screen state
             animator.Play("idle");
         }
     }
 
     private void Update()
     {
-        // Check for Space key input to advance dialogue
         if (isDialogueActive && Input.GetKeyDown(KeyCode.Space))
         {
             if (isTyping)
             {
-                // Action 1: If currently typing, skip the animation
                 SkipTyping();
             }
             else
             {
-                // Action 2: If typing is finished, move to the next line
                 DisplayNextDialogueLine();
             }
         }
@@ -61,12 +58,15 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue dialogue)
     {
-        // Prevent starting dialogue if one is already running
+        if (MovementController.Instance != null)
+        {
+            MovementController.Instance.SetMovementState(false);
+        }
+
         if (isDialogueActive) return;
 
         isDialogueActive = true;
 
-        // Animate the box to "show" (slide onto the screen)
         if (animator != null)
         {
             animator.Play("show");
@@ -74,7 +74,6 @@ public class DialogueManager : MonoBehaviour
 
         lines.Clear();
 
-        // Enqueue all lines from the Dialogue object
         foreach (DialogueLine dialogueLine in dialogue.dialogueLines)
         {
             lines.Enqueue(dialogueLine);
@@ -85,7 +84,6 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextDialogueLine()
     {
-        // Check if there are no more lines
         if (lines.Count == 0)
         {
             EndDialogue();
@@ -94,14 +92,15 @@ public class DialogueManager : MonoBehaviour
 
         currentDialogueLine = lines.Dequeue();
 
-        // Update UI elements
         characterIcon.sprite = currentDialogueLine.character.icon;
         characterName.text = currentDialogueLine.character.name;
 
-        // Stop any previous typing coroutine before starting a new one
-        StopAllCoroutines();
+        if (currentDialogueLine.lineSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(currentDialogueLine.lineSound);
+        }
 
-        // Start typing the new line
+        StopAllCoroutines();
         StartCoroutine(TypeSentence(currentDialogueLine));
     }
 
@@ -126,14 +125,19 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
+        if (MovementController.Instance != null)
+        {
+            MovementController.Instance.SetMovementState(true);
+        }
+
         isDialogueActive = false;
 
-        // Animate the box to "hide" (slide off-screen, back to idle state)
+        // Animate the box to "hide" (its slide off-screen, back to idle state)
         if (animator != null)
         {
             animator.Play("hide");
         }
 
-        dialogueArea.text = ""; // Clear text for next dialogue
+        dialogueArea.text = ""; 
     }
 }
