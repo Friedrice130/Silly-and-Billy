@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class PufferBehaviour : MonoBehaviour
 {
+    [SerializeField] private float damageToPlayer = 1f;
     public float Hitpoints;
     public float MaxHitpoints = 5;
     public HealthbarBehaviour Healthbar;
 
     // patrol
-    public float speed = 2f; 
-    public Transform[] waypoints; 
+    public float speed = 2f;
+    public Transform[] waypoints;
     private int currentWaypointIndex = 0;
     public float rotationSpeed = 5f;
 
@@ -66,10 +67,54 @@ public class PufferBehaviour : MonoBehaviour
 
         if (Hitpoints <= 0)
         {
+            if (Healthbar != null)
+            {
+                Healthbar.gameObject.SetActive(false);
+            }
+
             Destroy(gameObject);
         }
 
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        // 1. Check if the collision is with the Player
+        // Assuming your player has the tag "Player"
+        if (collision.CompareTag("Player"))
+        {
+            // 2. Get the PlayerAbilities component from the player
+            PlayerAbilities playerAbilities = collision.GetComponent<PlayerAbilities>();
 
+            // 3. Check for the shield!
+            if (playerAbilities != null && playerAbilities.IsShielding)
+            {
+                // Player is shielding! The puffer fish attack is blocked.
+                Debug.Log("Puffer attack blocked by shield!");
+                return; // **Stop the attack/damage logic here!**
+            }
+
+            // 4. If not shielding, proceed with the attack (player death)
+            Debug.Log("Player hit! Not shielding.");
+
+            // Find the GameController to call the Die method
+            MovementController playerMovementController = collision.GetComponent<MovementController>();
+            if (playerMovementController != null)
+            {
+                // Assuming GameController.Die takes the MovementController as an argument,
+                // like in your MovementController's OnTriggerEnter2D: gameController.Die(this);
+                // You'll need to make sure the GameController is accessible, e.g., through a static instance or FindObjectOfType.
+                GameController gameController = FindFirstObjectByType<GameController>();
+                if (gameController != null)
+                {
+                    gameController.Die(playerMovementController);
+                }
+            }
+
+            // Alternatively, if the puffer fish should only die/damage itself on collision,
+            // you might want to call TakeHit on the puffer fish here too: TakeHit(damageToPlayer);
+        }
+    }
 }
+
+  
