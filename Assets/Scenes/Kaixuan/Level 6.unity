@@ -34270,11 +34270,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4503434485145045438, guid: 8a2a13320695b0c48b4444174dc6dafd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20.54
+      value: -63.38
       objectReference: {fileID: 0}
     - target: {fileID: 4503434485145045438, guid: 8a2a13320695b0c48b4444174dc6dafd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -52.42
+      value: -63.7
       objectReference: {fileID: 0}
     - target: {fileID: 4503434485145045438, guid: 8a2a13320695b0c48b4444174dc6dafd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -39964,7 +39964,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e91f6b4c7401e48b39e11ca7bd4c41, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 5
   isDead: 0
   healthBarUI: {fileID: 1406566337893863575}
   sightRange: 15
@@ -40136,9 +40136,9 @@ MonoBehaviour:
   m_HandleRect: {fileID: 0}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 10
+  m_MaxValue: 5
   m_WholeNumbers: 0
-  m_Value: 10
+  m_Value: 5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
