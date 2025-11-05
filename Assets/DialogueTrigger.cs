@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-// --- Data Structures (No Changes Needed) ---
 [System.Serializable]
 public class DialogueCharacter
 {
@@ -23,7 +22,6 @@ public class Dialogue
 {
     public List<DialogueLine> dialogueLines = new List<DialogueLine>();
 }
-// ------------------------------------------
 
 public class DialogueTrigger : MonoBehaviour
 {
@@ -31,7 +29,6 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue()
     {
-        // Check if the dialogue system is ready to start a new dialogue
         if (DialogueManager.Instance != null && !DialogueManager.Instance.isDialogueActive)
         {
             DialogueManager.Instance.StartDialogue(dialogue);
@@ -40,7 +37,7 @@ public class DialogueTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player")) // Using CompareTag is slightly more efficient
+        if (collision.CompareTag("Player"))
         {
             TriggerDialogue();
         }
