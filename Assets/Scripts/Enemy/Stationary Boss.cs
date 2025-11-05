@@ -8,8 +8,8 @@ public class StationaryBoss : MonoBehaviour
 {
     // --- CONSTANTS & STATS ---
     [Header("Stats")]
-    public int health = 5;
-    public const int DAMAGE = 999;
+    public int health = 10;
+    public const int DAMAGE = 999; // any value is fine, just to kill player
     public bool isDead = false;
 
     [Header("Second Boss UI")]
@@ -46,7 +46,6 @@ public class StationaryBoss : MonoBehaviour
 
     [Header("Defeated State")]
     [SerializeField] private GameObject defeatedBossPrefab; // <-- CHANGED TO PREFAB
-    [SerializeField] private float defeatedPrefabLifetime = 5f; // Optional: Destroy prefab after time
 
     // --- STATE & TARGETING ---
     private enum BossState { Idle, Attack }
@@ -328,14 +327,7 @@ public class StationaryBoss : MonoBehaviour
         // --- INSTANTIATE THE DEFEATED ANIMATED PREFAB ---
         if (defeatedBossPrefab != null)
         {
-            // Instantiate the prefab at the boss's position
             GameObject defeatedVisual = Instantiate(defeatedBossPrefab, transform.position, Quaternion.identity);
-
-            // Optional: Parent it to the boss object if you move the boss later
-            // defeatedVisual.transform.SetParent(transform); 
-
-            // Optional: Automatically destroy the visual effect after it finishes (e.g., 5 seconds)
-            Destroy(defeatedVisual, defeatedPrefabLifetime);
         }
 
         // --- DESTROY HEALTH BAR UI ---
@@ -344,13 +336,10 @@ public class StationaryBoss : MonoBehaviour
             Destroy(healthBarUI);
             healthBarUI = null;
         }
-
-        // The StationaryBoss GameObject remains in the scene with its components disabled.
     }
 
     private IEnumerator DisableHealthBarAfterDelay(float delay, GameObject healthBarObject)
     {
-        // Utility method kept for reference but not used in Die()
         yield return new WaitForSeconds(delay);
         if (healthBarObject != null)
         {
