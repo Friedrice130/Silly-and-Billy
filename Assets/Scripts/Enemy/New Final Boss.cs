@@ -42,6 +42,9 @@ public class NewFinalBoss : MonoBehaviour
     private Rigidbody2D rb;
     private GameController gameController;
 
+    // Added SpriteRenderer reference
+    private SpriteRenderer spriteRenderer;
+
     // --- STATE & TARGETING ---
     private enum BossState { Idle, Run, Attack }
     private BossState currentState = BossState.Idle;
@@ -57,9 +60,11 @@ public class NewFinalBoss : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
         gameController = FindFirstObjectByType<GameController>();
 
-        // AMENDMENT 1: Ensure health bar is HIDDEN on start.
+
         if (healthBarUI != null)
             healthBarUI.SetActive(false);
 
@@ -72,12 +77,11 @@ public class NewFinalBoss : MonoBehaviour
         startPosition = transform.position;
         FindAllPlayers();
 
-        // Initialize Health Bar MaxValue and current Value
+
         if (healthBar != null)
         {
             healthBar.maxValue = health;
             healthBar.value = health;
-            // Removed redundant ToggleHealthBar(true) call here.
         }
     }
 
@@ -148,6 +152,7 @@ public class NewFinalBoss : MonoBehaviour
             return;
         }
 
+        // The FlipSprite method is updated below to use SpriteRenderer.flipX
         FlipSprite(targetPlayer.position);
 
         switch (currentState)
@@ -173,18 +178,15 @@ public class NewFinalBoss : MonoBehaviour
         if (currentState == newState) return;
         currentState = newState;
 
-        // --- Animation Logic Update ---
         anim.SetBool("Idle", newState == BossState.Idle);
         anim.SetBool("Run", newState == BossState.Run);
         anim.SetBool("Attack", newState == BossState.Attack);
-        // --- End Animation Logic Update ---
     }
 
     // ## UTILITY FOR PROJECTILES (NEW CO-OP SHIELD CHECK)
 
     public bool IsAnyPlayerShielding()
     {
-        // Clean up the list just in case
         allPlayers.RemoveAll(item => item == null);
 
         foreach (Transform playerTransform in allPlayers)
@@ -244,7 +246,6 @@ public class NewFinalBoss : MonoBehaviour
             float currentScale = Mathf.Lerp(minWaveScale, maxWaveScale, (float)i / (waveProjectileCount - 1));
             projectile.transform.localScale = new Vector3(currentScale, currentScale, currentScale);
 
-            // Assuming WaveProjectile script is attached to the prefab
             WaveProjectile wave = projectile.GetComponent<WaveProjectile>();
             Rigidbody2D projRb = projectile.GetComponent<Rigidbody2D>();
 
@@ -268,11 +269,20 @@ public class NewFinalBoss : MonoBehaviour
         SetState(BossState.Idle);
     }
 
-    // ## MOVEMENT & FLIP LOGIC
+    // Using SpriteRenderer.flipX
     private void FlipSprite(Vector3 targetPos)
     {
-        Vector3 currentScale = transform.localScale;
         bool targetIsToTheRight = targetPos.x > transform.position.x;
+
+        // 1. VISUAL FLIP 
+        if (spriteRenderer != null)
+        {
+            spriteRenderer.flipX = targetIsToTheRight;
+        }
+
+        // 2. FUNCTIONAL FLIP 
+        Vector3 currentScale = transform.localScale;
+
         float targetScaleX = targetIsToTheRight ? -Mathf.Abs(currentScale.x) : Mathf.Abs(currentScale.x);
 
         if (currentScale.x != targetScaleX)
@@ -280,19 +290,22 @@ public class NewFinalBoss : MonoBehaviour
             currentScale.x = targetScaleX;
             transform.localScale = currentScale;
         }
+
+        if (spriteRenderer == null && currentScale.x != targetScaleX)
+        {
+            Debug.LogWarning("SpriteRenderer not found! Using transform scale for visual flip, which may cause scaling issues.");
+        }
     }
 
     // ## TRIGGER LOGIC (COMBINED)
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // 1. PROXIMITY CHECK: Show health bar if player enters
         if (collision.CompareTag("Player"))
         {
             ToggleHealthBar(true);
         }
 
-        // 2. DAMAGE CHECK: Use TryGetComponent for safer component retrieval (Player Bullet)
         if (collision.TryGetComponent<Bullet>(out Bullet playerBullet))
         {
             int damageAmount = playerBullet.damage > 0 ? playerBullet.damage : 1;
@@ -302,10 +315,9 @@ public class NewFinalBoss : MonoBehaviour
         }
     }
 
-    // AMENDMENT 2: Add OnTriggerExit2D to hide the bar
     private void OnTriggerExit2D(Collider2D collision)
     {
-        // Hide health bar when the player leaves the trigger, but only if the boss is alive
+
         if (collision.CompareTag("Player") && !isDead)
         {
             ToggleHealthBar(false);
@@ -313,14 +325,13 @@ public class NewFinalBoss : MonoBehaviour
     }
 
 
-    // ## HEALTH AND DAMAGE LOGIC (TakeDamage is now clean)
+    // ## HEALTH AND DAMAGE LOGIC 
 
     public void TakeDamage(int amount)
     {
         if (isDead) return;
         health -= amount;
 
-        // Health bar value update 
         if (healthBar != null)
         {
             healthBar.value = health;
@@ -341,7 +352,6 @@ public class NewFinalBoss : MonoBehaviour
         Collider2D col = GetComponent<Collider2D>();
         if (col != null) col.enabled = false;
 
-        // Use ToggleHealthBar(false) which is cleaner
         ToggleHealthBar(false);
 
         float deathAnimationTime = 2.0f;
@@ -350,8 +360,7 @@ public class NewFinalBoss : MonoBehaviour
 
     private IEnumerator DisableHealthBarAfterDelay(float delay, GameObject healthBarObject)
     {
-        // This function is now redundant but kept for safety/legacy.
-        // Die() now uses ToggleHealthBar(false) directly.
+
         yield return new WaitForSeconds(delay);
 
         if (healthBarObject != null)
