@@ -6,6 +6,8 @@ using System.Linq;
 public class GameController : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip[] playerDeathSound;
+
     Vector2 checkpointPos;
 
     // References to all player controllers
@@ -39,7 +41,12 @@ public class GameController : MonoBehaviour
     {
         Debug.Log(deadPlayer.gameObject.name + " died! Triggering Fade Transition.");
 
-        // start fade transition and pass Respawn logic as midpoint action
+        if (audioSource != null && playerDeathSound != null)
+        {
+            AudioClip clip = playerDeathSound[Random.Range(0, playerDeathSound.Length)];
+            audioSource.PlayOneShot(clip);
+        }
+
         if (SceneFader.Instance != null)
         {
             StartCoroutine(SceneFader.Instance.StartTransition(
@@ -57,9 +64,6 @@ public class GameController : MonoBehaviour
             Debug.LogWarning("SceneFader not found. Respawning instantly.");
             StartCoroutine(RespawnWithoutFade(0.5f));
         }
-
-        // Debug.Log(deadPlayer.gameObject.name + " died! Triggering Co-op Respawn.");
-        // StartCoroutine(Respawn(0.5f));
     }
 
     private void PrepareForRespawn()
@@ -117,50 +121,4 @@ public class GameController : MonoBehaviour
         Respawn(); 
         FinalizeRespawn();
     }
-
-    // IEnumerator Respawn(float duration)
-    // {
-    //     // 1. Disable player simulation and visibility for all players
-    //     foreach (var player in players)
-    //     {
-    //         if (player.TryGetComponent(out Rigidbody2D playerRb))
-    //         {
-    //             playerRb.simulated = false;
-    //             player.transform.localScale = new Vector3(0, 0, 0);
-    //         }
-    //     }
-
-    //     yield return new WaitForSeconds(duration);
-
-    //     // 2. Teleport both players to the checkpoint
-    //     foreach (var player in players)
-    //     {
-    //         player.transform.position = checkpointPos;
-    //     }
-
-    //     // 3. Re-enable player simulation and visibility for all players
-    //     foreach (var player in players)
-    //     {
-    //         if (player.TryGetComponent(out Rigidbody2D playerRb))
-    //         {
-    //             player.transform.localScale = new Vector3(1, 1, 1);
-    //             playerRb.simulated = true;
-    //             playerRb.linearVelocity = Vector2.zero;
-    //         }
-    //     }
-
-    //     // 4. Reset the Boss state
-    //     FinalBoss finalBoss = FindFirstObjectByType<FinalBoss>();
-    //     if (finalBoss != null)
-    //     {
-    //         finalBoss.ResetBossState();
-    //     }
-
-    //     // Add this check for the Stationary Boss
-    //     StationaryBoss stationaryBoss = FindFirstObjectByType<StationaryBoss>();
-    //     if (stationaryBoss != null)
-    //     {
-    //         stationaryBoss.ResetBossState();
-    //     }
-    // }
 }
