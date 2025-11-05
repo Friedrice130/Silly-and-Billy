@@ -32,6 +32,8 @@ public class DialogueTrigger : MonoBehaviour
         if (DialogueManager.Instance != null && !DialogueManager.Instance.isDialogueActive)
         {
             DialogueManager.Instance.StartDialogue(dialogue);
+
+            Destroy(gameObject);
         }
     }
 
