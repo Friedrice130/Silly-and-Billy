@@ -37788,7 +37788,7 @@ MonoBehaviour:
     - character:
         name: Ice Gole
         icon: {fileID: -916460042708302994, guid: b3dc59a235b8a5348874852e58b52b66, type: 3}
-      line: Yeah, he is lost for days.. Could you do me a favour...? Help me get
+      line: Yeah, he was lost for days.. Could you do me a favour...? Help me get
         him back
       lineSound: {fileID: 8300000, guid: d912c6f66269b4a43a9b1c0bb7235c2f, type: 3}
     - character:
