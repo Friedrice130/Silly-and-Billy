@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class ChasingMonster : MonoBehaviour
 {
@@ -8,14 +7,12 @@ public class ChasingMonster : MonoBehaviour
     public Transform player;
     public float moveSpeed = 3f;
     public float jumpForce = 8f;
-    public float jumpCooldown = 0.5f;
-    public LayerMask groundLayer;
+    public float jumpCooldown = 1f;
 
     [Header("Feet Detector")]
     public MonsterFeet feet;
 
     private Rigidbody2D rb;
-    private bool isJumping = false;
     private bool canJump = true;
     private bool isChasing = false;
 
@@ -30,72 +27,54 @@ public class ChasingMonster : MonoBehaviour
 
     void Update()
     {
-        if (!feet) return;
+        if (player == null || feet == null) return;
 
         bool isGrounded = feet.isGrounded;
+        float distX = player.position.x - transform.position.x;
+        float distY = player.position.y - transform.position.y;
 
-        // ? If the monster has a target (player), chase it
-        if (player != null)
+        // Start chasing
+        if (!isChasing)
         {
-            if (!isChasing)
-            {
-                isChasing = true;
-                Debug.Log(" Monster started chasing the player!");
-            }
-
-            float distX = player.position.x - transform.position.x;
-            float distY = player.position.y - transform.position.y;
-
-            // Move horizontally toward the player
-            rb.linearVelocity = new Vector2(Mathf.Sign(distX) * moveSpeed, rb.linearVelocity.y);
-
-            
-            // Flip to face the player
-            if (distX != 0)
-            {
-                Vector3 scale = transform.localScale;
-                scale.x = Mathf.Abs(scale.x) * Mathf.Sign(distX);
-                transform.localScale = scale;
-            }
-
-
-            // Jump if player is higher and grounded
-            if (distY > 1.5f && isGrounded && canJump)
-            {
-                StartCoroutine(JumpToPlayer());
-            }
-
-            Debug.Log($"Chasing: {isChasing}, Grounded: {isGrounded}, Jumping: {isJumping}, DistY: {distY:F2}");
+            isChasing = true;
+            Debug.Log("Monster started chasing the player!");
         }
-        else
+
+        // Move horizontally
+        rb.linearVelocity = new Vector2(Mathf.Sign(distX) * moveSpeed, rb.linearVelocity.y);
+
+        // Face player
+        if (distX != 0)
         {
-            // Stop chasing when player leaves detection zone
-            if (isChasing)
-            {
-                Debug.Log(" Monster lost the player, stopping chase.");
-                isChasing = false;
-                rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
-            }
+            Vector3 scale = transform.localScale;
+            scale.x = Mathf.Abs(scale.x) * Mathf.Sign(distX);
+            transform.localScale = scale;
+        }
+
+        // Only jump if:
+        // - player is higher
+        // - monster is on the ground
+        // - not already in cooldown
+        if (distY > 1.5f && isGrounded && canJump)
+        {
+            StartCoroutine(JumpToPlayer());
         }
     }
 
     private IEnumerator JumpToPlayer()
     {
         canJump = false;
-        isJumping = true;
 
-        Vector2 dir = (player.position - transform.position).normalized;
-        if (Mathf.Abs(dir.x) < 0.2f)
-            dir.x = transform.localScale.x;
-
-        // Reset vertical velocity before jumping
+        // Add vertical force
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
-        rb.AddForce(new Vector2(dir.x * moveSpeed * 0.8f, jumpForce), ForceMode2D.Impulse);
+        rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
 
+        // Wait until grounded again
         yield return new WaitUntil(() => feet.isGrounded);
+
+        // Wait small delay before next jump
         yield return new WaitForSeconds(jumpCooldown);
 
-        isJumping = false;
         canJump = true;
     }
 
@@ -120,5 +99,4 @@ public class ChasingMonster : MonoBehaviour
             }
         }
     }
-
 }
