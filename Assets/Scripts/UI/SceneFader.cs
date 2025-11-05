@@ -46,7 +46,25 @@ public class SceneFader : MonoBehaviour
         _material = _image.material;
 
         _lastEffect = _useShutters;
-    } 
+
+        if (SceneLoader.IsLoadingNewScene)
+        {
+            _material.SetFloat(_fadeAmount, 1f); // fully black
+        }
+        else
+        {
+            _material.SetFloat(_fadeAmount, 0f); // start transparent   
+        }
+    }
+
+    public void StartFadeInAfterLoad(FadeType fadeType)
+    {
+        ChangeFadeEffect(fadeType);
+        
+        _material.SetFloat(_fadeAmount, 1f); 
+        
+        StartFadeIn(); 
+    }
 
     public IEnumerator StartTransition(FadeType fadeType, Action onMidpointAction)
     {
@@ -73,7 +91,7 @@ public class SceneFader : MonoBehaviour
         StartFadeIn();
     }
 
-    private void ChangeFadeEffect(FadeType fadeType)
+    public void ChangeFadeEffect(FadeType fadeType)
     {
         if (_lastEffect.HasValue)
         {
@@ -122,12 +140,10 @@ public class SceneFader : MonoBehaviour
 
     private void StartFadeIn()
     {
-        _material.SetFloat(_fadeAmount, 1f);
-
         StartCoroutine(HandleFade(0f, 1f));
     }
     
-    private IEnumerator HandleFade(float targetAmount, float startAmount)
+    public IEnumerator HandleFade(float targetAmount, float startAmount)
     {
         float elapsedTime = 0f;
         while (elapsedTime < FadeDuration)
