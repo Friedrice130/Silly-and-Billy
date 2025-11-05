@@ -38,7 +38,7 @@ public class FragmentManager : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (uiCanvas == null)
-            uiCanvas = FindObjectOfType<Canvas>(); // auto reassign in new scene
+            uiCanvas = FindFirstObjectByType<Canvas>(); // auto reassign in new scene
     }
 
     public void UpdateFragmentCount(bool showPopup = true)

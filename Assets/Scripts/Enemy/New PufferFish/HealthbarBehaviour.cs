@@ -12,7 +12,7 @@ public class HealthbarBehaviour : MonoBehaviour
 
     void Update()
     { 
-        Slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + Offset);
+        //Slider.transform.position = Camera.main.WorldToScreenPoint(transform.parent.position + Offset);
     }
 
     public void SetHealth(float health, float maxHealth)
