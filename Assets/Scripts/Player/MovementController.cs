@@ -5,6 +5,9 @@ using Vector2 = UnityEngine.Vector2;
 
 public class MovementController : MonoBehaviour
 {
+    public static MovementController Instance;
+    private bool canMove = true;
+
     [Header("Audio Clips")]
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip[] landFootsteps;
@@ -96,6 +99,11 @@ public class MovementController : MonoBehaviour
 
     void Awake()
     {
+        if (Instance == null)
+            Instance = this;
+        else
+            Debug.LogWarning("make sure to hv one Movement Controller only!");
+
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<CapsuleCollider2D>();
         rb.interpolation = RigidbodyInterpolation2D.Interpolate;
@@ -118,6 +126,30 @@ public class MovementController : MonoBehaviour
         }
     }
 
+    public void SetMovementState(bool state)
+    {
+        canMove = state;
+
+        if (!canMove)
+        {
+            moveInput = Vector2.zero;
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+            frameVelocity = Vector2.zero;
+
+        }
+        else
+        {
+            if (isAnchored) 
+            {
+                
+            }
+            else
+            {
+                rb.bodyType = RigidbodyType2D.Dynamic;
+            }
+        }
+    }
     void OnEnable()
     {
         PlayerActions controlsInstance = Controls;
@@ -169,11 +201,23 @@ public class MovementController : MonoBehaviour
     {
         time += Time.deltaTime;
 
+        if (!canMove)
+        {
+            anchorInputHeld = false;
+            return;
+        }
+
         anchorInputHeld = moveInput.y < -0.5f;
     }
 
     void FixedUpdate()
     {
+        if (!canMove)
+        {
+            rb.linearVelocity = Vector2.zero;
+            return;
+        }
+
         // Use linearVelocity
         if (!inWater)
         {
@@ -186,7 +230,7 @@ public class MovementController : MonoBehaviour
 
         if (isAnchored)
         {
-            rb.linearVelocity = frameVelocity; // Use linearVelocity
+            rb.linearVelocity = frameVelocity; 
             return;
         }
 
@@ -398,30 +442,25 @@ public class MovementController : MonoBehaviour
     #endregion
 
     // --- WATER MOVEMENT LOGIC ---
-    // Inside MovementController.cs, in the HandleSwimmingMovement method
 
     private void HandleSwimmingMovement()
     {
         Vector2 totalSwimForce = Vector2.zero;
 
-        // 1. Calculate force from standard movement input (left/right/up/down)
+        // 1. Calculate force from standard movement input
         if (moveInput.magnitude > 0.01f)
         {
             totalSwimForce += moveInput.normalized * swimForce;
         }
 
-        // 2. Optional: Add extra upward force if the jump button is held
-        // You might need a separate 'swimUpForce' variable for tuning this.
+        // 2. Add extra upward force if the jump button is held
         if (jumpHeld)
         {
-            // Example: Add 50% of the swimForce upward boost when jumping
             totalSwimForce += Vector2.up * (swimForce * 0.5f);
         }
 
-        // Apply the combined force
         rb.AddForce(totalSwimForce, ForceMode2D.Force);
 
-        // Limit max swimming speed... (rest of the function is the same)
         if (rb.linearVelocity.magnitude > swimMaxSpeed)
         {
             rb.linearVelocity = rb.linearVelocity.normalized * swimMaxSpeed;
@@ -429,7 +468,6 @@ public class MovementController : MonoBehaviour
 
         Flip();
     }
-    // ----------------------------------
 
     // --- WATER STATE METHOD ---
     public void SetInWater(bool state, float waterDrag, float waterAngularDamping)
@@ -462,7 +500,6 @@ public class MovementController : MonoBehaviour
             rb.gravityScale = originalGravityScale;
         }
     }
-    // ------------------------------
 
     private void Flip()
     {
