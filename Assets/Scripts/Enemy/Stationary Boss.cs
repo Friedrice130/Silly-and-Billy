@@ -42,6 +42,11 @@ public class StationaryBoss : MonoBehaviour
     private Animator anim;
     private Rigidbody2D rb;
     private GameController gameController;
+    private SpriteRenderer spriteRenderer;
+
+    [Header("Defeated State")]
+    [SerializeField] private GameObject defeatedBossPrefab; // <-- CHANGED TO PREFAB
+    [SerializeField] private float defeatedPrefabLifetime = 5f; // Optional: Destroy prefab after time
 
     // --- STATE & TARGETING ---
     private enum BossState { Idle, Attack }
@@ -60,6 +65,7 @@ public class StationaryBoss : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         gameController = FindFirstObjectByType<GameController>();
 
         if (healthBarUI != null)
@@ -188,6 +194,7 @@ public class StationaryBoss : MonoBehaviour
             if (playerTransform == null) continue;
 
             // Try to get the PlayerAbilities component from the player object or its parent
+            // (Assuming PlayerAbilities is elsewhere in your project)
             PlayerAbilities abilities = playerTransform.GetComponent<PlayerAbilities>()
                 ?? playerTransform.GetComponentInParent<PlayerAbilities>();
 
@@ -217,19 +224,17 @@ public class StationaryBoss : MonoBehaviour
         {
             if (targetPlayer == null || isDead) break;
 
-            // Calculate progressive size and speed
+            // ... (Projectile instantiation logic remains the same)
             float normalizedProgress = (float)i / (burstCount > 1 ? burstCount - 1 : 1);
             float currentScale = Mathf.Lerp(minSnowballScale, maxSnowballScale, normalizedProgress);
             float scaledSpeed = Mathf.Lerp(maxSnowballSpeed, minSnowballSpeed, normalizedProgress);
 
-            // Calculate Spawn Position (Based on target direction)
             bool targetIsToTheRight = targetPlayer.position.x > transform.position.x;
             float spawnXOffset = targetIsToTheRight ? projectileSpawnOffset : -projectileSpawnOffset;
             Vector3 spawnPosition = transform.position + new Vector3(spawnXOffset, 0, 0);
 
-            // Targeting and Instantiation
             float angleOffset = (i - (burstCount / 2)) * 8f;
-            Vector2 directionToTarget = (targetPlayer.position - spawnPosition).normalized; // Aim from spawn point
+            Vector2 directionToTarget = (targetPlayer.position - spawnPosition).normalized;
             float angle = Mathf.Atan2(directionToTarget.y, directionToTarget.x) * Mathf.Rad2Deg;
             Quaternion rotation = Quaternion.Euler(0, 0, angle + angleOffset);
 
@@ -237,13 +242,13 @@ public class StationaryBoss : MonoBehaviour
 
             projectile.transform.localScale = new Vector3(currentScale, currentScale, currentScale);
 
+            // Assuming SnowballBullet is elsewhere in your project
             SnowballBullet snowball = projectile.GetComponent<SnowballBullet>();
             Rigidbody2D projRb = projectile.GetComponent<Rigidbody2D>();
 
             if (projRb != null && snowball != null)
             {
                 snowball.speed = scaledSpeed;
-                // Note: Using velocity is better for instant movement than linearVelocity in some Unity versions/setups
                 projRb.linearVelocity = rotation * Vector2.right * scaledSpeed;
             }
 
@@ -252,7 +257,6 @@ public class StationaryBoss : MonoBehaviour
 
             if (projectileCollider != null && bossCollider != null)
             {
-                // Tell Unity to ignore collisions between the boss and the new snowball
                 Physics2D.IgnoreCollision(projectileCollider, bossCollider, true);
             }
 
@@ -281,10 +285,8 @@ public class StationaryBoss : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Use TryGetComponent for safer and more performant component retrieval
         if (collision.TryGetComponent<Bullet>(out Bullet playerBullet))
         {
-            // Use the damage value from the bullet, defaulting to 1 if not set
             int damageAmount = playerBullet.damage > 0 ? playerBullet.damage : 1;
 
             TakeDamage(damageAmount);
@@ -297,7 +299,6 @@ public class StationaryBoss : MonoBehaviour
         if (isDead) return;
         health -= amount;
 
-        // Health bar value update 
         if (healthBar != null)
         {
             healthBar.value = health;
@@ -315,25 +316,42 @@ public class StationaryBoss : MonoBehaviour
         StopAllCoroutines();
         SetState(BossState.Idle);
 
+        // --- DISABLE/HIDE THE ORIGINAL BOSS ---
         Collider2D col = GetComponent<Collider2D>();
         if (col != null) col.enabled = false;
+        if (rb != null) rb.bodyType = RigidbodyType2D.Kinematic;
 
-        // Disable health bar on death
-        if (healthBar != null)
+        // Hide the original sprite and disable the animator
+        if (spriteRenderer != null) spriteRenderer.enabled = false;
+        if (anim != null) anim.enabled = false;
+
+        // --- INSTANTIATE THE DEFEATED ANIMATED PREFAB ---
+        if (defeatedBossPrefab != null)
         {
-            StartCoroutine(DisableHealthBarAfterDelay(1f, healthBar.gameObject));
+            // Instantiate the prefab at the boss's position
+            GameObject defeatedVisual = Instantiate(defeatedBossPrefab, transform.position, Quaternion.identity);
+
+            // Optional: Parent it to the boss object if you move the boss later
+            // defeatedVisual.transform.SetParent(transform); 
+
+            // Optional: Automatically destroy the visual effect after it finishes (e.g., 5 seconds)
+            Destroy(defeatedVisual, defeatedPrefabLifetime);
         }
 
-        ToggleHealthBar(false);
+        // --- DESTROY HEALTH BAR UI ---
+        if (healthBarUI != null)
+        {
+            Destroy(healthBarUI);
+            healthBarUI = null;
+        }
 
-        float deathAnimationTime = 2.0f;
-        Destroy(gameObject, deathAnimationTime);
+        // The StationaryBoss GameObject remains in the scene with its components disabled.
     }
 
     private IEnumerator DisableHealthBarAfterDelay(float delay, GameObject healthBarObject)
     {
+        // Utility method kept for reference but not used in Die()
         yield return new WaitForSeconds(delay);
-
         if (healthBarObject != null)
         {
             healthBarObject.SetActive(false);
