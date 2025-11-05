@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class ChasingMonster : MonoBehaviour
 {
@@ -11,10 +10,12 @@ public class ChasingMonster : MonoBehaviour
     public float jumpCooldown = 0.5f;
     public LayerMask groundLayer;
 
-    [Header("Feet Detector")]
-    public MonsterFeet feet;
+    [Header("Ground Check Settings")]
+    public Transform groundCheck;          // Empty object below monster
+    public float groundCheckRadius = 0.2f; // Radius for checking ground
 
     private Rigidbody2D rb;
+    private bool isGrounded = false;
     private bool isJumping = false;
     private bool canJump = true;
     private bool isChasing = false;
@@ -24,23 +25,26 @@ public class ChasingMonster : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         rb.collisionDetectionMode = CollisionDetectionMode2D.Continuous;
 
-        if (feet == null)
-            feet = GetComponentInChildren<MonsterFeet>();
+        // Create ground check dynamically if missing
+        if (groundCheck == null)
+        {
+            GameObject checker = new GameObject("GroundCheck");
+            checker.transform.parent = transform;
+            checker.transform.localPosition = new Vector3(0, -1f, 0);
+            groundCheck = checker.transform;
+        }
     }
 
     void Update()
     {
-        if (!feet) return;
+        CheckGrounded();
 
-        bool isGrounded = feet.isGrounded;
-
-        // ? If the monster has a target (player), chase it
         if (player != null)
         {
             if (!isChasing)
             {
                 isChasing = true;
-                Debug.Log(" Monster started chasing the player!");
+                Debug.Log("Monster started chasing the player!");
             }
 
             float distX = player.position.x - transform.position.x;
@@ -49,8 +53,7 @@ public class ChasingMonster : MonoBehaviour
             // Move horizontally toward the player
             rb.linearVelocity = new Vector2(Mathf.Sign(distX) * moveSpeed, rb.linearVelocity.y);
 
-            
-            // Flip to face the player
+            // Flip sprite to face the player
             if (distX != 0)
             {
                 Vector3 scale = transform.localScale;
@@ -58,25 +61,29 @@ public class ChasingMonster : MonoBehaviour
                 transform.localScale = scale;
             }
 
-
             // Jump if player is higher and grounded
             if (distY > 1.5f && isGrounded && canJump)
             {
                 StartCoroutine(JumpToPlayer());
             }
-
-            Debug.Log($"Chasing: {isChasing}, Grounded: {isGrounded}, Jumping: {isJumping}, DistY: {distY:F2}");
         }
         else
         {
-            // Stop chasing when player leaves detection zone
+            // Stop chasing when no player found
             if (isChasing)
             {
-                Debug.Log(" Monster lost the player, stopping chase.");
+                Debug.Log("Monster lost the player, stopping chase.");
                 isChasing = false;
                 rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
             }
         }
+    }
+
+    private void CheckGrounded()
+    {
+        // Circle check below monster
+        Collider2D hit = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        isGrounded = (hit != null);
     }
 
     private IEnumerator JumpToPlayer()
@@ -92,7 +99,7 @@ public class ChasingMonster : MonoBehaviour
         rb.linearVelocity = new Vector2(rb.linearVelocity.x, 0);
         rb.AddForce(new Vector2(dir.x * moveSpeed * 0.8f, jumpForce), ForceMode2D.Impulse);
 
-        yield return new WaitUntil(() => feet.isGrounded);
+        yield return new WaitUntil(() => isGrounded);
         yield return new WaitForSeconds(jumpCooldown);
 
         isJumping = false;
@@ -121,4 +128,12 @@ public class ChasingMonster : MonoBehaviour
         }
     }
 
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck != null)
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+        }
+    }
 }
