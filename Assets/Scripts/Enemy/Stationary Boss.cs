@@ -12,6 +12,9 @@ public class StationaryBoss : MonoBehaviour
     public const int DAMAGE = 999;
     public bool isDead = false;
 
+    [Header("Second Boss UI")]
+    [SerializeField] private GameObject healthBarUI;
+
     // --- STATIONARY BOSS ABILITIES & RANGES ---
     [Header("Snowball Attack Settings")]
     public float sightRange = 15f;
@@ -58,6 +61,9 @@ public class StationaryBoss : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         gameController = FindFirstObjectByType<GameController>();
+
+        if (healthBarUI != null)
+            healthBarUI.SetActive(false);
 
         if (rb != null)
         {
@@ -318,6 +324,8 @@ public class StationaryBoss : MonoBehaviour
             StartCoroutine(DisableHealthBarAfterDelay(1f, healthBar.gameObject));
         }
 
+        ToggleHealthBar(false);
+
         float deathAnimationTime = 2.0f;
         Destroy(gameObject, deathAnimationTime);
     }
@@ -337,5 +345,11 @@ public class StationaryBoss : MonoBehaviour
     {
         StopAllCoroutines();
         SetState(BossState.Idle);
+    }
+
+    public void ToggleHealthBar(bool show)
+    {
+        if (healthBarUI != null)
+            healthBarUI.SetActive(show);
     }
 }
