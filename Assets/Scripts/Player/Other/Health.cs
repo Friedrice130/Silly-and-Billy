@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.UI; // Needed for Slider and Image
-using System.Collections; // Often useful, included for completeness
+using UnityEngine.UI;
+using System.Collections;
 
 public class Health : MonoBehaviour
 {
@@ -22,7 +22,6 @@ public class Health : MonoBehaviour
 
     private float currentHealth;
 
-    // Public property to allow the Enemy.cs to set the starting health
     public float MaxHealth { get => maxHealth; set => maxHealth = value; }
 
     private GameController gameController;
@@ -38,9 +37,6 @@ public class Health : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Updates the health bar's value, max value, and color.
-    /// </summary>
     private void SetHealthUI(float health, float max)
     {
         // Toggle visibility: only show the bar if health is not at max
@@ -49,14 +45,12 @@ public class Health : MonoBehaviour
         healthSlider.maxValue = max;
         healthSlider.value = health;
 
-        // Lerp color based on health percentage (normalizedValue)
         if (fillImage != null)
         {
             fillImage.color = Color.Lerp(lowColor, highColor, healthSlider.normalizedValue);
         }
     }
 
-    // New Update method to make the health bar follow the enemy in world space
     private void Update()
     {
         if (healthSlider != null && Camera.main != null)
@@ -66,9 +60,7 @@ public class Health : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// Reduces health and checks for death.
-    /// </summary>
+    // reduces health
     public void TakeDamage(float damageAmount)
     {
         if (currentHealth <= 0) return;
@@ -87,6 +79,7 @@ public class Health : MonoBehaviour
         }
     }
 
+    // checks for death
     private void Die()
     {
         Debug.Log(gameObject.name + " has died! Calling GameController.");
@@ -97,8 +90,6 @@ public class Health : MonoBehaviour
         {
             gameController.Die(deadPlayer);
         }
-        
-        // Debug.Log(gameObject.name + " has been destroyed!");
 
         // // OPTIONAL: Hide the health bar immediately upon death
         // if (healthSlider != null) healthSlider.gameObject.SetActive(false);
