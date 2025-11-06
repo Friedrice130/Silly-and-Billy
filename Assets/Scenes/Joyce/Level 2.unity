@@ -28203,11 +28203,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4503434485145045438, guid: 8a2a13320695b0c48b4444174dc6dafd, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 153.3
+      value: -5.1
       objectReference: {fileID: 0}
     - target: {fileID: 4503434485145045438, guid: 8a2a13320695b0c48b4444174dc6dafd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29.8
+      value: 2.2
       objectReference: {fileID: 0}
     - target: {fileID: 4503434485145045438, guid: 8a2a13320695b0c48b4444174dc6dafd, type: 3}
       propertyPath: m_LocalPosition.z
@@ -31571,6 +31571,50 @@ MonoBehaviour:
   typingSpeed: 0.05
   animator: {fileID: 2732231581669467138}
   isDialogueActive: 0
+--- !u!4 &2952021763732855872
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6396676226903762228}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 19.5, y: -10, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3242226693084484057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6396676226903762228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c63c258495e2f0747b18e9c86919ccd3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    dialogueLines:
+    - character:
+        name: Silly
+        icon: {fileID: -6610443934307312121, guid: ee79d32b9acf225498c6a5655c52b97d, type: 3}
+      line: Hey Billy, watch!
+      lineSound: {fileID: 8300000, guid: c1b0bbb254cb20547a5581bbba30451b, type: 3}
+    - character:
+        name: Billy
+        icon: {fileID: 4639125348499737962, guid: 8dcab76fb20908d488f635825921a8e7, type: 3}
+      line: What?
+      lineSound: {fileID: 8300000, guid: d912c6f66269b4a43a9b1c0bb7235c2f, type: 3}
+    - character:
+        name: Silly
+        icon: {fileID: -605355004446656571, guid: 8dcab76fb20908d488f635825921a8e7, type: 3}
+      line: Yeah! you're right!
+      lineSound: {fileID: 8300000, guid: d912c6f66269b4a43a9b1c0bb7235c2f, type: 3}
 --- !u!222 &3515060144093069413
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -31766,6 +31810,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1786079052890054053}
   m_CullTransparentMesh: 1
+--- !u!61 &5424229230893996931
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6396676226903762228}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.73198223, y: 2.1376576}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.4639645, y: 6.864373}
+  m_EdgeRadius: 0
 --- !u!224 &5514680291046983707
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32016,6 +32106,24 @@ RectTransform:
   m_AnchoredPosition: {x: -490, y: 153}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &6396676226903762228
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2952021763732855872}
+  - component: {fileID: 3242226693084484057}
+  - component: {fileID: 5424229230893996931}
+  m_Layer: 0
+  m_Name: Dialogue Trigger (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!222 &6645282430848701437
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -32338,6 +32446,7 @@ SceneRoots:
   - {fileID: 1410825546}
   - {fileID: 979439290}
   - {fileID: 825413348}
+  - {fileID: 2952021763732855872}
   - {fileID: 227388637}
   - {fileID: 231833342}
   - {fileID: 666062634}
