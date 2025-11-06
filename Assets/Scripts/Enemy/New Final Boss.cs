@@ -34,6 +34,9 @@ public class NewFinalBoss : MonoBehaviour
     public float maxWaveScale = 1.5f;
     public float waveSpeed = 12f;
 
+    [Header("Door Control")]
+    [SerializeField] private BossDoorController exitDoorController;
+
     // --- REFERENCES ---
     [Header("References")]
     public Animator camAnim;
@@ -348,6 +351,15 @@ public class NewFinalBoss : MonoBehaviour
         isDead = true;
         StopAllCoroutines();
         SetState(BossState.Idle);
+
+        if (exitDoorController != null)
+        {
+            exitDoorController.OpenDoor();
+        }
+        else
+        {
+            Debug.LogWarning("Boss Door Controller not assigned. Exit path may remain blocked.");
+        }
 
         Collider2D col = GetComponent<Collider2D>();
         if (col != null) col.enabled = false;
