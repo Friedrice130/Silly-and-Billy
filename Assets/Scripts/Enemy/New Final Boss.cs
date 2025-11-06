@@ -12,6 +12,10 @@ public class NewFinalBoss : MonoBehaviour
     public const int DAMAGE = 999;
     public bool isDead = false;
 
+    [Header("Audio Control")]
+    public AudioClip attackSoundClip;
+    private AudioSource audioSource;
+
     [Header("Final Boss UI")]
     [SerializeField] private GameObject healthBarUI;
 
@@ -63,6 +67,8 @@ public class NewFinalBoss : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+
+        audioSource = GetComponent<AudioSource>();
 
         spriteRenderer = GetComponent<SpriteRenderer>();
         gameController = FindFirstObjectByType<GameController>();
@@ -186,7 +192,7 @@ public class NewFinalBoss : MonoBehaviour
         anim.SetBool("Attack", newState == BossState.Attack);
     }
 
-    // ## UTILITY FOR PROJECTILES (NEW CO-OP SHIELD CHECK)
+    // ## UTILITY FOR PROJECTILES
 
     public bool IsAnyPlayerShielding()
     {
@@ -223,6 +229,11 @@ public class NewFinalBoss : MonoBehaviour
         if (anim != null)
         {
             anim.SetTrigger("Attack");
+        }
+
+        if (audioSource != null && attackSoundClip != null)
+        {
+            audioSource.PlayOneShot(attackSoundClip);
         }
 
         yield return new WaitForSeconds(0.5f);
@@ -276,14 +287,12 @@ public class NewFinalBoss : MonoBehaviour
     private void FlipSprite(Vector3 targetPos)
     {
         bool targetIsToTheRight = targetPos.x > transform.position.x;
-
-        // 1. VISUAL FLIP 
+ 
         if (spriteRenderer != null)
         {
             spriteRenderer.flipX = targetIsToTheRight;
         }
 
-        // 2. FUNCTIONAL FLIP 
         Vector3 currentScale = transform.localScale;
 
         float targetScaleX = targetIsToTheRight ? -Mathf.Abs(currentScale.x) : Mathf.Abs(currentScale.x);
