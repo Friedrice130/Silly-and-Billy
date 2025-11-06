@@ -38671,13 +38671,13 @@ MonoBehaviour:
         name: Lady Rabbit
         icon: {fileID: -5362292703166988329, guid: 3c0ec4b87b71a5a438209f9444d2f1a1, type: 3}
       line: 'The Snow monster  isn''t evil... '
-      lineSound: {fileID: 8300000, guid: c996a738c3f37444aa9c18f322bec876, type: 3}
+      lineSound: {fileID: 8300000, guid: 980402ebc862b4b4ebb9bc1b18af79aa, type: 3}
     - character:
-        name: Billi
+        name: Lady Rabbit
         icon: {fileID: -5362292703166988329, guid: 3c0ec4b87b71a5a438209f9444d2f1a1, type: 3}
       line: It's only angry because it's looking for its lost children. If you can
         find the  baby, it will calm down.
-      lineSound: {fileID: 8300000, guid: c996a738c3f37444aa9c18f322bec876, type: 3}
+      lineSound: {fileID: 8300000, guid: 980402ebc862b4b4ebb9bc1b18af79aa, type: 3}
     - character:
         name: Silly
         icon: {fileID: -5579191775794348777, guid: ee79d32b9acf225498c6a5655c52b97d, type: 3}
