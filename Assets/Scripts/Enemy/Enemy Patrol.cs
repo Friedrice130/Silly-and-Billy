@@ -1,4 +1,4 @@
-using UnityEditor.Tilemaps;
+using UnityEngine.Tilemaps;
 using UnityEngine;
 
 public class EnemyPatrol : MonoBehaviour

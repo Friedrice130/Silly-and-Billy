@@ -6,21 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Joyce/other/Portal switch scene.unity
-    guid: 639351f9e144aaf4aa68a8b793137eb8
-  - enabled: 1
-    path: Assets/Scenes/Joyce/other/BasicController.unity
-    guid: 413d9ccf547294d43b5c37db185a47e1
-  - enabled: 1
-    path: Assets/Scenes/Angel/PlayerController.unity
-    guid: 09bec15c456985948bd41c418e0bbfb0
-  - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/Joyce/Combine.unity
-    guid: d65400377dc26ce46b407b2e0a077fbe
-  - enabled: 1
     path: Assets/Scenes/enqi/MainMenu.unity
     guid: eaf195bf3a5e5404aa765a166ef41746
   - enabled: 1
@@ -28,7 +13,7 @@ EditorBuildSettings:
     guid: f9b81cc0b3708474ea242e4afd8fdb0e
   - enabled: 1
     path: Assets/Scenes/Joyce/Level 1.unity
-    guid: 43f3e73ea3e0aa145a1520affb06d292
+    guid: f85f7b73ef09bf04e94e9b350cff8053
   - enabled: 1
     path: Assets/Scenes/Joyce/Level 2.unity
     guid: a63f332b16550aa4bb471bc62778fac1
